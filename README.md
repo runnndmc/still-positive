@@ -63,9 +63,10 @@ Site to host podcasts / create a forum / have a mission to connect with others w
 <br>
 
 ## Post-MVP:
-   - be able to like, comment and share the podcast video 
+   - Be able to like, comment and share the podcast video 
    - Have a forum for people to communicate on.
-   - have a blog!
+   - Link to listen on Spotify, Apple Podcasts - etc. 
+   - Have a blog!
    
 <br>
    
