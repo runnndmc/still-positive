@@ -25,8 +25,7 @@ Site to host podcasts / create a forum / have a mission to connect with others w
 
 - Design mobile first 
 - Have the podcast be shown on site
-- Have a forum for people to communicate on 
-- Have a donate button 
+- Have a donate button
 - Have an about me section with articles
 
 
@@ -40,42 +39,6 @@ Site to host podcasts / create a forum / have a mission to connect with others w
   - Implement working generic controller actions for Full CRUD (`index`, `show`, `create`, `update`, `delete`) between your non-User tables 
     - _Note that if you choose to do Authentication, CRUD on your User table does not count toward this requirement._
 
-### Client (Front End) <!-- omit in toc -->
-
-- Have a working, interactive **React** app, built using `npx create-react-app`.
-  - Have at least 8 separate, rendered components in an organized and understandable React file structure.
-  - Utilize functional and class React components appropriately.
-  - Utilize state and props in your components efficiently.
-  - Use _only_ React for DOM Manipulation.
-- Consume data from your **Ruby on Rails API**, and render that data in your components.
-- Utilize **React Router**, for client-side routing.
-- Demonstrate Full CRUD actions ( `index`, `show`, `create`, `update`, and `delete` ) on the front end.
-  - _Note that if you decide to implement Auth, your full CRUD actions must be covered amongst your non-User tables._
-
-### Styling <!-- omit in toc -->
-
-- Be styled with CSS (or SCSS, if you'd prefer).
-- Use Flexbox or Grid in your layout design.
-- Implement 2 media queries for responsive design on 3 screen sizes (including desktop).
-
-### Linting <!-- omit in toc -->
-
-- Indent properly.
-- Utilize high-quality, semantic variable names.
-- Follow `camelCase`, `snake_case`, and `kebab-case` convention.
-- Remove unnecessary boilerplate React files and code.
-- Remove all `console.log()`s and commented out code (functional notes and comments are okay).
-
-### Deployment <!-- omit in toc -->
-
-- Deploy the fully functional front-end via Surge or Netlify.
-- Deploy the back-end via Heroku.
-
-### Procedural <!-- omit in toc -->
-
-- Initialize a **git repo on Github**, with a link to your hosted project.
-- Have **frequent commits**, making a _robust_ commit history at least every day. (75 commits minimum)
-- Use effective and safe **branching and merging** processes.
 
 <br>
 
@@ -94,8 +57,6 @@ Before you start coding away, you will meet with all your instructors for a 5 mi
 4. 
 
 > [Project 4 README Template](./README-template.md)
-
-> ["How detailed should wireframes be?"](https://justuxdesign.com/blog/wireframe-fidelity)
 >
 > [Wireframe.cc](https://wireframe.cc/)
 > 
@@ -110,4 +71,5 @@ Before you start coding away, you will meet with all your instructors for a 5 mi
 
 ## Post-MVP:
    - be able to like, comment and share the podcast video 
+   - Have a forum for people to communicate on.
    - have a blog!
