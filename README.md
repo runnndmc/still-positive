@@ -44,16 +44,17 @@ Site to host podcasts / create a forum / have a mission to connect with others w
 ## ERD
 
 <br>
+
 ## Wireframe
 
 > [Whimsical](https://whimsical.com/)
 
-<br>
-## Component Hierarchy
+
+## Timeframe Estimates
 
 
 <br>
-## Component Breakdown
+## Timeframe Estimates
 
 
 
