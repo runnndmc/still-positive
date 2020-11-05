@@ -5,28 +5,27 @@ Site to host podcasts / create a forum / have a mission to connect with others w
 
 ## Table of Contents <!-- omit in toc -->
 - [OVERVIEW](#overview)
-  - [Important Dates](#important-dates)
-  - [The MVP Requirements](#the-mvp-requirements)
-- [GETTING STARTED](#getting-started)
-  - [Step 1. Make A New Repo](#step-1-make-a-new-repo)
-  - [Step 2. Pitch Your Idea](#step-2-pitch-your-idea)
-  - [Step 3. Get Hacking](#step-3-get-hacking)
-- [EVALUATION](#evaluation)
-- [PLAGIARISM](#plagiarism)
+  - [The MVP Requirements](#mvp-goals)
+  - [ERD](#erd)
+  - [Wireframe](#wireframe)
+  - [Component Hierarchy](#component-hierarchy)
+  - [Component Breakdown](#component-breakdown)
+  - [The Post MVP Goals](#post-mvp)
+  - [Timeframe Estimates](#time-estimates)
 
 # OVERVIEW
 
  **Still Positive** is a pet project that is coming to life before - our - EYES. Still Positive as a whole will aim to create connection, conversation and comedy around those with and without chonic illness.
  
- To create connection, I will be hosting a weekly podcast entitles Still Positive that will have guests on the show that are or are living around people with chrnoic illness. This weekly podcast will be a video and audio recording that will last anywhere from 45 min to 1 hour and will be housed on this Still Positive site. In order to increase connection there will also be a forum where people can discuss topics, ask questions, and connect with others. 
+ To create connection, I will be hosting a weekly podcast entitled Still Positive that will have guests on the show that are or living around people with chrnoic illness. This is a weekly podcast that will be a video and audio recording lasting anywhere from 45 min to 1 hour and will be housed on this Still Positive site. In order to increase connection I will also aim to have a public forum where people can discuss topics, ask questions, and connect with others. 
 
 
 ## MVP Goals
 
-- Design mobile first 
-- Have the podcast be shown on site
-- Have a donate button
-- Have an about me section with articles
+- Design mobile first.
+- Have the podcast video and audio be shown on site for all to see.
+- Have an about me section with articles/ features.
+- Have a donate button that links you to an organization to donate to. 
 
 
 ### Server (Back End) <!-- omit in toc -->
@@ -42,34 +41,27 @@ Site to host podcasts / create a forum / have a mission to connect with others w
 
 <br>
 
-## Step 2. Pitch Your Idea
+## ERD
 
-Before you start coding away, you will meet with all your instructors for a 5 minute pitch to get your idea approved. You must have your idea prepared in the repository's README.md file, **including all of the following items**, to get approved.
+<br>
+## Wireframe
 
-
-   - **Features:** A full feature list for your MVP app.
-   - **Goals:** The overarching goals for your project.
-   - **Challenges:** An explanation of the challenges you expect to face with this project.
-3. **MVP:** An overview of your MVP, including the minimum, need-to-have features of the app.
-   - **Client:** Wire-frames, component hierarchy, component breakdown, and time-frame estimates.
-   - **Server:** Data architecture, ERD model, and API endpoint documentation.
-   - **Dependencies:** A full list of all libraries, frameworks, etc.
-4. 
-
-> [Project 4 README Template](./README-template.md)
->
-> [Wireframe.cc](https://wireframe.cc/)
-> 
 > [Whimsical](https://whimsical.com/)
-> 
-> [lucidchart](https://www.lucidchart.com/)
->
-> [draw.io](https://www.draw.io/)
->
-> [ERDPlus](https://erdplus.com/)
+
+<br>
+## Component Hierarchy
 
 
+<br>
+## Component Breakdown
+
+
+
+<br>
 ## Post-MVP:
    - be able to like, comment and share the podcast video 
    - Have a forum for people to communicate on.
    - have a blog!
+   
+   
+## Timeframe Estimates
