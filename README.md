@@ -49,20 +49,24 @@ Site to host podcasts / create a forum / have a mission to connect with others w
 
 > [Whimsical](https://whimsical.com/)
 
+<br>
 
-## Timeframe Estimates
+## Component Hierarchy
 
 
 <br>
-## Timeframe Estimates
+
+## Component Breakdown
 
 
 
 <br>
+
 ## Post-MVP:
    - be able to like, comment and share the podcast video 
    - Have a forum for people to communicate on.
    - have a blog!
    
+<br>
    
 ## Timeframe Estimates
