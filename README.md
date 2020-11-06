@@ -18,7 +18,15 @@ Site to host podcasts / create a forum / have a mission to connect with others w
  **Still Positive** is a pet project that is coming to life before - our - EYES. Still Positive as a whole will aim to create connection, conversation and comedy around those with and without chonic illness.
  
  To create connection, I will be hosting a weekly podcast entitled Still Positive that will have guests on the show that are or living around people with chrnoic illness. This is a weekly podcast that will be a video and audio recording lasting anywhere from 45 min to 1 hour and will be housed on this Still Positive site. In order to increase connection I will also aim to have a public forum where people can discuss topics, ask questions, and connect with others. 
-
+ 
+ As a user, I want to be able to be able to add new video and audio episodes for my audience to listen or view.
+ As a user, I want to be able to edit and delete my podcast episodes.
+ As a user, I want to be able to upload mp3's 
+ As a user, I want to be able to listen to my podcast
+ As a user, I want to be able to view my podcast
+ 
+ Features : 
+ - store assets on Amazon S3
 
 ## MVP Goals
 
@@ -43,9 +51,33 @@ Site to host podcasts / create a forum / have a mission to connect with others w
 
 ## ERD
 
+**Podcast**
+has_many :episodes
+  - title 
+  - description 
+  - thumbnail 
+  - episode 
+  - iTunes Link
+  - Stitcher Link
+  - Spotify Link
+
+**Episode**
+belongs_to :podcast
+  - Title 
+  - Description
+  - Podcast_id
+  - Thumbnail 
+  - mp3
+  - video 
+
 <br>
 
 ## Wireframe
+
+**Pages**
+- Podcasts (podcast#show)
+- Episode  (episode#show)
+
 
 > [Whimsical](https://whimsical.com/)
 
