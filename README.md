@@ -27,7 +27,9 @@ Site to host podcasts / create a forum / have a mission to connect with others w
  
  Features : 
  - store assets on Amazon S3
-
+ - email subscription 
+ - be able to view latest episodes
+ - have a like be clickable by anyone and saves to that podcast episode.
 ## MVP Goals
 
 - Design mobile first.
@@ -64,8 +66,10 @@ has_many :episodes
 **Episode**
 belongs_to :podcast
   - Title 
+  - Date
   - Description
   - Podcast_id
+  - Episode_id
   - Thumbnail 
   - mp3
   - video 
