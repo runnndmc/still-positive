@@ -63,7 +63,7 @@ Site to host podcasts / create a forum / have a mission to connect with others w
 <br>
 
 ## Component Breakdown
-
+``` structure
          _ _ _ _ _ _ _ _ _ _Home_ _ _ _ _ _ _ _ _ _ _ _ About_ _ _ _ _ _ Donate
         |                  |               |
   NewestEpisode       LatestCard      AllEpisodes
@@ -71,7 +71,7 @@ Site to host podcasts / create a forum / have a mission to connect with others w
    EpisodeDetail      EpisodeDetail    EpisodeCard
                                            |
                                       EpisodeDetail
-   
+ ```
 <br>
 
 ## Post-MVP:
