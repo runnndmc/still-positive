@@ -1,9 +1,16 @@
 import React from 'react'
+import { Route, Switch } from 'react-router';
 import './App.css';
+import Main from './screens/Main';
 
 function App() {
   return (
-    <h1>Hello World!</h1>
+    <Switch>
+      <Route exact path='/'>
+        <Main />
+      </Route>
+    </Switch>
+    
   )
 }
 
