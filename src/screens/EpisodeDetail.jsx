@@ -1,10 +1,10 @@
 import react from 'react'
 
-const EpisodePage = () => {
+const EpisodeDetail = () => {
     
     return(
         <h1>Single Episode Page</h1>
     )
 }
 
-export default EpisodePage
+export default EpisodeDetail
