@@ -6,9 +6,11 @@ import AllEpisodes from "./screens/AllEpisodes";
 import Donate from "./screens/Donate";
 import EpisodeDetail from "./screens/EpisodeDetail";
 import Main from "./screens/Main";
+import Layout from "./shared/Layout";
 
 function App() {
   return (
+    <Layout>
     <Switch>
       <Route exact path="/">
         <Main />
@@ -26,6 +28,7 @@ function App() {
         <Donate />
       </Route>
     </Switch>
+    </Layout>
   );
 }
 
