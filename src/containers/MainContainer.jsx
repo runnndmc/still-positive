@@ -14,7 +14,7 @@ const MainContainer = () => {
   useEffect(() => {
     const apiCall = async () => {
       const resp = await axios.get(
-        "https://api.airtable.com/v0/appRx1trr4DFayGsm/Table%201",
+        "https://api.airtable.com/v0/appRx1trr4DFayGsm/Table%201?view=Grid%20view",
         {
           headers: {
             "Authorization": `Bearer ${process.env.REACT_APP_AIRTABLE_API_KEY}`,
