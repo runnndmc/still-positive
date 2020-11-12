@@ -26,7 +26,7 @@ const MainContainer = () => {
     apiCall();
   }, []);
 
-console.log(allEpisodes)
+
 
 
   return (

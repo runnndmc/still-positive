@@ -1,16 +1,15 @@
 import React from "react";
 
 const AllEpisodes = (props) => {
-/*   const { allEpisodes } = props;
+  const { allEpisodes } = props;
 
-  const episodeCard = allEpisodes.map(episode => {
-    <h2>{episode.title}</h2>
-})
- */
+
   return (
     <>
       <h1>All of the Episodes</h1>
-     {/*  {episodeCard} */}
+      {allEpisodes.map(episode => (
+    <h2 key={episode.id}>{episode.fields.title}</h2>
+      ))}
     </>
   );
 };
