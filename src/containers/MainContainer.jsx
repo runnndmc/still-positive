@@ -14,7 +14,7 @@ const MainContainer = () => {
   useEffect(() => {
     const apiCall = async () => {
       const resp = await axios.get(
-        "https://api.airtable.com/v0/appRx1trr4DFayGsm/Table%201?maxRecords=10&view=Grid%20view",
+        "https://api.airtable.com/v0/appRx1trr4DFayGsm/Table%201",
         {
           headers: {
             "Authorization": `Bearer ${process.env.REACT_APP_AIRTABLE_API_KEY}`,
@@ -38,7 +38,9 @@ const MainContainer = () => {
         <EpisodeDetail />
       </Route>
       <Route path="/episodes">
-        <AllEpisodes allEpisodes={allEpisodes}/>
+        <AllEpisodes 
+            allEpisodes={allEpisodes}
+            />
       </Route>
       <Route path="/about">
         <About />
