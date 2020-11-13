@@ -30,7 +30,7 @@ const MainContainer = () => {
 
   return (
     <>
-      {environment === "production" ? (
+      {environment === "development" ? (
         <Switch>
           <Route exact path="/">
             <Main />
