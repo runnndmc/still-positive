@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Still Positive
+Site to host podcasts / create a forum / have a mission to connect with others what are chronically ill
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Table of Contents <!-- omit in toc -->
+- [OVERVIEW](#overview)
+  - [The MVP Requirements](#mvp-goals)
+  - [Wireframe](#wireframe)
+  - [Component Hierarchy](#component-hierarchy)
+  - [Component Breakdown](#component-breakdown)
+  - [The Post MVP Goals](#post-mvp)
+  - [Timeframe Estimates](#time-estimates)
 
-### `npm start`
+# OVERVIEW
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ **Still Positive** is a pet project that is coming to life before - our - EYES. Still Positive as a whole will aim to create connection, conversation and comedy around those with and without chonic illness.
+ 
+ To create connection, I will be hosting a weekly podcast entitled Still Positive that will have guests on the show that are or living around people with chrnoic illness. This is a weekly podcast that will be a video and audio recording lasting anywhere from 45 min to 1 hour and will be housed on this Still Positive site. In order to increase connection I will also aim to have a public forum where people can discuss topics, ask questions, and connect with others. 
+ 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ As a user, I want to be able to listen to my podcast
+ As a user, I want to be able to view my podcast
+ 
+ Features : 
+ - client-side rendering
+ - email subscription using mailto: or emailjs and a formatted message saying you want to join in. 
+ - be able to view latest episodes
+ - have a like be clickable by anyone and saves to that podcast episode.
+ 
+## MVP Goals
 
-### `npm test`
+- Design mobile first.
+- Have the podcast video from youtube and audio from spotify or soundcloud that will be shown on site for all to see.
+- Have an about me section with articles/ features.
+- Have a donate button that links you to an organization to donate to. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Wireframe
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+> [Whimsical](https://whimsical.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<br>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Component Hierarchy
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Components**
+- LatestCard
+- NewestEpisode
+- EpisodeCard
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**Pages**
+- Home - latest
+- AllEpisodes
+- EpisodeDetail
+- About
+- Donate 
 
-## Learn More
+<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Component Breakdown
+``` structure
+         _ _ _ _ _ _ _ _ _ _Home_ _ _ _ _ _ _ _ _ _ _ _ About_ _ _ _ _ _ Donate
+        |                  |               |
+  NewestEpisode       LatestCard      AllEpisodes
+        |                  |               |
+   EpisodeDetail      EpisodeDetail    EpisodeCard
+                                           |
+                                      EpisodeDetail
+ ```
+<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Post-MVP:
+   - Be able to like, comment and share the podcast video 
+   - Have a forum for people to communicate on.
+   - Link to listen on Spotify, Apple Podcasts - etc. 
+   - Have a blog!
+   
+<br>
+   
+## Timeframe Estimates
