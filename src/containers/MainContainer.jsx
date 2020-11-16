@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Route, Switch } from "react-router";
+import { Route, Switch, useParams } from "react-router";
 import axios from "axios";
 
 import About from "../screens/About";
@@ -9,7 +9,9 @@ import EpisodeDetail from "../screens/EpisodeDetail";
 import Main from "../screens/Main";
 
 const MainContainer = () => {
+  const { id } = useParams();
   const [allEpisodes, setAllEpisodes] = useState([]);
+  const [fetchEpisode, updateFetchEpisode] = useState(false)
 
   const environment = process.env.NODE_ENV;
 
@@ -35,8 +37,8 @@ const MainContainer = () => {
           <Route exact path="/">
             <Main />
           </Route>
-          <Route path="/episode">
-            <EpisodeDetail />
+          <Route path="/episodes/:id">
+            <EpisodeDetail/>
           </Route>
           <Route path="/episodes">
             <AllEpisodes allEpisodes={allEpisodes} />
