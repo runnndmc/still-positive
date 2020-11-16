@@ -50,7 +50,7 @@ const MainContainer = () => {
         </Switch>
       ) : (
         <div>
-          <h2>kitti</h2>
+          <h2>kitti piss a lot</h2>
         </div>
       )}
     </>
