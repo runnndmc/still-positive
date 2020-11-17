@@ -1,10 +1,9 @@
 .main-body{
     padding: 0;
-    margin: 10px 25px 0px 0px;
-    margin-bottom: 0;
-
+    margin-top: 10px;
+    margin-right: 25px;
     background-color: blanchedalmond;
-    position: relative;
-    overflow-y: unset;
+    position: absolute;
+    height: 106vh;
 }
 
