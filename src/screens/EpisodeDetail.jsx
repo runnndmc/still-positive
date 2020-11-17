@@ -4,11 +4,34 @@ import axios from 'axios'
 
 const EpisodeDetail = () => {
 
+  const [episode, setEpisode] = useState(null)
+  const [isLoaded, setLoaded] = useState(false)
+  const { id } = useParams()
+
+
+    useEffect(() => {
+        const findOneEpisode = async () => {
+            const response = await axios.get(`https://api.airtable.com/v0/appRx1trr4DFayGsm/Table%201/${id}`, 
+            {
+                headers: {
+                    Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_API_KEY}`,
+                  },
+            })
+            setEpisode(response.data.fields)
+            setLoaded(true)
+        }
+        findOneEpisode()
+    }, [id])
+    
+
+      if(!isLoaded){
+        return <h4>Loading...</h4>
+    }
 
     return(
         <>
             <h1>Single Episode Page</h1>
-            <h2>{episode.fields.title}</h2>
+            <h2>{episode.title}</h2>
         </>
     )
 }
