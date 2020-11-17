@@ -1,4 +1,9 @@
 .nav-bar{
+
     display: flex;
     justify-content: space-around;
-}
+    position: relative;
+    transform-origin: 60vw 50vw;
+    transform: rotate(90deg);
+    top: 10vh;
+};
