@@ -5,5 +5,10 @@
     position: relative;
     transform-origin: 60vw 50vw;
     transform: rotate(90deg);
-    top: 10vh;
+    top: 7vh;
+    right: 3vw;
+
 };
+.nav-link{
+    margin-bottom: 0px;
+}
