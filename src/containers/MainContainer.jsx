@@ -4,9 +4,10 @@ import axios from "axios";
 
 import About from "../screens/About";
 import AllEpisodes from "../screens/AllEpisodes";
-import Donate from "../screens/Donate";
+import Contact from "../screens/Contact";
 import EpisodeDetail from "../screens/EpisodeDetail";
 import Main from "../screens/Main";
+
 
 const MainContainer = () => {
   const { id } = useParams();
@@ -46,8 +47,8 @@ const MainContainer = () => {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/donate">
-            <Donate />
+          <Route path="/contact">
+            <Contact />
           </Route>
         </Switch>
       ) : (

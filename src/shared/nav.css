@@ -7,8 +7,9 @@
     transform: rotate(90deg);
     top: 7vh;
     right: 3vw;
+    z-index: auto;
 
 };
-.nav-link{
-    margin-bottom: 0px;
+.about-link, .episodes-link, .contact-link {
+    text-decoration: none;
 }

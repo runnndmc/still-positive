@@ -1,8 +1,10 @@
 .main-body{
     padding: 0;
     margin: 10px 25px 0px 0px;
+    margin-bottom: 0;
 
     background-color: blanchedalmond;
-    position: absolute;
+    position: relative;
+    overflow-y: unset;
 }
 
