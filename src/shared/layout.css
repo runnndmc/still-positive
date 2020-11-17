@@ -3,7 +3,10 @@
     margin-top: 10px;
     margin-right: 25px;
     background-color: blanchedalmond;
-    position: absolute;
-    height: 106vh;
+    position: relative;
 }
 
+.logo{
+    text-decoration: none;
+    margin-top: 0;
+}

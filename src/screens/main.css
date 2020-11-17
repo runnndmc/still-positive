@@ -39,3 +39,9 @@
 .stp-annimation span:nth-child(5){
     animation-delay: 2.5s;
 }
+
+.green-box{
+    background-color: lawngreen;
+    width: 30vw;
+    height: 70px;
+}

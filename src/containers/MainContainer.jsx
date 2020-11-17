@@ -12,7 +12,10 @@ import Main from "../screens/Main";
 const MainContainer = () => {
   const { id } = useParams();
   const [allEpisodes, setAllEpisodes] = useState([]);
-  const [fetchEpisode, updateFetchEpisode] = useState(false)
+
+  const [episode, setEpisode] = useState([])
+  const [isLoaded, setLoaded] = useState(false)
+
 
   const environment = process.env.NODE_ENV;
 
@@ -30,6 +33,26 @@ const MainContainer = () => {
     };
     apiCall();
   }, []);
+
+  useEffect(() => {
+      const findOneEpisode = async () => {
+          const response = await axios.get(`https://api.airtable.com/v0/appRx1trr4DFayGsm/Table%201/${id}`, 
+          {
+              headers: {
+                  Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_API_KEY}`,
+                },
+          })
+          setEpisode(response.data.records)
+          setLoaded(true)
+      }
+      findOneEpisode()
+  }, [id])
+
+  console.log(episode)
+
+/*   if(!isLoaded){
+      return <h4>Loading...</h4>
+  } */
 
   return (
     <>

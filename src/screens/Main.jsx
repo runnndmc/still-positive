@@ -1,15 +1,15 @@
 import React from "react";
 
-import LatestEpCard from "../components/LatestEpCard";
+
 import NewestEp from "../components/NewestEp";
 import './main.css'
 
 const Main = () => {
     
   return (
-    <div className='body'>
+    <div className='main-wrapper'>
       <h1>Hello Main Page!</h1>
-
+      <div className='green-box'>  </div>
       <div className='stp-annimation'>
         <span className='stp-text'>Still Positive</span>
         <span className='stp-text'>Still Positive</span>
@@ -18,9 +18,7 @@ const Main = () => {
         <span className='stp-text'>Still Positive</span>
         
       </div>
-
       <NewestEp />
-      <LatestEpCard />
     </div>
   );
 };
