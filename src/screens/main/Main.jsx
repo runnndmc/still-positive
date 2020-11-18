@@ -1,4 +1,5 @@
 import React from "react";
+import NewestEp from "../../components/NewestEp";
 
 import Layout from "../../shared/Layout";
 import "./main.css";
@@ -16,7 +17,7 @@ const Main = () => {
           <span className="stp-text">Still Positive</span>
           <span className="stp-text">Still Positive</span>
         </div>
-        {/* <h3>This is the newest <Link to={`/episode`}>episode!</Link></h3> */}
+        <NewestEp />
       </div>
     </Layout>
   );

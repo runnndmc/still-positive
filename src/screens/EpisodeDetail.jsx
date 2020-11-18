@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {useParams} from 'react-router-dom'
 import axios from 'axios'
+import Layout from '../shared/Layout'
 
 const EpisodeDetail = () => {
 
@@ -29,10 +30,10 @@ const EpisodeDetail = () => {
     }
 
     return(
-        <>
+        <Layout>
             <h1>Single Episode Page</h1>
             <h2>{episode.title}</h2>
-        </>
+        </Layout>
     )
 }
 

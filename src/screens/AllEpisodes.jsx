@@ -12,6 +12,7 @@ const AllEpisodes = () => {
 
   useEffect(() => {
     const apiCall = async () => {
+      try{
       const resp = await axios.get(
         "https://api.airtable.com/v0/appRx1trr4DFayGsm/Table%201?view=Grid%20view",
         {
@@ -21,6 +22,9 @@ const AllEpisodes = () => {
         }
       );
       setAllEpisodes(resp.data.records);
+      } catch (error){
+        throw error
+      }
     };
     apiCall();
   }, []);
@@ -31,8 +35,8 @@ const AllEpisodes = () => {
     <Layout>
       <h1>All of the Episodes</h1>
 
-      {allEpisodes.map((episode) => (
-        <Link to={`/episodes/${episode.id}`}><h2 key={episode.id}>{episode.fields.title}</h2></Link>
+      {allEpisodes.map((episode, index) => (
+        <Link to={`/episodes/${episode.id}`}><h2 id={episode.id} key={index}>{episode.fields.title}</h2></Link>
       ))}
       
     </Layout>
