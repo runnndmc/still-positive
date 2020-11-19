@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Layout from "../shared/Layout";
+import EpisodeCard from "../components/EpisodeCard";
 
 const AllEpisodes = () => {
   const [allEpisodes, setAllEpisodes] = useState([]);
@@ -33,9 +34,12 @@ const AllEpisodes = () => {
 
       {allEpisodes.map((episode, index) => (
         <Link to={`/episodes/${episode.id}`}>
-          <h2 id={episode.id} key={index}>
-            {episode.fields.title}
-          </h2>
+          <EpisodeCard 
+            title={episode.fields.title}
+            description={episode.fields.description}
+            id={episode.fields.id}
+            key={index}
+         />
         </Link>
       ))}
     </Layout>

@@ -6,44 +6,43 @@ import Layout from "../../shared/Layout";
 import "./main.css";
 
 const Main = () => {
-  const [allEps, setAllEps] = useState([]);
   const [queriedEps, setQueriedEps] = useState([]);
+  const [isLoaded, setLoaded] = useState(false);
+
+
+  console.log(queriedEps);
 
   useEffect(() => {
-    const apiReq = async () => {
+    const apiCall = async () => {
       try {
         const resp = await axios.get(
           "https://api.airtable.com/v0/appRx1trr4DFayGsm/Table%201?view=Grid%20view",
           {
             headers: {
-                Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_API_KEY}`,
-              },
+              Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_API_KEY}`,
+            },
           }
         );
-        setAllEps(resp.data.records);
-        setQueriedEps(resp.data.records)
+        setQueriedEps(resp.data.records.shift
+          ());
+        setLoaded(true);
       } catch (error) {
-        throw error; 
+        throw error;
       }
     };
-    apiReq();
-  },[]);
-
-  
-
-  const originFirst = queriedEps.filter(episode => episode.fields.id === (queriedEps.length))
-
-  console.log(originFirst)
+    apiCall();
+  }, []);
 
 
-/*   const handleSort = () => {
-    const ascending = setQueriedEps(originFirst(queriedEps))
-    return ascending
+
+  /* const audio = new Audio(`${audioUrl}`);
+audio.play();
+ */
+
+  if (!isLoaded) {
+    return <h1>One moment babe..</h1>;
   }
 
-  const handleSearch = () => {
-     setQueriedEps(() => handleSort())
-  } */
   return (
     <Layout>
       <div className="main-wrapper">
@@ -56,7 +55,7 @@ const Main = () => {
           <span className="stp-text">Still Positive</span>
           <span className="stp-text">Still Positive</span>
         </div>
-        <NewestEp />
+        <NewestEp queriedEps={queriedEps}/>
       </div>
     </Layout>
   );

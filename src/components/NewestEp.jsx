@@ -1,14 +1,16 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-
-const NewestEp = () => {
+import React from "react";
 
 
+const NewestEp = (props) => {
+const {queriedEps} = props
+
+console.log()
   return (
     <>
-      <h2>Newest episode here!</h2>
+    <h2>{queriedEps.fields.title}</h2>
     
     </>
+     
   );
 };
 
