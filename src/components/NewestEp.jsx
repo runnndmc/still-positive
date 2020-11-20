@@ -5,12 +5,12 @@ const NewestEp = (props) => {
 
   const audioFile = queriedEps.fields.audio_attach[0];
 
-  console.log();
+  console.log(audioFile);
   return (
     <>
       <h2>{queriedEps.fields.title}</h2>
       <audio controls>
-        <source src={audioFile} type={audioFile}></source>
+        <source src={audioFile.url} type={audioFile.type}></source>
         Your browser does not support this audio.
       </audio>
     </>
