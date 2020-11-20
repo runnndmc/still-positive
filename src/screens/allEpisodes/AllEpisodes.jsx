@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import Layout from "../shared/Layout";
-import EpisodeCard from "../components/EpisodeCard";
+import Layout from "../../shared/Layout";
+import './allEpisodes.css';
+import EpisodeCard from "../../components/episodeCard/EpisodeCard";
+
+
 
 const AllEpisodes = () => {
   const [allEpisodes, setAllEpisodes] = useState([]);
+  const [isLoaded, setLoaded] = useState(false)
 
   useEffect(() => {
     const apiCall = async () => {
@@ -19,6 +23,7 @@ const AllEpisodes = () => {
           }
         );
         setAllEpisodes(resp.data.records);
+        setLoaded(true);
       } catch (error) {
         throw error;
       }
@@ -28,18 +33,25 @@ const AllEpisodes = () => {
 
   console.log(allEpisodes);
 
+
+  if (!isLoaded) {
+    return <h1>One moment babe..</h1>;
+  }
+
   return (
     <Layout>
       <h1>All of the Episodes</h1>
 
       {allEpisodes.map((episode, index) => (
-        <Link to={`/episodes/${episode.id}`}>
+        <Link className='episode-card' to={`/episodes/${episode.id}`}>
           <EpisodeCard 
             title={episode.fields.title}
             description={episode.fields.description}
             id={episode.fields.id}
+            img={episode.fields.thumbnail[0].thumbnails.large.url}
             key={index}
          />
+         <button className='ep-detail-bttn'>Full Episode Details</button>
         </Link>
       ))}
     </Layout>

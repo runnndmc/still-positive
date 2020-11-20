@@ -1,0 +1,7 @@
+.episode-card{
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    text-decoration: none;
+}
