@@ -23,24 +23,46 @@ const EpisodeDetail = () => {
         }
         findOneEpisode()
     }, [id])
+
+    function formatDate(date) {
+        var d = new Date(date),
+            month = '' + (d.getMonth() + 1),
+            day = '' + d.getDate(),
+            year = d.getFullYear();
     
+        if (month.length < 2) 
+            month = '0' + month;
+        if (day.length < 2) 
+            day = '0' + day;
+    
+        return [month, day, year].join('/');
+    }
+
+
+
+
 
       if(!isLoaded){
         return <h4>Loading...</h4>
     }
 
+
     return(
         <Layout>
-            <h1>Single Episode Page</h1>
             <h2>{episode.title}</h2>
             <iframe 
+                title={episode.title}
                 src={episode.video_link} 
-                height='300' 
-                width="300" 
-                frameborder='0' 
+                height='130' 
+                width="230" 
+                frameBorder='0' 
                 allowFullScreen='allowfullscreen'
                 controls='1'
+                loading='eager'
                 ></iframe>
+            <p>{episode.description}</p>
+            {formatDate(episode.post_date)}
+
         </Layout>
     )
 }
