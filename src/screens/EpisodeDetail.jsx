@@ -33,6 +33,14 @@ const EpisodeDetail = () => {
         <Layout>
             <h1>Single Episode Page</h1>
             <h2>{episode.title}</h2>
+            <iframe 
+                src={episode.video_link} 
+                height='300' 
+                width="300" 
+                frameborder='0' 
+                allowFullScreen='allowfullscreen'
+                controls='1'
+                ></iframe>
         </Layout>
     )
 }

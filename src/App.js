@@ -15,7 +15,7 @@ function App() {
 
   return (
     
-    <div className="app">
+    <main>
        {environment === "development" ? (
        <Switch>
           <Route exact path="/" component={Main} />
@@ -27,7 +27,7 @@ function App() {
       ) : (
           <h2>kitti piss a lot</h2>
       )}
-    </div>
+    </main>
   );
 }
 
