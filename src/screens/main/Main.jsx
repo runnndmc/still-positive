@@ -35,10 +35,6 @@ const Main = () => {
 
 
 
-  /* const audio = new Audio(`${audioUrl}`);
-audio.play();
- */
-
   if (!isLoaded) {
     return <h1>One moment babe..</h1>;
   }
@@ -54,11 +50,6 @@ audio.play();
           <li className="stp-text">Still Positive</li>
           <li className="stp-text">Still Positive</li>
           <li className="stp-text">Still Positive</li>
-
-          {/* <span className="stp-text">Still Positive</span>
-          <span className="stp-text">Still Positive</span>
-          <span className="stp-text">Still Positive</span>
-          <span className="stp-text">Still Positive</span> */}
         </ul>
         <NewestEp queriedEps={queriedEps}/>
       </div>
