@@ -4,6 +4,7 @@ import axios from "axios";
 import NewestEp from "../../components/NewestEp";
 import Layout from "../../shared/Layout";
 import "./main.css";
+import { Link } from "react-router-dom";
 
 const Main = () => {
   const [queriedEps, setQueriedEps] = useState([]);
@@ -51,7 +52,7 @@ const Main = () => {
           <li className="stp-text">Still Positive</li>
           <li className="stp-text">Still Positive</li>
         </ul>
-        <NewestEp queriedEps={queriedEps}/>
+        <Link to={`/episodes/${queriedEps.id}`}><NewestEp queriedEps={queriedEps}/></Link>
       </div>
     </Layout>
   );
