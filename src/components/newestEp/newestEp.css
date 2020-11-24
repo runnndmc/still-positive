@@ -1,0 +1,10 @@
+.new-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.new-title{
+    text-decoration: none;
+}
+.new-audio{
+    width: 80vw;
+}

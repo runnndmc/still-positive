@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-import NewestEp from "../../components/NewestEp";
+import NewestEp from "../../components/newestEp/NewestEp";
 import Layout from "../../shared/Layout";
 import "./main.css";
 import { Link } from "react-router-dom";
@@ -50,7 +50,7 @@ const Main = () => {
           <li className="stp-text">Still Positive</li>
           <li className="stp-text">Still Positive</li>
         </ul>
-        <Link to={`/episodes/${queriedEps.id}`}><NewestEp queriedEps={queriedEps}/></Link>
+        <Link className='new-title' to={`/episodes/${queriedEps.id}`}><NewestEp queriedEps={queriedEps}/></Link>
       </div>
     </Layout>
   );
