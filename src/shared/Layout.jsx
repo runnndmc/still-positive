@@ -6,7 +6,7 @@ import './layout.css';
 
 const Layout = (props) => {
   return (
-    <div className='main-body'>
+    <div className='layout-body'>
       <Nav/>
       
       <Link className='logo' to='/'><h1 className='logo'>STILL POSITIVE</h1></Link>

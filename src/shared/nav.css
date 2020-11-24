@@ -6,7 +6,7 @@
     transform-origin: 60vw 50vw;
     transform: rotate(90deg);
     top: 7vh;
-    right: 10vw;
+    right: 14vw;
     z-index: auto;
 
 };
@@ -16,5 +16,8 @@
 .about-link, .episodes-link, .contact-link {
     text-decoration: none;
     margin:0;
-    
+    background-color: black;
+    color: white;
+    padding:4px;
+    padding-bottom: 1px;
 }

@@ -5,7 +5,6 @@ const NewestEp = (props) => {
 
   const audioFile = queriedEps.fields.audio_attach[0];
 
-  console.log(audioFile);
   return (
     <>
       <h2>{queriedEps.fields.title}</h2>

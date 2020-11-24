@@ -6,7 +6,7 @@ import "./App.css";
 import About from "./screens/About";
 import AllEpisodes from "./screens/allEpisodes/AllEpisodes";
 import Contact from "./screens/Contact";
-import EpisodeDetail from "./screens/EpisodeDetail";
+import EpisodeDetail from "./screens/episodeDetail/EpisodeDetail";
 import Main from "./screens/main/Main";
 
 function App() {

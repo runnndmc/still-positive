@@ -11,8 +11,6 @@ const Main = () => {
   const [isLoaded, setLoaded] = useState(false);
 
 
-  console.log(queriedEps);
-
   useEffect(() => {
     const apiCall = async () => {
       try {

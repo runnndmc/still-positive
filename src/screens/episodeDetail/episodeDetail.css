@@ -1,0 +1,27 @@
+.detail-wrapper{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.detail-episode-num{
+    align-self:flex-end;
+    margin-top:0;
+}
+.top-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.detail-title{
+    width: 50vw;
+    font-size: 20px;
+    margin-top: 0;
+}
+.detail-thumbnail{
+    width: 30vw;
+    display: inline;
+}
+.detail-audio{
+    width:90vw;
+}

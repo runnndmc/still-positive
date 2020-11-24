@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import Layout from "../shared/Layout";
+
+import Layout from "../../shared/Layout";
+import './episodeDetail.css'
 
 const EpisodeDetail = () => {
   const [episode, setEpisode] = useState(null);
@@ -42,11 +44,21 @@ const EpisodeDetail = () => {
 
   return (
     <Layout>
-      <h2>{episode.title}</h2>
-      <p>{episode.id}</p>
-      <p>{episode.duration}</p>
+      <article className='detail-wrapper'>
+      <p className='detail-episode-num'>{episode.id}</p>
+      <div className='top-wrap'>
+        <h2 className='detail-title'>{episode.title}</h2>
+        <img
+          className="detail-thumbnail"
+          src={episode.thumbnail[0].thumbnails.large.url}
+          alt="Still Positive logo. A cartoon reed-sternberg cell smiling with an outline of a person standing next to it and giving it the finger because - fuck illness"
+          loading="lazy"
+        ></img>
+      </div>
+      <p className='detail-duration'>{episode.duration}</p>
       {formatDate(episode.post_date)}
       <iframe
+         className='detail-video'
         title={episode.title}
         src={episode.video_link}
         height="130"
@@ -56,17 +68,12 @@ const EpisodeDetail = () => {
         controls="1"
         loading="eager"
       ></iframe>
-      <img
-        className="thumbnail"
-        src={episode.thumbnail[0].thumbnails.large.url}
-        alt="Still Positive logo. A cartoon reed-sternberg cell smiling with an outline of a person standing next to it and giving it the finger because - fuck illness"
-        loading="lazy"
-      ></img>
-      <audio controls>
+      <audio className='detail-audio' controls>
         <source src={episode.audio_attach[0].url} type={episode.audio_attach[0].type}></source>
         Your browser does not support this audio.
       </audio>
-      <p>{episode.description}</p>
+      <p className='detail-description'>{episode.description}</p>
+      </article>
     </Layout>
   );
 };
