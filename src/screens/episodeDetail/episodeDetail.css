@@ -1,5 +1,5 @@
 .detail-wrapper{
-    padding: 5px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -7,21 +7,35 @@
 
 .detail-episode-num{
     align-self:flex-end;
-    margin-top:0;
+    margin:0;
+    font-size: 17px;
 }
-.top-wrap{
+.wrap{
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+.middle-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
 }
 .detail-title{
-    width: 50vw;
-    font-size: 20px;
-    margin-top: 0;
+    width: 80vw;
+    font-size: 25px;
+    margin: 0;
 }
 .detail-thumbnail{
     width: 30vw;
     display: inline;
 }
+
 .detail-audio{
-    width:90vw;
+    width:80vw;
+    margin-top: 10px;
+}
+.detail-description{
+    font-size: 17px;
 }
