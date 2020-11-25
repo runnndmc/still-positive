@@ -17,13 +17,13 @@ const NewestEp = (props) => {
 
     return [month, day, year].join("/");
   };
-  
+
   return (
     <article className='new-wrapper'>
-      <p className="new-episode-num">Episode {queriedEps.fields.id}</p>
+      <p className="new-episode-num"># {queriedEps.fields.id}</p>
       <h2 className='new-title'>{queriedEps.fields.title}</h2>
-      <section className="middle-wrap">
-          <p className="detail-duration">{queriedEps.fields.duration}</p>
+      <section className="info-wrap">
+          <p className="new-duration">{queriedEps.fields.duration}</p>
           <span>{formatDate(queriedEps.fields.post_date)}</span>
         </section>
       <audio className='new-audio' controls>

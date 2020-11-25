@@ -1,43 +1,60 @@
 .stp-annimation {
   display: flex;
   flex-direction: column;
+  position:relative;
+  margin: 0;
+  width: 6em;
+  padding-left:12px;
+  margin-top: -116px;
 }
 .stp-annimation li {
-  color: blue;
+  color: #160d4b;
   opacity: 0;
   text-align: center;
   font-size: 1em;
   animation: firstmove 1.5s linear forwards;
   list-style: none;
 }
+.stp-dwayne{
+  width: 80vw;
+  margin: 0 auto;
+  position: relative;
+}
 
 @keyframes firstmove {
   0% {
-    color: blue;
+    color: #d0fc0d;
     text-shadow: none;
   }
   100% {
     opacity: 1;
-    color: rgb(6, 6, 72);
-    text-shadow: 0 0 7px blue /* , 0 0 50px blue */;
+    color: #d0fc0d;
+    text-shadow: 0 0 7px #d0fc0d; /* , 0 0 50px blue */;
   }
 }
 
-/* .stp-annimation span:nth-child(1){
-    animation-delay: 1.0s;
-} */
+.stp-annimation span:nth-child(1){
+    animation-delay: 1.5s;
+}
 .stp-annimation li:nth-child(2) {
-  animation-delay: 1s;
-}
-.stp-annimation li:nth-child(3) {
-  animation-delay: 1.5s;
-}
-.stp-annimation li:nth-child(4) {
   animation-delay: 2s;
 }
-.stp-annimation li:nth-child(5) {
+.stp-annimation li:nth-child(3) {
   animation-delay: 2.5s;
 }
+.stp-annimation li:nth-child(4) {
+  animation-delay: 3s;
+}
+.stp-annimation li:nth-child(5) {
+  animation-delay: 3.5s;
+}
+.stp-annimation li:nth-child(6) {
+  animation-delay: 4.0s;
+}
+.stp-annimation li:nth-child(7) {
+  animation-delay: 4.0s;
+}
+
 
 .green-box {
   background-color: lawngreen;

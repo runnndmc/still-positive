@@ -4,7 +4,19 @@
 }
 .new-title{
     text-decoration: none;
+    margin: 0 auto;
+}
+
+.new-episode-num{
+    margin-bottom:0;
+}
+.info-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
 }
 .new-audio{
-    width: 80vw;
+    width: 87vw;
 }
+

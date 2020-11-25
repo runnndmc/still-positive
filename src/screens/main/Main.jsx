@@ -10,7 +10,6 @@ const Main = () => {
   const [queriedEps, setQueriedEps] = useState([]);
   const [isLoaded, setLoaded] = useState(false);
 
-
   useEffect(() => {
     const apiCall = async () => {
       try {
@@ -22,8 +21,7 @@ const Main = () => {
             },
           }
         );
-        setQueriedEps(resp.data.records.shift
-          ());
+        setQueriedEps(resp.data.records.shift());
         setLoaded(true);
       } catch (error) {
         throw error;
@@ -32,8 +30,6 @@ const Main = () => {
     apiCall();
   }, []);
 
-
-
   if (!isLoaded) {
     return <h1>One moment babe..</h1>;
   }
@@ -41,16 +37,24 @@ const Main = () => {
   return (
     <Layout>
       <div className="main-wrapper">
-        <h1>Hello Main Page!</h1>
-        <div className="green-box"> </div>
+        <section className="green-box"> </section>
+        <img
+          className="stp-dwayne"
+          src="./stp2.png"
+          alt="a collage of a girl looking blankly with her hand over her mouth"
+        />
         <ul className="stp-annimation">
           <li className="stp-text">Still Positive</li>
           <li className="stp-text">Still Positive</li>
           <li className="stp-text">Still Positive</li>
           <li className="stp-text">Still Positive</li>
           <li className="stp-text">Still Positive</li>
+          <li className="stp-text">Still Positive</li>
+          <li className="stp-text">Still Positive</li>
         </ul>
-        <Link className='new-title' to={`/episodes/${queriedEps.id}`}><NewestEp queriedEps={queriedEps}/></Link>
+        <Link className="new-title" to={`/episodes/${queriedEps.id}`}>
+          <NewestEp queriedEps={queriedEps} />
+        </Link>
       </div>
     </Layout>
   );
