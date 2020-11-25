@@ -5,10 +5,12 @@
 .new-title{
     text-decoration: none;
     margin: 0 auto;
+    color: #160d4b;
 }
 
 .new-episode-num{
     margin-bottom:0;
+    margin-top: 160px;
 }
 .info-wrap{
     display: flex;
@@ -17,6 +19,8 @@
     font-size: 12px;
 }
 .new-audio{
-    width: 87vw;
+    width: 83vw;
+    height: 25px;
+    border-radius: 0px;
 }
 

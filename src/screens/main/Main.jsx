@@ -36,13 +36,14 @@ const Main = () => {
 
   return (
     <Layout>
-      <div className="main-wrapper">
-        <section className="green-box"> </section>
-        <img
-          className="stp-dwayne"
-          src="./stp2.png"
-          alt="a collage of a girl looking blankly with her hand over her mouth"
-        />
+      <main className="main-wrapper">
+        <section className="green-box">
+          <img
+            className="stp-dwayne"
+            src="./stp2.png"
+            alt="a collage of a girl looking blankly with her hand over her mouth"
+          />
+        </section>
         <ul className="stp-annimation">
           <li className="stp-text">Still Positive</li>
           <li className="stp-text">Still Positive</li>
@@ -52,10 +53,11 @@ const Main = () => {
           <li className="stp-text">Still Positive</li>
           <li className="stp-text">Still Positive</li>
         </ul>
+        
         <Link className="new-title" to={`/episodes/${queriedEps.id}`}>
           <NewestEp queriedEps={queriedEps} />
         </Link>
-      </div>
+      </main>
     </Layout>
   );
 };
