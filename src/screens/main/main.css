@@ -3,7 +3,6 @@
 .main-wrapper{
   width: 80vw;
   margin: 0;
-  padding-right: 10px;
 }
 .stp-annimation {
   display: flex;
@@ -16,7 +15,6 @@
   top:190px;
 }
 .stp-annimation li {
-  color: #160d4b;
   opacity: 0;
   text-align: center;
   font-size: 17px;

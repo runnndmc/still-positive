@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 .layout-body{
     padding: 0;
     padding-left:10px;
@@ -12,5 +13,11 @@
 .logo{
     text-decoration: none;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-family: 'Shrikhand', cursive;
+    font-size: 45px;
+    line-height: .8em;
+    font-weight: 200;
+    letter-spacing:-3px;
+    color:#000000;
 }

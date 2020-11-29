@@ -1,25 +1,32 @@
 .new-wrapper{
     display: flex;
     flex-direction: column;
+    background-color: #7b5d98;
+    margin-top: 155px;
+    width: 80vw;
+    border-radius: 30px/30px;
+    padding: 10px 0px 10px 10px;
+
 }
 .new-title{
+    color:#000000;
     text-decoration: none;
     margin: 0 auto;
-    color: #160d4b;
 }
 
 .new-episode-num{
     margin-bottom:0;
-    margin-top: 160px;
+    margin-top: 5px;
 }
 .info-wrap{
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 12px;
+    padding: 0px 10px 0px 10px;
 }
 .new-audio{
-    width: 83vw;
+    width: 75vw;
     height: 25px;
     border-radius: 0px;
 }
