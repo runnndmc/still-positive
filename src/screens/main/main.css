@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
 .main-wrapper{
   width: 80vw;
   margin: 0;
@@ -8,36 +10,37 @@
   flex-direction: column;
   position: absolute;
   margin: 0;
-  width: 6em;
-  padding-left:12px;
+  width: 7em;
+  padding-left:20px;
   z-index: 2;
-  top:290px;
+  top:190px;
 }
 .stp-annimation li {
   color: #160d4b;
   opacity: 0;
   text-align: center;
-  font-size: 1em;
+  font-size: 17px;
   animation: firstmove 1.5s linear forwards;
   list-style: none;
+  font-family: 'Syne Mono', monospace;
 }
 .stp-dwayne{
   width: 80vw;
   margin: 0 auto;
   right: 50px;
-  margin-top: 70px;
-  margin-left: -70px;
+  margin-top: 85px;
+  margin-left: 20px;
 }
 .green-box {
-  background-color: #d0fc0d;
+  background-color: #dfff00;
   z-index: -1;
-  height: 30vh;
-  margin-left: 75px;
-  width: 160px;
+  height: 31vh;
+  margin-left: 0px;
+  width: 155px;
 }
 @keyframes firstmove {
   0% {
-    color: #d0fc0d;
+    color:  #dfff00;
     text-shadow: none;
   }
   100% {

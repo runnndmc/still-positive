@@ -40,12 +40,11 @@ const Main = () => {
         <section className="green-box">
           <img
             className="stp-dwayne"
-            src="./stp2.png"
+            src="./stp-left-align.png"
             alt="a collage of a girl looking blankly with her hand over her mouth"
           />
         </section>
         <ul className="stp-annimation">
-          <li className="stp-text">Still Positive</li>
           <li className="stp-text">Still Positive</li>
           <li className="stp-text">Still Positive</li>
           <li className="stp-text">Still Positive</li>
