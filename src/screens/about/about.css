@@ -19,3 +19,11 @@
     margin-top:0;
     font-size: 17px;
 }
+.about-btn-wrap{
+    display: flex;
+    justify-content: center;
+}
+.subscribe-btn{
+    border-radius: 30px;
+    padding: 10px;
+}

@@ -25,7 +25,9 @@ const About = () => {
         </p>
         <p className="about-hosted">Hosted by: Dayna Marie</p>
       </section>
-      <button className="subscribe-btn">Subscribe to Podcast</button>
+      <section className="about-btn-wrap">
+        <button className="subscribe-btn">Subscribe to Podcast</button>
+      </section>
     </Layout>
   );
 };
