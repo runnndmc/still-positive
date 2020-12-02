@@ -40,6 +40,7 @@ const Main = () => {
         <section className="green-box">
           <img
             className="stp-dwayne"
+            tabindex="0"
             src="./stp-left-align.png"
             alt="a collage of a girl looking blankly with her hand over her mouth"
           />
