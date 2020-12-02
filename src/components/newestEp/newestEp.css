@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
 .new-wrapper{
     display: flex;
     flex-direction: column;
@@ -8,25 +11,30 @@
 
 }
 .new-title{
+    font-family: 'Syne Mono', monospace;
     color:#000000;
     text-decoration: none;
     margin: 0px auto;
+    font-size: 20px;
 }
 
 .new-episode-num{
-    margin-bottom:0;
+    margin-bottom: 5px;
     margin-top: 5px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 15px;
 }
 .info-wrap{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 12px;
-    padding: 0px 10px 0px 10px;
+    font-size: 15px;
+    padding: 0px 5px 0px 5px;
     height: 25px;
+    font-family: 'Questrial', sans-serif;
 }
 .new-audio{
-    width: 75vw;
+    width: 77vw;
     height: 25px;
     border-radius: 0px;
 }
