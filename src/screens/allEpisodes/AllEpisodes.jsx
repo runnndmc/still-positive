@@ -31,7 +31,17 @@ const AllEpisodes = () => {
     apiCall();
   }, []);
 
-  console.log(allEpisodes);
+  function formatDate(date) {
+    var d = new Date(date),
+      month = "" + (d.getMonth() + 1),
+      day = "" + d.getDate(),
+      year = d.getFullYear();
+
+    if (month.length < 2) month = "0" + month;
+    if (day.length < 2) day = "0" + day;
+
+    return [month, day, year].join("/");
+  }
 
 
   if (!isLoaded) {
@@ -40,7 +50,7 @@ const AllEpisodes = () => {
 
   return (
     <Layout>
-      <h1>All of the Episodes</h1>
+      <h1>All Episodes</h1>
 
       {allEpisodes.map((episode, index) => (
         <Link className='episode-card' to={`/episodes/${episode.id}`}>
@@ -48,10 +58,11 @@ const AllEpisodes = () => {
             title={episode.fields.title}
             description={episode.fields.description}
             id={episode.fields.id}
+            date={formatDate(episode.fields.post_date)}
             img={episode.fields.thumbnail[0].thumbnails.large.url}
             key={index}
          />
-         <button className='ep-detail-bttn'>Full Episode Details</button>
+         <button className='ep-detail-btn'>Episode Details</button>
         </Link>
       ))}
     </Layout>

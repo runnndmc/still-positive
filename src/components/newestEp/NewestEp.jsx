@@ -21,8 +21,8 @@ const NewestEp = (props) => {
   return (
     <>   
       <article className="new-wrapper">
-        <p className="new-episode-num"># {queriedEps.fields.id}</p>
-        <h2 className="new-title">{queriedEps.fields.title}</h2>
+        <p className="new-episode-num">Ep #{queriedEps.fields.id}</p>
+        <h3 className="new-title">{queriedEps.fields.title}</h3>
         <section className="info-wrap">
           <p className="new-duration">{queriedEps.fields.duration}</p>
           <span>{formatDate(queriedEps.fields.post_date)}</span>

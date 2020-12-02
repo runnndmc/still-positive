@@ -1,17 +1,26 @@
-import React from 'react'
-import './episodeCard.css'
+import React from "react";
+import "./episodeCard.css";
 
 const EpisodeCard = (props) => {
-const {title, description, img, id} = props
+  const { title, description, img, id, date } = props;
 
-    return (
-        <>
-            <p className='ep-num'>{id}</p>
-    <img className='thumbnail' src={img} alt='Still Positive logo. A cartoon reed-sternberg cell smiling with an outline of a person standing next to it and giving it the finger because - fuck illness' loading="lazy"></img>
-            <h3 className='ep-name'>{title}</h3>
-            <p className='ep-description'>{description}</p>
-        </>
-    )
-}
+  return (
+    <>
+      <section className="id-wrapper">
+        <p className="ep-num">Ep #{id}</p>
+        <p className="ep-date">{date}</p>
+      </section>
+      <h3 className="ep-name">{title}</h3>
+      <img
+        className="thumbnail"
+        src={img}
+        alt="Still Positive logo. A cartoon reed-sternberg cell smiling with an outline of a person standing next to it and giving it the finger because - fuck illness"
+        loading="lazy"
+      ></img>
 
-export default EpisodeCard
+      <p className="ep-description">{description}</p>
+    </>
+  );
+};
+
+export default EpisodeCard;

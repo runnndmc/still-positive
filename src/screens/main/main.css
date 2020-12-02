@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 .main-wrapper{
-  width: 80vw;
+  width: 75vw;
   margin: 0;
 }
 .stp-annimation {
@@ -12,7 +13,7 @@
   width: 7em;
   padding-left:20px;
   z-index: 2;
-  top:190px;
+  top: 150px;
 }
 .stp-annimation li {
   opacity: 0;
@@ -26,16 +27,17 @@
   width: 80vw;
   margin: 0 auto;
   right: 50px;
-  margin-top: 85px;
+  margin-top: 55px;
   margin-left: 20px;
 }
 .green-box {
   background-color: #dfff00;
   z-index: -1;
-  height: 31vh;
+  height: 27vh;
   margin-left: 0px;
   width: 155px;
 }
+
 @keyframes firstmove {
   0% {
     color:  #dfff00;
@@ -70,5 +72,19 @@
   animation-delay: 4.0s;
 }
 
-
+.new-main-wrapper{
+  margin-top:130px;
+  height: 30vh;
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+}
+.newest-title{
+  line-height: .8em;
+  font-weight: 900;
+  align-content: center;
+  margin-top: 10px;
+  font-size: 25px;
+  padding-left: 10px;
+}
 

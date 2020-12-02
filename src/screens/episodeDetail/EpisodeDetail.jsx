@@ -57,7 +57,7 @@ const EpisodeDetail = () => {
         <h2 className="detail-title">{episode.title}</h2>
         <section className="middle-wrap">
           <p className="detail-duration">{episode.duration}</p>
-          <span>{(episode.post_date)}</span>
+          <span>{formatDate(episode.post_date)}</span>
         </section>
         <iframe
           className="detail-video"
