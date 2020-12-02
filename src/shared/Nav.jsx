@@ -12,9 +12,9 @@ const Nav = () => {
       <Link className='nav-link' to="/episodes">
         <h5 className='episodes-link'>Episodes</h5>
       </Link>
-      <Link className='nav-link'to="/contact">
+      {/* <Link className='nav-link'to="/contact">
         <h5 className='contact-link'>Contact</h5>
-      </Link>
+      </Link> */}
     </div>
   );
 };

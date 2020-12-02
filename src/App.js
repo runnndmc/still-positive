@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router";
 
 import "./App.css";
 
-import About from "./screens/About";
+import About from "./screens/about/About";
 import AllEpisodes from "./screens/allEpisodes/AllEpisodes";
 import Contact from "./screens/Contact";
 import EpisodeDetail from "./screens/episodeDetail/EpisodeDetail";

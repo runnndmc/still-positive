@@ -50,9 +50,7 @@ const Main = () => {
           <li className="stp-text">Still Positive</li>
           <li className="stp-text">Still Positive</li>
           <li className="stp-text">Still Positive</li>
-          <li className="stp-text">Still Positive</li>
         </ul>
-        
         <Link className="new-title" to={`/episodes/${queriedEps.id}`}>
           <NewestEp queriedEps={queriedEps} />
         </Link>

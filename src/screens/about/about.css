@@ -1,0 +1,21 @@
+.about-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-right: 14px;
+    padding:10px;
+}
+.about-title{
+    margin-top:0;
+    margin-bottom:10px;
+}
+.about-p1{
+    margin: 0 auto;
+    font-size: 17px;
+}
+.about-p2{
+    font-size: 17px;
+}
+.about-hosted{
+    margin-top:0;
+    font-size: 17px;
+}
