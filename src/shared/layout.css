@@ -1,23 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-.layout-body{
-    padding: 0;
-    padding-left:10px;
-    margin-top: 10px;
-    margin-right: 0px;
-    padding-bottom:25px;
-    width:87vw;
-    background-color: #e9e9e9;
-    position: relative;
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+.layout-body {
+  padding: 0;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-right: 0px;
+  padding-bottom: 25px;
+  width: 87vw;
+  background-color: #e9e9e9;
+  position: relative;
 }
 
-.logo{
-    text-decoration: none;
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-family: 'Shrikhand', cursive;
-    font-size: 45px;
-    line-height: .8em;
-    font-weight: 200;
-    letter-spacing:-3px;
-    color:#000000;
+.logo {
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "Shrikhand", cursive;
+  font-size: 45px;
+  line-height: 0.8em;
+  font-weight: 200;
+  letter-spacing: -3px;
+  color: #000000;
+}
+
+@media only screen and (min-width: 360px) {
+  .layout-body {
+    width: 87vw;
+  }
+}
+
+@media only screen and (min-width: 374px) {
+}
+
+@media only screen and (min-width: 414px) {
+}
+
+@media only screen and (min-width: 767px) {
+}
+
+@media only screen and (min-width: 799px) {
+}
+
+@media only screen and (min-width: 999px) {
 }

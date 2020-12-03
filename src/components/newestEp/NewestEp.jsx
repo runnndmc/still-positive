@@ -22,11 +22,9 @@ const NewestEp = (props) => {
     <>   
       <article className="new-wrapper">
         <p className="new-episode-num">Ep #{queriedEps.fields.id}</p>
+        <span className='new-date'>{formatDate(queriedEps.fields.post_date)}</span>
         <h3 className="new-title">{queriedEps.fields.title}</h3>
-        <section className="info-wrap">
-          <p className="new-duration">{queriedEps.fields.duration}</p>
-          <span>{formatDate(queriedEps.fields.post_date)}</span>
-        </section>
+
         <audio className="new-audio" controls>
           <source src={audioFile.url} type={audioFile.type}></source>
           Your browser does not support this audio.

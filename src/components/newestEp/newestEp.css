@@ -7,18 +7,18 @@
     background-color: #7b5d98;
     width: 80vw;
     border-radius: 30px/30px;
-    padding: 10px 0px 10px 10px;
+    padding: 10px 0px 10px 20px;
 
 }
 .new-title{
     font-family: 'Syne Mono', monospace;
     color:#000000;
     text-decoration: none;
-    margin: 0px auto;
+    margin: 10px auto;
     font-size: 20px;
 }
 
-.new-episode-num{
+.new-episode-num, .new-date{
     margin-bottom: 5px;
     margin-top: 5px;
     font-family: 'Questrial', sans-serif;
@@ -39,3 +39,34 @@
     border-radius: 0px;
 }
 
+@media only screen and (min-width: 360px){
+    .new-title{
+        font-size: 22px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .new-audio{
+       margin-top: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 374px){
+
+}
+
+@media only screen and (min-width: 414px){
+
+}
+
+@media only screen and (min-width: 767px){
+
+}
+
+@media only screen and (min-width: 799px){
+
+}
+
+@media only screen and (min-width: 999px){
+
+}

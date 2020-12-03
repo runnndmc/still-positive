@@ -1,23 +1,48 @@
-.nav-bar{
-    height: 10px;
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    transform-origin: 60vw 50vw;
-    transform: rotate(90deg);
-    top: 7vh;
-    right: 14vw;
-    z-index: auto;
-
-};
-.nav-link{
-    text-decoration: none;
+.nav-bar {
+  height: 10px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  transform-origin: 60vw 50vw;
+  transform: rotate(90deg);
+  top: 7vh;
+  right: 14vw;
+  z-index: auto;
 }
-.about-link, .episodes-link, .home-link {
-    text-decoration: none;
-    margin:0;
-    background-color:#160d4b;
-    color: white;
-    padding:4px;
-    padding-bottom: 1px;
+.nav-link {
+  text-decoration: none;
+}
+.about-link,
+.episodes-link,
+.home-link {
+  text-decoration: none;
+  margin: 0;
+  background-color: #160d4b;
+  color: white;
+  padding: 4px;
+  padding-bottom: 1px;
+}
+
+@media only screen and (min-width: 360px) {
+  .about-link,
+  .episodes-link,
+  .home-link {
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+  }
+}
+
+@media only screen and (min-width: 374px) {
+}
+
+@media only screen and (min-width: 414px) {
+}
+
+@media only screen and (min-width: 767px) {
+}
+
+@media only screen and (min-width: 799px) {
+}
+
+@media only screen and (min-width: 999px) {
 }

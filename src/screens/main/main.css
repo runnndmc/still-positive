@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
-.main-wrapper{
+.main-wrapper {
   width: 75vw;
   margin: 0;
 }
@@ -11,7 +11,7 @@
   position: absolute;
   margin: 0;
   width: 7em;
-  padding-left:20px;
+  padding-left: 20px;
   z-index: 2;
   top: 150px;
 }
@@ -21,16 +21,16 @@
   font-size: 17px;
   animation: firstmove 1s linear forwards;
   list-style: none;
-  font-family: 'Syne Mono', monospace;
+  font-family: "Syne Mono", monospace;
 }
-.stp-dwayne{
+.stp-dwayne {
   width: 80vw;
   margin: 0 auto;
   right: 50px;
   margin-top: 55px;
   margin-left: 20px;
 }
-.stp-dwayne:focus{
+.stp-dwayne:focus {
   width: 100vw;
 }
 .green-box {
@@ -43,7 +43,7 @@
 
 @keyframes firstmove {
   0% {
-    color:  #dfff00;
+    color: #dfff00;
     text-shadow: none;
   }
   100% {
@@ -53,8 +53,8 @@
   }
 }
 
-.stp-annimation span:nth-child(1){
-    animation-delay: 1s;
+.stp-annimation span:nth-child(1) {
+  animation-delay: 1s;
 }
 .stp-annimation li:nth-child(2) {
   animation-delay: 1s;
@@ -69,22 +69,22 @@
   animation-delay: 2.5s;
 }
 .stp-annimation li:nth-child(6) {
-  animation-delay: 3.0s;
+  animation-delay: 3s;
 }
 .stp-annimation li:nth-child(7) {
   animation-delay: 3.5s;
 }
 
-.new-main-wrapper{
-  margin-top:130px;
+.new-main-wrapper {
+  margin-top: 130px;
   height: 30vh;
   width: 85vw;
   display: flex;
   flex-direction: column;
 }
-.newest-title{
-  font-family: 'Shrikhand', cursive;
-  line-height: .8em;
+.newest-title {
+  font-family: "Shrikhand", cursive;
+  line-height: 0.8em;
   letter-spacing: -2;
   font-weight: 400;
   align-content: center;
@@ -93,8 +93,59 @@
   padding-left: 10px;
 }
 
-@media only screen and (min-width: 360px){
-  .green-box{
+@media only screen and (min-width: 360px) {
+  .green-box {
     background-color: black;
+  }
+  .stp-annimation {
+    top: 175px;
+    width: 10em;
+    padding-left: 5px;
+  }
+  .stp-annimation-li {
+    font-size: 20px;
+  }
+  .stp-dwayne {
+    padding-top: 20px;
+  }
+  .new-main-wrapper {
+    margin-top: 200px;
+    height: 25vh;
+  }
+  .newest-title {
+    padding-left: 20px;
+    font-size: 34px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 374px) {
+  .green-box {
+    background-color: blue;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  .green-box {
+    background-color: purple;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .green-box {
+    background-color: red;
+  }
+}
+
+@media only screen and (min-width: 799px) {
+  .green-box {
+    background-color: orange;
+  }
+}
+
+@media only screen and (min-width: 999px) {
+  .green-box {
+    background-color: yellow;
   }
 }
