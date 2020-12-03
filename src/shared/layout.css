@@ -29,6 +29,10 @@
 }
 
 @media only screen and (min-width: 374px) {
+    .layout-body {
+        width: 88vw;
+        padding-bottom: 35px;
+      }
 }
 
 @media only screen and (min-width: 414px) {

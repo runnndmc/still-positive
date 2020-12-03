@@ -123,6 +123,23 @@
 @media only screen and (min-width: 374px) {
   .green-box {
     background-color: blue;
+    width: 47vw;
+  }
+  .stp-dwayne {
+    margin-top: 20px;
+  }
+  .new-main-wrapper{
+    margin-top: 160px;
+  }
+  .newest-title{
+    margin-top: 10px;
+  }
+  .stp-annimation {
+    top: 140px;
+    padding-left: 20px;
+  }
+  .stp-annimation li {
+    font-size: 20px;
   }
 }
 
