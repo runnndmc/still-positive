@@ -68,7 +68,13 @@
 }
 
 @media only screen and (min-width: 767px){
-
+    .new-episode-num, .new-date{
+        font-size: 20px;
+    }
+    .new-title{
+        font-size: 28px;
+        margin-left: 0;
+    }
 }
 
 @media only screen and (min-width: 799px){

@@ -38,7 +38,17 @@
 @media only screen and (min-width: 414px) {
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 766px) {
+  .nav-bar{
+    width: 65vw;
+  }
+  .about-link,
+  .episodes-link,
+  .home-link {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+
 }
 
 @media only screen and (min-width: 799px) {

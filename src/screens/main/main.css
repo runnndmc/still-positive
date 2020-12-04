@@ -171,9 +171,27 @@
   }
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 766px) {
   .green-box {
     background-color: red;
+  }
+  .stp-annimation {
+    top: 220px;
+    margin-left: 10px;
+  }
+  .stp-annimation li {
+    font-size: 35px;
+  }
+  .newest-title{
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .new-main-wrapper{
+    margin-top: 260px;
+  }
+  .stp-dwayne {
+    margin-left: 73px;
+    margin-top: 70px;
   }
 }
 
