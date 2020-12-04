@@ -39,7 +39,7 @@
     border-radius: 0px;
 }
 
-@media only screen and (min-width: 360px){
+@media only screen and (min-width: 340px){
     .new-title{
         font-size: 22px;
         margin-top: 0;
