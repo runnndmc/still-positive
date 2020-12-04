@@ -174,9 +174,10 @@
 @media only screen and (min-width: 766px) {
   .green-box {
     background-color: red;
+    height: 33vh;
   }
   .stp-annimation {
-    top: 220px;
+    top: 210px;
     margin-left: 10px;
   }
   .stp-annimation li {
@@ -187,11 +188,13 @@
     margin-bottom: 20px;
   }
   .new-main-wrapper{
-    margin-top: 260px;
+    margin-top: 280px;
+    height: 23vh;
   }
   .stp-dwayne {
     margin-left: 73px;
     margin-top: 70px;
+    height: 49vh;
   }
 }
 
