@@ -52,6 +52,15 @@
 }
 
 @media only screen and (min-width: 799px) {
+  .nav-bar{
+    width: 65vw;
+  }
+  .about-link,
+  .episodes-link,
+  .home-link {
+    font-size: 35px;
+    padding-bottom: 12px;
+  }
 }
 
 @media only screen and (min-width: 999px) {

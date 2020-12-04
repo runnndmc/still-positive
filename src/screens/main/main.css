@@ -202,6 +202,23 @@
   .green-box {
     background-color: orange;
   }
+  .stp-dwayne {
+    margin-left: 65px;
+    margin-top: 50px;
+    padding-top: 60px;
+  }
+  .stp-annimation {
+    top: 250px;
+  }
+  .stp-annimation li {
+    font-size: 40px;
+  }
+  .new-main-wrapper{
+    margin-top: 30vh;
+  }
+  .newest-title{
+    font-size: 60px;
+  }
 }
 
 @media only screen and (min-width: 999px) {
