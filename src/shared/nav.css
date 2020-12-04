@@ -17,10 +17,11 @@
 .home-link {
   text-decoration: none;
   margin: 0;
-  background-color: #160d4b;
+  background-color: #4F008F;
   color: white;
   padding: 4px;
   padding-bottom: 1px;
+  border-radius: 5px;
 }
 
 @media only screen and (min-width: 360px) {
@@ -64,4 +65,14 @@
 }
 
 @media only screen and (min-width: 999px) {
+  .nav-bar{
+    width: 35vw;
+    top: 25vh;
+  }
+  .about-link,
+  .episodes-link,
+  .home-link {
+    font-size: 30px;
+    
+  }
 }
