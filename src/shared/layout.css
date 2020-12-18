@@ -6,7 +6,7 @@
   margin-right: 0px;
   padding-bottom: 25px;
   width: 87vw;
-  background-color: #e9e9e9;
+  background-color: #EFE7DF;
   position: relative;
 }
 
@@ -31,10 +31,11 @@
 @media only screen and (min-width: 374px) {
     .layout-body {
         width: 88vw;
-        padding-bottom: 55px;
+        padding-bottom: 10%;
       }
       .logo{
         font-size: 55px;
+        margin-bottom: 6%;
       }
 }
 

@@ -15,9 +15,10 @@
 .about-link,
 .episodes-link,
 .home-link {
+  font-family: 'Syne Mono', monospace;
   text-decoration: none;
   margin: 0;
-  background-color: #4F008F;
+  background-color: #310059;
   color: white;
   padding: 4px;
   padding-bottom: 1px;

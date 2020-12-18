@@ -51,7 +51,7 @@ const AllEpisodes = () => {
   return (
     <Layout>
       <h1>All Episodes</h1>
-
+      <section className='all-ep-wrapper'>
       {allEpisodes.map((episode, index) => (
         <Link className='episode-card' to={`/episodes/${episode.id}`}>
           <EpisodeCard 
@@ -65,6 +65,7 @@ const AllEpisodes = () => {
          <button className='ep-detail-btn'>Episode Details</button>
         </Link>
       ))}
+       </section>
     </Layout>
   );
 };
