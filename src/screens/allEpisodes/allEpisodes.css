@@ -1,3 +1,14 @@
+.header-all-eps{
+    grid-row-start: 2;
+    grid-column-start:2;
+    padding-left: 10px;
+}
+.all-ep-wrapper{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: auto;
+    grid-column-end: 4;
+}
 .episode-card{
     font-family: 'Syne Mono', monospace;
     background-color: #310059;
@@ -36,6 +47,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        grid-column-end: span 4;
     }
     .episode-card{
         width: 30vw;
@@ -43,5 +55,7 @@
 }
 
 @media only screen and (min-width: 999px){
-
+    .episode-card{
+        width: 20vw;
+    }
 }

@@ -69,11 +69,12 @@
   .nav-bar{
     width: 35vw;
     top: 25vh;
+    height: 8px;
   }
   .about-link,
   .episodes-link,
   .home-link {
     font-size: 30px;
-    
+    padding-bottom: 10px;
   }
 }

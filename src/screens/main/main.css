@@ -111,7 +111,7 @@
     margin-top: 20px;
   }
   .new-main-wrapper {
-    margin-top: 200px;
+    margin-top: 150px;
     height: 25vh;
   }
   .newest-title {
@@ -146,6 +146,9 @@
   .stp-annimation li {
     font-size: 20px;
     letter-spacing: 1.5px;
+  }
+  .newest-title{
+    margin-top: 0;
   }
 }
 

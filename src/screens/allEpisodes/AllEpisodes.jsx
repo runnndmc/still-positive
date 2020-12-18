@@ -50,7 +50,7 @@ const AllEpisodes = () => {
 
   return (
     <Layout>
-      <h1>All Episodes</h1>
+      <h2 className='header-all-eps'>All Episodes</h2>
       <section className='all-ep-wrapper'>
       {allEpisodes.map((episode, index) => (
         <Link className='episode-card' to={`/episodes/${episode.id}`}>
