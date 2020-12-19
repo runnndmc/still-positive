@@ -3,8 +3,8 @@
 .main-desktop{
   grid-column-start: 1;
   grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 7;
 }
 .main-wrapper {
   width: 75vw;
@@ -12,7 +12,7 @@
 
 }
 .stp-annimation {
-  
+  grid-row-start: 3;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -20,10 +20,9 @@
   width: 7em;
   padding-left: 20px;
   z-index: 2;
-  top: 150px;
+  top: 0px;
 }
 .stp-annimation li {
-
   opacity: 0;
   text-align: center;
   font-size: 17px;
@@ -107,7 +106,6 @@
     width: 50vw;
   }
   .stp-annimation {
-    top: 160px;
     width: 12em;
     padding-left: 5px;
   }
@@ -148,7 +146,6 @@
     margin-bottom: 10px;
   }
   .stp-annimation {
-    top: 170px;
     padding-left: 20px;
   }
   .stp-annimation li {

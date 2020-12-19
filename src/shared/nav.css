@@ -5,8 +5,8 @@
   position: relative;
   transform-origin: 60vw 50vw;
   transform: rotate(90deg);
-  top: 7vh;
-  right: 14vw;
+  top: 25vh;
+  right: 20vw;
   z-index: auto;
 }
 .nav-link {
@@ -17,7 +17,7 @@
 .home-link {
   font-family: 'Syne Mono', monospace;
   text-decoration: none;
-  margin: 0;
+  margin: 10px;
   background-color: #310059;
   color: white;
   padding: 4px;
