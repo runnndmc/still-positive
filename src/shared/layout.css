@@ -1,14 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 .layout-body {
   display: grid;
-  grid-template-columns: 0vw 20vw 20vw 20vw 20vw;
-  grid-template-rows:1fr 1fr auto auto;
+  grid-template-columns: 5vw 20vw 20vw 20vw 20vw;
+  grid-template-rows: 15vw 10vw 40vw 35vw;
   grid-gap: 10px;
-  padding: 0;
-  padding-left: 10px;
+  padding: 0 0 25px 10px;
   margin-top: 10px;
   margin-right: 0px;
-  padding-bottom: 25px;
   width: 87vw;
   background-color: #EFE7DF;
   position: relative;
@@ -17,8 +15,7 @@
 
 .logo {
   text-decoration: none;
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 5px 0 20px 0;
   font-family: "Shrikhand", cursive;
   font-size: 45px;
   line-height: 0.8em;
