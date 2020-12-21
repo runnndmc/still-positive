@@ -71,7 +71,19 @@
 }
 
 @media only screen and (min-width: 414px){
-
+    .about-title{
+        font-size: 35px;
+     }
+     .about-p1, .about-p2{
+         font-size: 19px;
+     }
+     .about-hosted{
+        font-size: 19px;
+    }
+    .subscribe-btn{
+        font-size: 19px;
+        padding: 15px;
+    }
 }
 
 @media only screen and (min-width: 767px){
