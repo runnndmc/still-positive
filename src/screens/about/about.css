@@ -59,28 +59,51 @@
 */
 
 @media only screen and (min-width: 360px){
+    .about-wrapper{
+        margin-top: 40px;
+    }
     .about-title{
        font-size: 30px;
+       grid-row-start: 3;
+       grid-column-start: 2;
+       grid-column-end: 6;
     }
     .about-p1, .about-p2{
         font-size: 18.5px;
+        line-height: 1.1;
+    }
+    .about-hosted{
+        margin-bottom:0
+    }
+    .subscribe-btn{
+        font-size: 18.5px;
+        padding: 10px;
     }
 }
 
 @media only screen and (min-width: 374px){
     .about-title{
         font-size: 35px;
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 3;
+     }
+     .about-wrapper{
+         margin-top: 20px;
+         padding-bottom: 0;
      }
      .about-p1, .about-p2{
          font-size: 19px;
-         margin-top: 20px;
+         margin-top: 15px;
+         line-height: 1.2;
      }
      .about-hosted{
         font-size: 19px;
+        margin-bottom: 5px;
     }
     .subscribe-btn{
         font-size: 19px;
-        padding: 15px;
+        padding: 10px;
     }
 }
 
@@ -90,6 +113,7 @@
      }
      .about-p1, .about-p2{
          font-size: 19px;
+         line-height: 1.1;
      }
      .about-hosted{
         font-size: 19px;
@@ -102,10 +126,11 @@
 
 @media only screen and (min-width: 767px){
     .about-wrapper{
-        margin: 0 auto;
+        margin: 20 auto;
     }
     .about-title{
         font-size: 40px;
+        
      }
      .about-p1, .about-p2{
          margin-top: 25px;
@@ -113,17 +138,24 @@
      }
      .about-hosted{
         font-size: 25px;
+        margin: 15px;
     }
     .subscribe-btn{
         font-size: 20px;
-        padding: 30px;
+        padding: 20px;
+        margin: 20px;
     }
 }
 
 @media only screen and (min-width: 799px){
+    .about-wrapper{
+        margin-top: 30px;
+    }
     .about-title{
         font-size: 45px;
-        margin-top: 20px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
      }
      .about-p1, .about-p2{
          font-size: 27px;
@@ -141,14 +173,15 @@
     }
     .about-btn-wrap{
         margin: 40px;
+        margin-bottom: 8vh;
     }
 }
 
 @media only screen and (min-width: 999px){
     .about-title{
         font-size: 50px;
-        margin-top: 20px;
         grid-column-start: 2;
+        grid-column-end: 4;
         grid-row-start: 2;
      }
      .about-p1, .about-p2{
