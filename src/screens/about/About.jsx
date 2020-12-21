@@ -6,10 +6,11 @@ import "./about.css";
 const About = () => {
   return (
     <Layout>
-      <section className="about-wrapper">
-        <h2 className="about-title">
+       <h2 className="about-title">
           About <em>STP</em>
         </h2>
+      <section className="about-wrapper">
+       
         <p className="about-p1">
           Still Positive is a podcast aiming to create connection, conversation and comedy around
           those with or without chronic illness and disability.
