@@ -44,27 +44,27 @@ const EpisodeDetail = () => {
 
   return (
     <Layout>
+      <img
+        className="detail-thumbnail"
+        src={episode.thumbnail[0].thumbnails.large.url}
+        alt="Still Positive logo. A cartoon reed-sternberg cell smiling with an outline of a person standing next to it and giving it the finger because - fuck illness"
+        loading="lazy"
+      ></img>
       <article className="detail-wrapper">
-        <section className="wrap">
-          <p className="detail-episode-num">Episode {episode.id}</p>
-          <img
-            className="detail-thumbnail"
-            src={episode.thumbnail[0].thumbnails.large.url}
-            alt="Still Positive logo. A cartoon reed-sternberg cell smiling with an outline of a person standing next to it and giving it the finger because - fuck illness"
-            loading="lazy"
-          ></img>
-        </section>
-        <h2 className="detail-title">{episode.title}</h2>
-        <section className="middle-wrap">
+      <section className="middle-wrap">
           <p className="detail-duration">{episode.duration}</p>
           <span>{formatDate(episode.post_date)}</span>
         </section>
+        <section className="wrap">
+          <p className="detail-episode-num">Episode {episode.id}</p>
+        </section>
+        <h2 className="detail-title">{episode.title}</h2>
         <iframe
           className="detail-video"
           title={episode.title}
           src={episode.video_link}
-          height="125"
-          width="222"
+          /*           height="125"
+          width="222" */
           frameBorder="0"
           allowFullScreen="allowfullscreen"
           controls="1"
