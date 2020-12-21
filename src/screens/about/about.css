@@ -34,10 +34,11 @@
     border-radius: 30px;
     padding: 10px;
 }
-.who-she-wrapper{
-/*     grid-row-start: 4;
+
+/* .who-she-wrapper{
+    grid-row-start: 4;
     grid-column-start: 2;
-    grid-column-end: 6; */
+    grid-column-end: 6; 
 }
 .who-she-title{
 
@@ -54,9 +55,15 @@
 .featured-links{
 
 }
+*/
 
 @media only screen and (min-width: 360px){
-
+    .about-title{
+       font-size: 30px;
+    }
+    .about-p1, .about-p2{
+        font-size: 18.5px;
+    }
 }
 
 @media only screen and (min-width: 374px){
@@ -68,7 +75,23 @@
 }
 
 @media only screen and (min-width: 767px){
-
+    .about-wrapper{
+        margin: 0 auto;
+    }
+    .about-title{
+        font-size: 40px;
+     }
+     .about-p1, .about-p2{
+         margin-top: 25px;
+         font-size: 25px;
+     }
+     .about-hosted{
+        font-size: 25px;
+    }
+    .subscribe-btn{
+        font-size: 20px;
+        padding: 30px;
+    }
 }
 
 @media only screen and (min-width: 799px){
