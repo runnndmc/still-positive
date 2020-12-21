@@ -2,7 +2,7 @@
 .layout-body {
   display: grid;
   grid-template-columns: 5vw 20vw 20vw 20vw 5vw;
-  grid-template-rows: 25vw 10vw auto  5vw;
+  grid-template-rows: 25vw 10vw auto  auto 5vw;
   grid-gap: 10px;
   padding: 0 0 40px 10px;
   margin-top: 15px;

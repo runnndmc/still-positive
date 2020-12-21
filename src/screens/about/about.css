@@ -3,8 +3,12 @@
     flex-direction: column;
     margin-right: 14px;
     padding:10px;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 6;
 }
 .about-title{
+    grid-row-start: 2;
     margin-top:0;
     margin-bottom:10px;
 }
@@ -20,6 +24,9 @@
     font-size: 17px;
 }
 .about-btn-wrap{
+    grid-row-start: 4;
+    grid-column-start: 2;
+    grid-column-end: 6;
     display: flex;
     justify-content: center;
 }
@@ -27,13 +34,33 @@
     border-radius: 30px;
     padding: 10px;
 }
+.who-she-wrapper{
+/*     grid-row-start: 4;
+    grid-column-start: 2;
+    grid-column-end: 6; */
+}
+.who-she-title{
+
+}
+.who-she-intro{
+
+}
+.featured-title{
+
+}
+.featured-links-wrapper{
+
+}
+.featured-links{
+
+}
 
 @media only screen and (min-width: 360px){
 
 }
 
 @media only screen and (min-width: 374px){
-
+    
 }
 
 @media only screen and (min-width: 414px){
