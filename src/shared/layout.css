@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 .layout-body {
   display: grid;
-  grid-template-columns: 5vw 20vw 20vw 20vw 5vw;
+  grid-template-columns: 5vw 20vw 20vw 20vw auto 2vw;
   grid-template-rows: 25vw 10vw auto  auto 5vw;
   grid-gap: 10px;
   padding: 0 0 40px 10px;
