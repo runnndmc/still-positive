@@ -50,14 +50,14 @@ const EpisodeDetail = () => {
         alt="Still Positive logo. A cartoon reed-sternberg cell smiling with an outline of a person standing next to it and giving it the finger because - fuck illness"
         loading="lazy"
       ></img>
-      <article className="detail-wrapper">
+
       <section className="middle-wrap">
-          <p className="detail-duration">{episode.duration}</p>
-          <span>{formatDate(episode.post_date)}</span>
-        </section>
-        <section className="wrap">
-          <p className="detail-episode-num">Episode {episode.id}</p>
-        </section>
+        <span className="detail-date">{formatDate(episode.post_date)}</span>
+        <p className="detail-duration">{episode.duration}</p>
+        <p className="detail-episode-num">Episode {episode.id}</p>
+      </section>
+
+      <article className="detail-wrapper">
         <h2 className="detail-title">{episode.title}</h2>
         <iframe
           className="detail-video"
