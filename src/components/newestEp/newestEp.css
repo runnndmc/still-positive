@@ -14,9 +14,11 @@
     font-family: 'Syne Mono', monospace;
     color:#000000;
     text-decoration: none;
-    margin: 10px auto;
+    margin: 5px;
+    margin-left: 0;
     font-size: 20px;
     color: #FFFFFF;
+    grid-row-start: 1;
 }
 
 .new-episode-num, .new-date{

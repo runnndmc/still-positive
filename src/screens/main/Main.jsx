@@ -3,6 +3,8 @@ import axios from "axios";
 
 import NewestEp from "../../components/newestEp/NewestEp";
 import Layout from "../../shared/Layout";
+import stpTrailerAudio from "../../stpTrailerAudio.mp3"
+import stpTrailer from "../../stpTrailer.ogg"
 import "./main.css";
 import { Link } from "react-router-dom";
 
@@ -59,7 +61,9 @@ const Main = () => {
         <section className="new-main-wrapper">
           <h2 className="newest-title">Newest Episode</h2>
           <Link className="new-title" to={`/episodes/${queriedEps.id}`}>
-            <NewestEp queriedEps={queriedEps} />
+            <NewestEp queriedEps={queriedEps} mp3={stpTrailerAudio} ogg={stpTrailer}/>
+            
+            
           </Link>
         </section>
         </section>
