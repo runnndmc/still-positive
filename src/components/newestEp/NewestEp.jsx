@@ -5,7 +5,8 @@ const NewestEp = (props) => {
   const { queriedEps } = props;
 
   const audioFile = queriedEps.fields.audio_attach[0];
-
+  const soundCloud = queriedEps.fields.audio_url
+console.log(soundCloud)
   function formatDate(date) {
     var d = new Date(date),
       month = "" + (d.getMonth() + 1),
@@ -29,6 +30,7 @@ const NewestEp = (props) => {
           <source src={audioFile.url} type={audioFile.type}></source>
           Your browser does not support this audio.
         </audio>
+        <a href={soundCloud} type='audio'>Sound Cloud</a>
       </article>
     </>
   );
