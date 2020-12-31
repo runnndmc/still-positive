@@ -71,7 +71,10 @@
   font-size: 17px;
 }
 
-
+.pdf-cc-btn{
+  display:block;
+  z-index: 2;
+}
 
 @media only screen and (min-width: 360px) {
 }

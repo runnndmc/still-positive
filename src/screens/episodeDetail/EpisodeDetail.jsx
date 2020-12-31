@@ -4,11 +4,13 @@ import axios from "axios";
 
 import Layout from "../../shared/Layout";
 import "./episodeDetail.css";
+import e from "cors";
 
 const EpisodeDetail = () => {
   const [episode, setEpisode] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
+  console.log(episode)
 
   useEffect(() => {
     const findOneEpisode = async () => {
@@ -38,6 +40,11 @@ const EpisodeDetail = () => {
     return [month, day, year].join("/");
   }
 
+  const toggleContent= (e)=>{
+    e.preventDefault()
+    alert("toggle me bebe")
+  }
+
   if (!isLoaded) {
     return <h4>One Minute Babe...</h4>;
   }
@@ -58,27 +65,29 @@ const EpisodeDetail = () => {
       </section>
 
       <section className="detail-wrapper">
-        <h2 className="detail-title">{episode.title}</h2>
-        <iframe
-          className="detail-video"
+        <h2 className="detail-title">{episode.title}</h2>       
+{/*         <iframe className="detail-video"
           title={episode.title}
           src={episode.video_link}
+          cc_lang_pref='en'
+          cc_load_policy='1'
           frameBorder="0"
           allowFullScreen="allowfullscreen"
           controls="1"
           loading="eager"
-        ></iframe>
-          <iframe
-          className='detail-audio'
+        ></iframe> */}
+          <iframe className='detail-audio'
           title={episode.title}
           width="98%"
           height="130"
           scrolling="no"
-          frameborder="no"
+          frameBorder="no"
           allow="autoplay"
           src={episode.audio_url}
         ></iframe>
         <p className="detail-description">{episode.description}</p>
+        <button className='pdf-cc-btn' /* onClick={toggleContent(e)} */><a href='https://docs.google.com/document/d/1mqtGgqyUaYDlffzFpC7G03sDTitIlUwoeJ8vHMc7uPo/edit?usp=sharing' target="_blank">CC</a></button>
+       {/*  <section className='pdf-content'>this is content</section> */}
       </section>
     </Layout>
   );
