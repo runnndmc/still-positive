@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+
 import Layout from "../../shared/Layout";
 import './allEpisodes.css';
 import EpisodeCard from "../../components/episodeCard/EpisodeCard";
@@ -62,7 +63,9 @@ const AllEpisodes = () => {
             img={episode.fields.thumbnail[0].thumbnails.large.url}
             key={index}
          />
-         <button className='ep-detail-btn'>Episode Details</button>
+         <section className='btn-wrapper'>
+         <button className='ep-detail-btn'>Closed Captionings</button>
+         </section>
         </Link>
       ))}
       <h3 className='start'>Series begins Feburary 2021!</h3>

@@ -57,7 +57,7 @@ const EpisodeDetail = () => {
         <p className="detail-episode-num">Episode {episode.id}</p>
       </section>
 
-      <article className="detail-wrapper">
+      <section className="detail-wrapper">
         <h2 className="detail-title">{episode.title}</h2>
         <iframe
           className="detail-video"
@@ -69,6 +69,7 @@ const EpisodeDetail = () => {
           loading="eager"
         ></iframe>
           <iframe
+          className='detail-audio'
           title={episode.title}
           width="98%"
           height="130"
@@ -78,7 +79,7 @@ const EpisodeDetail = () => {
           src={episode.audio_url}
         ></iframe>
         <p className="detail-description">{episode.description}</p>
-      </article>
+      </section>
     </Layout>
   );
 };
