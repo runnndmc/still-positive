@@ -63,20 +63,20 @@ const EpisodeDetail = () => {
           className="detail-video"
           title={episode.title}
           src={episode.video_link}
-          /*           height="125"
-          width="222" */
           frameBorder="0"
           allowFullScreen="allowfullscreen"
           controls="1"
           loading="eager"
         ></iframe>
-        <audio className="detail-audio" controls>
-          <source
-            src={episode.audio_attach[0].url}
-            type={episode.audio_attach[0].type}
-          ></source>
-          Your browser does not support this audio.
-        </audio>
+          <iframe
+          title={episode.title}
+          width="98%"
+          height="130"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src={episode.audio_url}
+        ></iframe>
         <p className="detail-description">{episode.description}</p>
       </article>
     </Layout>

@@ -2,12 +2,7 @@ import React from "react";
 import "./newestEp.css";
 
 const NewestEp = (props) => {
-  const { queriedEps, mp3, ogg } = props;
-
-  const audioFile = queriedEps.fields.audio_attach[0];
-  const soundCloud = queriedEps.fields.audio_url;
-
-  console.log(soundCloud);
+  const { queriedEps } = props;
 
   function formatDate(date) {
     var d = new Date(date),
@@ -36,13 +31,8 @@ const NewestEp = (props) => {
           scrolling="no"
           frameborder="no"
           allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/955750255&color=%23b4b4b4&auto_play=false&hide_related=true&show_comments=true&show_user=false&show_reposts=false&show_teaser=false"
+          src={queriedEps.fields.audio_url}
         ></iframe>
-{/*         <audio className="new-audio" controls>
-          <source src={ogg} type="audio/ogg" preload="auto"></source>
-          <source src={mp3} type="audio/mp3" preload="auto"></source>
-          Your browser does not support this audio!
-        </audio> */}
       </article>
     </>
   );

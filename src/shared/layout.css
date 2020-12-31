@@ -31,7 +31,7 @@
 @media only screen and (min-width: 360px) {
   .layout-body {
     width: 87vw;
-    grid-template-rows: 29vw 12vw auto  auto 18vw 70vw 5vw;
+    grid-template-rows: 29vw 12vw auto  auto auto 5vw 5vw;
 
   }
   .logo{

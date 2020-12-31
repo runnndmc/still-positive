@@ -8,6 +8,7 @@
   z-index: 2;
   border: 1px solid #000000;
   border-left: none;
+  border-right: none;
   
 }
 .middle-wrap {
@@ -39,9 +40,7 @@
   justify-content: space-between;
   align-items: flex-end;
 }
-.detail-duration,
-.detail-date {
-}
+
 .detail-episode-num {
   margin: 0;
 }
@@ -67,8 +66,9 @@
 }
 .detail-description {
   font-size: 17px;
-  
 }
+
+
 
 @media only screen and (min-width: 360px) {
 }

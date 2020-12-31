@@ -5,7 +5,6 @@ import "./App.css";
 
 import About from "./screens/about/About";
 import AllEpisodes from "./screens/allEpisodes/AllEpisodes";
-import Contact from "./screens/Contact";
 import EpisodeDetail from "./screens/episodeDetail/EpisodeDetail";
 import Main from "./screens/main/Main";
 
@@ -22,7 +21,6 @@ function App() {
           <Route path="/episodes/:id" component={EpisodeDetail} />
           <Route path="/episodes" component={AllEpisodes} />
           <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
         </Switch>
       ) : (
           <h2>kitti piss a lot</h2>

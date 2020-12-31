@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 import NewestEp from "../../components/newestEp/NewestEp";
 import Layout from "../../shared/Layout";
-import stpTrailerAudio from "../../stpTrailerAudio.mp3"
-import stpTrailer from "../../stpTrailer.ogg"
 import "./main.css";
-import { Link } from "react-router-dom";
+
 
 const Main = () => {
   const [queriedEps, setQueriedEps] = useState([]);
@@ -61,9 +60,7 @@ const Main = () => {
         <section className="new-main-wrapper">
           <h2 className="newest-title">Newest Episode</h2>
           <Link className="new-title" to={`/episodes/${queriedEps.id}`}>
-            <NewestEp queriedEps={queriedEps} mp3={stpTrailerAudio} ogg={stpTrailer}/>
-            
-            
+            <NewestEp queriedEps={queriedEps}/>
           </Link>
         </section>
         </section>

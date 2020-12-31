@@ -65,6 +65,7 @@ const AllEpisodes = () => {
          <button className='ep-detail-btn'>Episode Details</button>
         </Link>
       ))}
+      <h3 className='start'>Series begins Feburary 2021!</h3>
        </section>
     </Layout>
   );

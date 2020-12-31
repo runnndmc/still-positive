@@ -4,6 +4,7 @@
     margin-right: 14px;
     padding:10px;
     grid-row-start: 3;
+    grid-row-end: 4;
     grid-column-start: 2;
     grid-column-end: 6;
     
@@ -25,7 +26,7 @@
     font-size: 17px;
 }
 .about-btn-wrap{
-    grid-row-start: 4;
+    grid-row-start: 5;
     grid-column-start: 2;
     grid-column-end: 6;
     display: flex;
@@ -34,6 +35,10 @@
 .subscribe-btn{
     border-radius: 30px;
     padding: 10px;
+}
+
+.start{
+    margin-top:15%;
 }
 
 /* .who-she-wrapper{
@@ -85,17 +90,17 @@
     .about-title{
         font-size: 35px;
         grid-column-start: 2;
-        grid-column-end: 6;
+        grid-column-end: 5;
         grid-row-start: 3;
      }
      .about-wrapper{
-         margin-top: 20px;
+         margin-top: 40px;
          padding-bottom: 0;
      }
      .about-p1, .about-p2{
          font-size: 19px;
          margin-top: 15px;
-         line-height: 1.2;
+         line-height: 1.4;
      }
      .about-hosted{
         font-size: 19px;
