@@ -120,10 +120,13 @@
     margin-top: 150px;
     height: 25vh;
   }
+  .new-wrapper{
+    padding-top:5px;
+  }
   .newest-title {
     padding-left: 20px;
-    font-size: 34px;
-    margin-top: 0;
+    font-size: 30px;
+    margin-top: .5em;
     margin-bottom: 10px;
   }
 }

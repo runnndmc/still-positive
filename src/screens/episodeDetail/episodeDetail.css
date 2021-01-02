@@ -82,7 +82,14 @@
   color: #000000
 }
 
-@media only screen and (min-width: 360px) {
+@media only screen and (min-width: 340px) {
+  .middle-wrap{
+    margin-top: -30px;
+  }
+  .detail-thumbnail {
+    border-top: none;
+    margin-top: -10px;
+  }
 }
 
 @media only screen and (min-width: 374px) {
