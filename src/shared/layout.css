@@ -68,7 +68,7 @@
     width: 90vw;
     padding-left: 30px;
     grid-template-rows: 25vw 6vw auto  auto 18vw;
-
+    padding-bottom: 15%;
   }
   .logo{
     font-size: 65px;

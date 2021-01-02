@@ -89,7 +89,11 @@
     }
     .new-title{
         font-size: 28px;
-        margin-left: 0;
+        margin: 10px 0px 10px 0px;
+
+    }
+    .new-soundcloud{
+        height: 5em;
     }
 }
 
