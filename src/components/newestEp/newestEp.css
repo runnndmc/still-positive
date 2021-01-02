@@ -69,6 +69,12 @@
 }
 
 @media only screen and (min-width: 414px){
+    .new-soundcloud{
+        height:5em;
+    }
+    .new-episode-num{
+        margin-top:0;
+    }
 
 }
 

@@ -171,12 +171,17 @@
     padding-top: 15px;
   }
   .stp-annimation {
-    top: 150px;
-    padding-left: 10px;
+    grid-column-start: 2;
     width: 50vw;
+    top: -20px;
+    grid-row-start:3;
+    grid-row-end:4;
   }
   .stp-annimation li {
     font-size: 23px;
+  }
+  .new-wrapper{
+    margin-bottom: 0;
   }
   .new-main-wrapper{
     margin-top: 180px;

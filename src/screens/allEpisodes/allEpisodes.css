@@ -1,9 +1,9 @@
 .header-all-eps{
     grid-row-start: 2;
-    grid-column-start:2;
+    grid-column-start:1;
     margin-top: 10px;
     width: 60vw;
-
+    font-size: 35px;
 }
 .all-ep-wrapper{
     grid-column-start: 2;
