@@ -27,9 +27,9 @@
     justify-content: center;
 }
 .btn-wrapper .ep-detail-btn{
-    background-color: #dfff00;
-    border: none;
-    color: black;
+    background-color: #310059;
+    border:2px solid white;
+    color: #dfff00;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -41,9 +41,9 @@
     cursor: pointer;
 }
 .btn-wrapper .ep-detail-btn:hover {
-    background-color: #310059;
-    border:2px solid white;
-    color: #dfff00;
+    background-color: #dfff00;
+    border: none;
+    color: black;
   }
 
 @media only screen and (min-width: 360px){

@@ -4,13 +4,15 @@ import axios from "axios";
 
 import Layout from "../../shared/Layout";
 import "./episodeDetail.css";
-import e from "cors";
 
 const EpisodeDetail = () => {
   const [episode, setEpisode] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
-  console.log(episode)
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  });
 
   useEffect(() => {
     const findOneEpisode = async () => {
