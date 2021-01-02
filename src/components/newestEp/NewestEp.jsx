@@ -25,6 +25,7 @@ const NewestEp = (props) => {
         </span>
         <h3 className="new-title">{queriedEps.fields.title}</h3>
         <iframe
+          className="new-soundcloud"
           title={queriedEps.fields.title}
           width="96%"
           height="130"

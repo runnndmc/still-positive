@@ -79,6 +79,7 @@
 .cc-text{
   text-decoration: none;
   font-weight: 600;
+  color: #000000
 }
 
 @media only screen and (min-width: 360px) {
