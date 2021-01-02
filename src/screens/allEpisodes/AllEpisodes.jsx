@@ -64,7 +64,7 @@ const AllEpisodes = () => {
             key={index}
          />
          <section className='btn-wrapper'>
-         <button className='ep-detail-btn'>Closed Captionings</button>
+         <button className='ep-detail-btn'>View This Episode</button>
          </section>
         </Link>
       ))}

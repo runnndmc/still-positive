@@ -61,7 +61,7 @@ const EpisodeDetail = () => {
       <section className="middle-wrap">
         <span className="detail-date">{formatDate(episode.post_date)}</span>
         <p className="detail-duration">{episode.duration}</p>
-        <p className="detail-episode-num">Episode {episode.id}</p>
+        <p className="detail-episode-num">Episode #{episode.id}</p>
       </section>
 
       <section className="detail-wrapper">
@@ -86,7 +86,7 @@ const EpisodeDetail = () => {
           src={episode.audio_url}
         ></iframe>
         <p className="detail-description">{episode.description}</p>
-        <button className='pdf-cc-btn' /* onClick={toggleContent(e)} */><a href='https://docs.google.com/document/d/1mqtGgqyUaYDlffzFpC7G03sDTitIlUwoeJ8vHMc7uPo/edit?usp=sharing' target="_blank">CC</a></button>
+        <button className='pdf-cc-btn' /* onClick={toggleContent(e)} */><a href='https://docs.google.com/document/d/1mqtGgqyUaYDlffzFpC7G03sDTitIlUwoeJ8vHMc7uPo/edit?usp=sharing' target="_blank" className='cc-text'>Closed Captions</a></button>
        {/*  <section className='pdf-content'>this is content</section> */}
       </section>
     </Layout>

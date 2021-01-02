@@ -44,7 +44,7 @@ const Main = () => {
           <img
             className="stp-dwayne"
             tabIndex="1"
-            src="./stp-left-align.png"
+            src="./stp-peach-back.png"
             alt="a collage of a girl looking blankly with her hand over her mouth"
           />
         </section>

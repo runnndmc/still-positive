@@ -74,6 +74,11 @@
 .pdf-cc-btn{
   display:block;
   z-index: 2;
+  font-size: 1em;
+}
+.cc-text{
+  text-decoration: none;
+  font-weight: 600;
 }
 
 @media only screen and (min-width: 360px) {

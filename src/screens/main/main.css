@@ -130,7 +130,7 @@
 
 @media only screen and (min-width: 374px) {
   .green-box {
-    background-color: blue;
+    background-color:#dfff00;
     width: 55vw;
     height: 29vh;
   }
