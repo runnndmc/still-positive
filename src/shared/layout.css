@@ -80,11 +80,11 @@
   .layout-body{
     width: 89vw;
     padding-left: 20px;
-
+    padding-bottom: 18%;
   }
   .logo{
     font-size: 75px;
-    margin: 20px auto 40px auto;
+    width: 70vw;
   }
 }
 

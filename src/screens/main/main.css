@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-.main-desktop{
+.main-desktop {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
@@ -9,7 +9,6 @@
 .main-wrapper {
   width: 75vw;
   margin: 0;
-
 }
 .stp-annimation {
   grid-row-start: 3;
@@ -119,20 +118,20 @@
     margin-top: 150px;
     height: 25vh;
   }
-  .new-wrapper{
-    padding-top:5px;
+  .new-wrapper {
+    padding-top: 5px;
   }
   .newest-title {
     padding-left: 20px;
     font-size: 30px;
-    margin-top: .5em;
+    margin-top: 0.5em;
     margin-bottom: 10px;
   }
 }
 
 @media only screen and (min-width: 374px) {
   .green-box {
-    background-color:#dfff00;
+    background-color: #dfff00;
     width: 55vw;
     height: 29vh;
   }
@@ -140,10 +139,10 @@
     margin-top: 20px;
     height: 38vh;
   }
-  .new-main-wrapper{
+  .new-main-wrapper {
     margin-top: 20vh;
   }
-  .newest-title{
+  .newest-title {
     margin-top: 5px;
     margin-bottom: 10px;
   }
@@ -154,11 +153,11 @@
     font-size: 20px;
     letter-spacing: 1.5px;
   }
-  .newest-title{
+  .newest-title {
     margin-top: 0;
   }
-  .new-date{
-    margin:0;
+  .new-date {
+    margin: 0;
   }
 }
 
@@ -175,16 +174,16 @@
     grid-column-start: 2;
     width: 50vw;
     top: -20px;
-    grid-row-start:3;
-    grid-row-end:4;
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
   .stp-annimation li {
     font-size: 23px;
   }
-  .new-wrapper{
+  .new-wrapper {
     margin-bottom: 0;
   }
-  .new-main-wrapper{
+  .new-main-wrapper {
     margin-top: 180px;
   }
 }
@@ -195,17 +194,17 @@
     height: 35vh;
   }
   .stp-annimation {
-    top: .5em;
+    top: 0.5em;
     margin-left: 30px;
   }
   .stp-annimation li {
     font-size: 40px;
   }
-  .newest-title{
+  .newest-title {
     font-size: 50px;
     margin-bottom: 20px;
   }
-  .new-main-wrapper{
+  .new-main-wrapper {
     margin-top: 70%;
     height: 23vh;
   }
@@ -220,24 +219,25 @@
 @media only screen and (min-width: 799px) {
   .green-box {
     background-color: orange;
+    height: 28vh;
   }
   .stp-dwayne {
+  
+    height: 40vh;
     margin-left: 65px;
-    margin-top: 50px;
-    padding-top: 60px;
+    width: 135%;
   }
-  .stp-annimation {
-    top: 250px;
-    left: 40px;
-  }
+
   .stp-annimation li {
     font-size: 40px;
   }
-  .new-main-wrapper{
-    margin-top: 30vh;
+  .new-main-wrapper {
+    margin-top: 65%;
   }
-  .newest-title{
+  .newest-title {
     font-size: 60px;
+    margin-bottom: 10px;
+    margin-top: 30px;
   }
 }
 
@@ -246,10 +246,10 @@
     background-color: yellow;
     width: 30vw;
   }
-  .stp-dwayne{
+  .stp-dwayne {
     width: 40vw;
   }
-  .main-desktop{
+  .main-desktop {
     display: flex;
     flex-direction: row;
   }
