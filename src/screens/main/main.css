@@ -236,20 +236,32 @@
 @media only screen and (min-width: 980px) {
   .main-wrapper{
     grid-column-start: 1;
-    grid-column-end:3;
+    grid-column-end:4;
   }
   .green-box {
     background-color: yellow;
-    width: 27vw;
+    width: 25vw;
     grid-row-start: 2;
     grid-row-end:3;
-    height: 500px;
+    height: 27em;
   }
   .stp-dwayne {
-    width: 40vw;
-    height: 160%;
+    width: 30vw;
+    height: 130%;
     margin-top: 15%;
-    margin-left:20%;
+    margin-left:30%;
+    grid-row-start:3;
+    grid-row-end:4;
+  }
+  .stp-annimation {
+    grid-column-start:3;
+    grid-row-start:2;
+    top: 8vh;
+margin-left:3%;
+  }
+  .stp-text{
+    width:25vw;
+    font-size: 40px;
   }
   .newest-title {
     grid-column-start:4;
