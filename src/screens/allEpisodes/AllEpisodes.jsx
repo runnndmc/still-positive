@@ -3,14 +3,12 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 import Layout from "../../shared/Layout";
-import './allEpisodes.css';
+import "./allEpisodes.css";
 import EpisodeCard from "../../components/episodeCard/EpisodeCard";
-
-
 
 const AllEpisodes = () => {
   const [allEpisodes, setAllEpisodes] = useState([]);
-  const [isLoaded, setLoaded] = useState(false)
+  const [isLoaded, setLoaded] = useState(false);
 
   useEffect(() => {
     const apiCall = async () => {
@@ -42,32 +40,31 @@ const AllEpisodes = () => {
     return [month, day, year].join("/");
   }
 
-
   if (!isLoaded) {
     return <h1>One moment babe..</h1>;
   }
 
   return (
     <Layout>
-      <h2 className='header-all-eps'>All Episodes</h2>
-      <section className='all-ep-wrapper'>
-      {allEpisodes.map((episode, index) => (
-        <Link className='episode-card' to={`/episodes/${episode.id}`}>
-          <EpisodeCard 
-            title={episode.fields.title}
-            description={episode.fields.description}
-            id={episode.fields.id}
-            date={formatDate(episode.fields.post_date)}
-            img={episode.fields.thumbnail[0].thumbnails.large.url}
-            key={index}
-         />
-         <section className='btn-wrapper'>
-         <button className='ep-detail-btn'>View This Episode</button>
-         </section>
-        </Link>
-      ))}
-      <h3 className='start'>Series begins Feburary 2021!</h3>
-       </section>
+      <h2 className="header-all-eps">All Episodes</h2>
+      <section className="all-ep-wrapper">
+        {allEpisodes.map((episode, index) => (
+          <Link className="episode-card" to={`/episodes/${episode.id}`}>
+            <EpisodeCard
+              title={episode.fields.title}
+              description={episode.fields.description}
+              id={episode.fields.id}
+              date={formatDate(episode.fields.post_date)}
+              img={episode.fields.thumbnail[0].thumbnails.large.url}
+              key={index}
+            />
+            <section className="btn-wrapper">
+              <button className="ep-detail-btn">View This Episode</button>
+            </section>
+          </Link>
+        ))}
+        </section>
+        <h3 className="start">Series begins Feburary 2021!</h3>
     </Layout>
   );
 };

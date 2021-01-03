@@ -45,6 +45,12 @@
     border: none;
     color: black;
   }
+  .start{
+      grid-column-start: 2;
+      grid-column-end: 6;
+      grid-row-start: 6;
+      font-size: 20px;
+  }
 
 @media only screen and (min-width: 360px){
 
@@ -60,7 +66,22 @@
 }
 
 @media only screen and (min-width: 767px){
-
+    .all-ep-wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        grid-column-end: span 4;
+    }
+    .episode-card{
+        width: 30vw;
+        margin-top: 10%;
+    }
+    .start{
+        grid-column-start:2;
+        grid-column-end: 6;
+        grid-row-start: 6;
+        font-size: 40px;
+    }
 }
 
 @media only screen and (min-width: 799px){
@@ -75,7 +96,10 @@
         margin-top: 10%;
     }
     .start{
-        margin-left: 50px;
+        grid-column-start:2;
+        grid-column-end: 6;
+        grid-row-start: 6;
+        font-size: 40px;
     }
 }
 

@@ -67,12 +67,12 @@
   .layout-body{
     width: 90vw;
     padding-left: 30px;
-    grid-template-rows: 25vw 6vw auto  auto 18vw;
-    padding-bottom: 15%;
+    grid-template-rows: 25vw 6vw auto  auto 17vw;
+    padding-bottom: 10%;
   }
   .logo{
-    font-size: 65px;
-    margin: 20px auto 40px auto;
+    font-size: 75px;
+    margin: 20px auto 0px auto;
   }
 }
 

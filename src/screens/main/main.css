@@ -190,35 +190,32 @@
 
 @media only screen and (min-width: 766px) {
   .green-box {
-    background-color: red;
-    height: 35vh;
+    height: 30vh;
+    width: 65%;
   }
-  .stp-annimation {
-    top: 0.5em;
-    margin-left: 30px;
-  }
+
   .stp-annimation li {
-    font-size: 40px;
+    font-size: 38px;
   }
+
   .newest-title {
     font-size: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top:0;
   }
   .new-main-wrapper {
-    margin-top: 70%;
+    margin-top: 50%;
     height: 23vh;
   }
   .stp-dwayne {
     grid-row-start: 3;
     margin-left: 53px;
-    margin-top: 40px;
-    height: 49vh;
+    height: 40vh;
   }
 }
 
 @media only screen and (min-width: 799px) {
   .green-box {
-    background-color: orange;
     height: 28vh;
   }
   .stp-dwayne {
