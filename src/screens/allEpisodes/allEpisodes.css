@@ -103,7 +103,7 @@
     }
 }
 
-@media only screen and (min-width: 999px){
+@media only screen and (min-width: 980px){
     .episode-card{
         width: 20vw;
     }

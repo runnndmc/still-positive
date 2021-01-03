@@ -158,7 +158,7 @@
   }
 }
 
-@media only screen and (min-width: 999px) {
+@media only screen and (min-width: 980px) {
   .middle-wrap {
     grid-column-start: 5;
     grid-column-end: 5;

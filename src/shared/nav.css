@@ -87,16 +87,17 @@
   }
 }
 
-@media only screen and (min-width: 999px) {
+@media only screen and (min-width: 980px) {
   .nav-bar{
     width: 35vw;
     top: 25vh;
     height: 8px;
+    right: 18.5vw;
   }
   .about-link,
   .episodes-link,
   .home-link {
     font-size: 30px;
-    padding-bottom: 10px;
+    padding: 20px;
   }
 }
