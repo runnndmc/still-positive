@@ -236,6 +236,7 @@
   .main-wrapper {
     grid-column-start: 1;
     grid-column-end: 4;
+    width: 40vw;
   }
   .green-box {
     background-color: yellow;
@@ -246,7 +247,7 @@
   }
   .stp-dwayne {
     width: 30vw;
-    height: 130%;
+    height: 110%;
     margin-top: 15%;
     margin-left: 30%;
     grid-row-start: 3;
@@ -260,7 +261,7 @@
   }
   .stp-text {
     width: 25vw;
-    font-size: 40px;
+    font-size: 35px;
   }
   .new-main-wrapper{
     margin-top:10%;
