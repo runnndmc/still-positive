@@ -6,7 +6,6 @@ import NewestEp from "../../components/newestEp/NewestEp";
 import Layout from "../../shared/Layout";
 import "./main.css";
 
-
 const Main = () => {
   const [queriedEps, setQueriedEps] = useState([]);
   const [isLoaded, setLoaded] = useState(false);
@@ -31,14 +30,12 @@ const Main = () => {
     apiCall();
   }, []);
 
-
   if (!isLoaded) {
     return <h2>One minute babe..</h2>;
   }
 
   return (
     <Layout>
-      <section className='main-desktop'>
       <main className="main-wrapper">
         <section className="green-box">
           <img
@@ -56,14 +53,13 @@ const Main = () => {
           <li className="stp-text">Still Positive</li>
           <li className="stp-text">Still Positive</li>
         </ul>
-        </main>
-        <section className="new-main-wrapper">
-          <h2 className="newest-title">Newest Episode</h2>
-          <Link className="new-title" to={`/episodes/${queriedEps.id}`}>
-            <NewestEp queriedEps={queriedEps}/>
-          </Link>
-        </section>
-        </section>
+      </main>
+      <section className="new-main-wrapper">
+        <h2 className="newest-title">Newest Episode</h2>
+        <Link className="new-title" to={`/episodes/${queriedEps.id}`}>
+          <NewestEp queriedEps={queriedEps} />
+        </Link>
+      </section>
     </Layout>
   );
 };

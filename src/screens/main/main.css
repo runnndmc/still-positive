@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-.main-desktop {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 7;
-}
+
 .main-wrapper {
   width: 75vw;
   margin: 0;
@@ -238,16 +233,25 @@
   }
 }
 
-@media only screen and (min-width: 999px) {
+@media only screen and (min-width: 980px) {
+  .main-wrapper{
+    grid-column-start: 1;
+    grid-column-end:3;
+  }
   .green-box {
     background-color: yellow;
-    width: 30vw;
+    width: 27vw;
+    grid-row-start: 2;
+    grid-row-end:3;
+    height: 500px;
   }
   .stp-dwayne {
     width: 40vw;
+    height: 160%;
+    margin-top: 15%;
+    margin-left:20%;
   }
-  .main-desktop {
-    display: flex;
-    flex-direction: row;
+  .newest-title {
+    grid-column-start:4;
   }
 }

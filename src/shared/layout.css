@@ -90,6 +90,8 @@
 
 @media only screen and (min-width: 999px) {
   .layout-body{
+  grid-template-rows:10vw 10vw auto  auto 5vw;
+
     width: 93vw;
   }
 }
