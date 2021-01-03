@@ -196,7 +196,7 @@
   .newest-title {
     font-size: 50px;
     margin-bottom: 10px;
-    margin-top:0;
+    margin-top: 0;
   }
   .new-main-wrapper {
     margin-top: 50%;
@@ -214,7 +214,6 @@
     height: 28vh;
   }
   .stp-dwayne {
-  
     height: 40vh;
     margin-left: 65px;
     width: 135%;
@@ -234,36 +233,42 @@
 }
 
 @media only screen and (min-width: 980px) {
-  .main-wrapper{
+  .main-wrapper {
     grid-column-start: 1;
-    grid-column-end:4;
+    grid-column-end: 4;
   }
   .green-box {
     background-color: yellow;
     width: 25vw;
     grid-row-start: 2;
-    grid-row-end:3;
+    grid-row-end: 3;
     height: 27em;
   }
   .stp-dwayne {
     width: 30vw;
     height: 130%;
     margin-top: 15%;
-    margin-left:30%;
-    grid-row-start:3;
-    grid-row-end:4;
+    margin-left: 30%;
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
   .stp-annimation {
-    grid-column-start:3;
-    grid-row-start:2;
+    grid-column-start: 3;
+    grid-row-start: 2;
     top: 8vh;
-margin-left:3%;
+    margin-left: 3%;
   }
-  .stp-text{
-    width:25vw;
+  .stp-text {
+    width: 25vw;
     font-size: 40px;
   }
-  .newest-title {
-    grid-column-start:4;
+  .new-main-wrapper{
+    margin-top:10%;
+    width:20vw;
+  }
+  .newest-title{
+    grid-column-start: 4;
+    grid-row-start:2;
+    grid-row-end: 4;
   }
 }
