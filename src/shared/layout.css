@@ -90,10 +90,9 @@
 
 @media only screen and (min-width: 999px) {
   .layout-body{
-    background-color: gray;
     display: grid;
     grid-template-columns: 15% 15% 10% 10% 20% 15% 10%;
-    grid-template-rows: 10vh 10vh 10vh 30vh 13vh 20vh;
+    grid-template-rows: 10vh 10vh 10vh 30vh 13vh 18vh;
     width: 93vw;
     padding-bottom:0;
   }

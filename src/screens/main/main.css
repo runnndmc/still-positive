@@ -201,7 +201,7 @@
   .newest-title {
     font-size: 50px;
     margin-bottom: 10px;
-    margin-top:0;
+    margin-top: 0;
   }
   .new-main-wrapper {
     margin-top: 50%;
@@ -219,7 +219,6 @@
     height: 28vh;
   }
   .stp-dwayne {
-  
     height: 40vh;
     margin-left: 65px;
     width: 135%;
@@ -239,38 +238,34 @@
 }
 
 @media only screen and (min-width: 999px) {
-
-  .green-box {
-    background-color: yellow;
-
+  .stp-annimation {
+    grid-column-start: 2;
+    grid-row-start: 4;
+    margin-top: 18%;
   }
-  .stp-dwayne {
-
+  .stp-annimation li {
+    width: 20vw;
+    font-size: 40px;
   }
-  .stp-annimation{
-    top:38%;
+  .main-desktop {
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 6;
   }
-  .main-desktop { 
-  grid-column-end: 8;
-  grid-row-start: 4;
-  grid-row-end: 6;
-/*     grid-row-start: 3;
-    grid-row-end: 4;
-    display: grid;
-    grid-template-columns: 10% 40% 40% 40%;
-    grid-template-rows: 10vh 40vh; */
+  .main-wrapper {
+    width: 28vw;
   }
-  .main-wrapper{
-    width: 25vw;
-  }
-  .new-main-wrapper{
-    margin-top:-10%;
+  .new-main-wrapper {
+    margin-top: -15%;
     width: 40vw;
     margin-left: 45%;
     margin-bottom: 100%;
-    grid-row-start: 5;
+    grid-row-start: 4;
     grid-row-end: 7;
     grid-column-start: 5;
     grid-column-end: 8;
+  }
+  .new-wrapper {
+    padding-bottom: 30px;
   }
 }
