@@ -15,7 +15,7 @@ function App() {
   return (
     
     <main>
-       {environment === "development" ? (
+       {environment === "production" ? (
        <Switch>
           <Route exact path="/" component={Main} />
           <Route path="/episodes/:id" component={EpisodeDetail} />
