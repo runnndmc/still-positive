@@ -15,16 +15,16 @@ function App() {
   return (
     
     <main>
-       {environment === "production" ? (
+   {/*     {environment === "production" ? ( */}
        <Switch>
           <Route exact path="/" component={Main} />
           <Route path="/episodes/:id" component={EpisodeDetail} />
           <Route path="/episodes" component={AllEpisodes} />
           <Route path="/about" component={About} />
         </Switch>
-      ) : (
+{/*       ) : (
           <h2>kitti piss a lot</h2>
-      )}
+      )} */}
     </main>
   );
 }
