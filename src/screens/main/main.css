@@ -201,7 +201,7 @@
   .newest-title {
     font-size: 50px;
     margin-bottom: 10px;
-    margin-top:0;
+    margin-top: 0;
   }
   .new-main-wrapper {
     margin-top: 50%;
@@ -219,7 +219,6 @@
     height: 28vh;
   }
   .stp-dwayne {
-  
     height: 40vh;
     margin-left: 65px;
     width: 135%;
@@ -239,15 +238,34 @@
 }
 
 @media only screen and (min-width: 999px) {
-  .green-box {
-    background-color: yellow;
-    width: 30vw;
+  .stp-annimation {
+    grid-column-start: 2;
+    grid-row-start: 4;
+    margin-top: 18%;
   }
-  .stp-dwayne {
-    width: 40vw;
+  .stp-annimation li {
+    width: 20vw;
+    font-size: 40px;
   }
   .main-desktop {
-    display: flex;
-    flex-direction: row;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 6;
+  }
+  .main-wrapper {
+    width: 28vw;
+  }
+  .new-main-wrapper {
+    margin-top: -15%;
+    width: 40vw;
+    margin-left: 45%;
+    margin-bottom: 100%;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    grid-column-start: 5;
+    grid-column-end: 8;
+  }
+  .new-wrapper {
+    padding-bottom: 30px;
   }
 }

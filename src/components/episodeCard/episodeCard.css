@@ -43,5 +43,10 @@
 }
 
 @media only screen and (min-width: 999px){
-
+.ep-num, .ep-date{
+    font-size: 18px;
+}
+.ep-name{
+    font-size: 33px;
+}
 }
