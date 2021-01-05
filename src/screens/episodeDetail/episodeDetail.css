@@ -69,7 +69,7 @@
   font-size: 17px;
 }
 
-.pdf-cc-btn {
+.pdf-cc-btn{
   display: block;
   z-index: 2;
   font-size: 1em;
@@ -77,11 +77,26 @@
   border-radius: 25px;
   grid-column-start: 2;
   margin-right: 10px;
-}
-.cc-text {
-  text-decoration: none;
+  background-color: #310059;
+  border: 2px solid white;
   font-weight: 600;
-  color: #000000;
+  color: #dfff00;
+}
+.pdf-cc-btn a{
+  text-decoration: none;
+  color: #dfff00;
+}
+
+.pdf-cc-btn:hover {
+  background-color: #dfff00;
+  border: none;
+  color: #310059;
+}
+.button-text:hover{
+  color: #310059;
+}
+.pdf-cc-btn a:hover{
+  color: #310059;
 }
 
 @media only screen and (min-width: 340px) {
@@ -129,7 +144,6 @@
   }
   .cc-text {
     font-size: 1.5em;
-  
   }
 }
 
@@ -163,9 +177,9 @@
     grid-column-start: 5;
     grid-column-end: 7;
     grid-row-start: 4;
-    grid-row-end:6;
-    padding:0 20px;
-    align-items:flex-end;
+    grid-row-end: 6;
+    padding: 0 20px;
+    align-items: flex-end;
     font-size: 30px;
   }
   .detail-thumbnail {
@@ -181,22 +195,21 @@
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 4;
-    border:none;
+    border: none;
   }
-  .detail-title{
+  .detail-title {
     font-size: 3.5em;
   }
-  .detail-description{
+  .detail-description {
     margin-top: 35px;
-  
   }
-  .detail-duration{
-    margin:0;
+  .detail-duration {
+    margin: 0;
   }
   .detail-audio {
     margin-top: 35px;
   }
-  .pdf-cc-btn{
+  .pdf-cc-btn {
     margin-top: 10%;
   }
 }

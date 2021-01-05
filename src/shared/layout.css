@@ -8,7 +8,7 @@
   margin-top: 15px;
   margin-right: 0px;
   width: 87vw;
-  background-color: #EFE7DF;
+  background-color: #efe7df; /* light purple - #D6CEDF;*/
   position: relative;
 }
 
@@ -25,37 +25,41 @@
   grid-column-end: 2;
   grid-row: 1;
   width: 70vw;
-
 }
-@media only screen and(min-width: 340px){
+.logo:hover,
+.logo:active,
+.logo:focus {
+  background-color: #ffffff;
+  color: #310059;
+}
+@media only screen and(min-width: 340px) {
   .layout-body {
-    grid-template-rows: 29vw 12vw auto  auto auto 5vw 5vw;
+    grid-template-rows: 29vw 12vw auto auto auto 5vw 5vw;
   }
 }
 
 @media only screen and (min-width: 360px) {
   .layout-body {
     width: 87vw;
-    grid-template-rows: 29vw 12vw auto  auto auto 5vw 5vw;
-
+    grid-template-rows: 29vw 12vw auto auto auto 5vw 5vw;
   }
-  .logo{
+  .logo {
     margin-bottom: 40px;
   }
 }
 
 @media only screen and (min-width: 374px) {
-    .layout-body {
-        width: 88vw;
-      }
-      .logo{
-        font-size: 55px;
-        margin-bottom: 6%;
-      }
+  .layout-body {
+    width: 88vw;
+  }
+  .logo {
+    font-size: 55px;
+    margin-bottom: 6%;
+  }
 }
 
 @media only screen and (min-width: 413px) {
-  .logo{
+  .logo {
     font-size: 51px;
   }
   .layout-body {
@@ -64,36 +68,36 @@
 }
 
 @media only screen and (min-width: 766px) {
-  .layout-body{
+  .layout-body {
     width: 90vw;
     padding-left: 30px;
-    grid-template-rows: 25vw 6vw auto  auto 17vw;
+    grid-template-rows: 25vw 6vw auto auto 17vw;
     padding-bottom: 10%;
   }
-  .logo{
+  .logo {
     font-size: 75px;
     margin: 20px auto 0px auto;
   }
 }
 
 @media only screen and (min-width: 799px) {
-  .layout-body{
+  .layout-body {
     width: 89vw;
     padding-left: 20px;
     padding-bottom: 18%;
   }
-  .logo{
+  .logo {
     font-size: 75px;
     width: 70vw;
   }
 }
 
 @media only screen and (min-width: 999px) {
-  .layout-body{
+  .layout-body {
     display: grid;
     grid-template-columns: 15% 15% 10% 10% 20% 15% 10%;
     grid-template-rows: 10vh 10vh 10vh 30vh 13vh 18vh;
     width: 93vw;
-    padding-bottom:0;
+    padding-bottom: 0;
   }
 }

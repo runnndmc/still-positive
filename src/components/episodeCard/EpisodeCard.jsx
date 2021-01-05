@@ -5,9 +5,9 @@ const EpisodeCard = (props) => {
   const { title, description, img, id, date } = props;
 
   const descriptionTeaser = () => {
-    if(description.length >= 55){
+    if (description.length >= 55) {
     }
-  }
+  };
 
   return (
     <>

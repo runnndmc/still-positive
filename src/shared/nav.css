@@ -24,6 +24,19 @@
   padding-bottom: 1px;
   border-radius: 5px;
 }
+
+.about-link:hover, .about-link:active, .about-link:focus{
+  background-color: #ffffff;
+  color: #310059;
+}
+.episodes-link:hover, .episodes-link:active, .episodes-link:focus{
+  background-color: #ffffff;
+  color: #310059;
+}
+.home-link:hover, .home-link:active, .home-link:focus{
+  background-color: #ffffff;
+  color: #310059;
+}
 @media only screen and (min-width: 340px){
   .nav-bar{
     top: 25vh;

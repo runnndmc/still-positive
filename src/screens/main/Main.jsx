@@ -39,7 +39,7 @@ const Main = () => {
   return (
     <Layout>
       <section className='main-desktop'>
-      <main className="main-wrapper">
+      <article className="main-wrapper">
         <section className="green-box">
           <img
             className="stp-dwayne"
@@ -56,7 +56,7 @@ const Main = () => {
           <li className="stp-text">Still Positive</li>
           <li className="stp-text">Still Positive</li>
         </ul>
-        </main>
+        </article>
         <section className="new-main-wrapper">
           <h2 className="newest-title">Newest Episode</h2>
           <Link className="new-title" to={`/episodes/${queriedEps.id}`}>
