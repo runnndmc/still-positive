@@ -43,6 +43,19 @@
     border-radius: 0px;
 }
 
+.new-episode-num:hover, .new-episode-num:active, .new-episode-num:focus{
+    background-color: #ffffff;
+    color: #310059;
+  }
+  .new-date:hover, .new-date:active, .new-date:focus{
+    background-color: #ffffff;
+    color: #310059;
+  }
+  .new-title:hover, .new-title:active, .new-title:focus{
+    background-color: #ffffff;
+    color: #310059;
+  }
+
 @media only screen and (min-width: 340px){
     .new-episode-num, .new-date{
         margin: 0;

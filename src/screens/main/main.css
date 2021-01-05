@@ -98,6 +98,10 @@
   font-size: 26px;
   padding-left: 10px;
 }
+.newest-title:hover, .newest-title:active, .newest-title:focus{
+  background-color: #ffffff;
+  color: #310059;
+}
 
 @media only screen and (min-width: 340px) {
   .green-box {

@@ -5,7 +5,7 @@ import "./nav.css"
 
 const Nav = () => {
   return (
-    <div className='nav-bar'>
+    <nav className='nav-bar'>
       <Link className='nav-link'to="/">
         <h5 className='home-link'>Home</h5>
       </Link> 
@@ -15,7 +15,7 @@ const Nav = () => {
       <Link className='nav-link' to="/episodes">
         <h5 className='episodes-link'>Episodes</h5>
       </Link>
-    </div>
+    </nav>
   );
 };
 
