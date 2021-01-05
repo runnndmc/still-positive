@@ -63,8 +63,8 @@ const AllEpisodes = () => {
             </section>
           </Link>
         ))}
-        </section>
-        <h3 className="start">Series begins Feburary 2021!</h3>
+      </section>
+      <h3 className="start">Series begins Feburary 2021!</h3>
     </Layout>
   );
 };

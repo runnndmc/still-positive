@@ -1,131 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
-.new-wrapper{
-    display: flex;
-    flex-direction: column;
-    background-color: #310059;
-    width: 80vw;
-    border-radius: 30px/30px;
-    padding: 15px 0px 10px 15px;
-
+.new-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #310059;
+  width: 80vw;
+  border-radius: 30px/30px;
+  padding: 15px 0px 10px 15px;
 }
-.new-title{
-    font-family: 'Syne Mono', monospace;
-    color:#000000;
-    text-decoration: none;
-    margin: 5px;
-    margin-left: 0;
+.new-title {
+  font-family: "Syne Mono", monospace;
+  color: #000000;
+  text-decoration: none;
+  margin: 5px;
+  margin-left: 0;
+  font-size: 20px;
+  color: #ffffff;
+  grid-row-start: 1;
+}
+
+.new-episode-num,
+.new-date {
+  color: #ffffff;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-family: "Syne Mono", monospace;
+  font-size: 15px;
+}
+.info-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  padding: 0px 5px 0px 5px;
+  height: 25px;
+  font-family: "Questrial", sans-serif;
+}
+.new-audio {
+  width: 77vw;
+  height: 25px;
+  border-radius: 0px;
+}
+
+.ep-name:hover,
+.ep-name:active,
+.ep-name:focus {
+  background-color: #ffffff;
+  color: #310059;
+}
+
+@media only screen and (min-width: 340px) {
+  .new-episode-num,
+  .new-date {
+    margin: 0;
+  }
+  .new-title {
     font-size: 20px;
-    color: #FFFFFF;
-    grid-row-start: 1;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .new-audio {
+    margin-top: 10px;
+  }
+  .new-soundcloud {
+    height: 6em;
+  }
 }
 
-.new-episode-num, .new-date{
-    color: #FFFFFF;
-    margin-bottom: 5px;
-    margin-top: 5px;
-      font-family: 'Syne Mono', monospace;
-    font-size: 15px;
-}
-.info-wrap{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 15px;
-    padding: 0px 5px 0px 5px;
-    height: 25px;
-    font-family: 'Questrial', sans-serif;
-}
-.new-audio{
-    width: 77vw;
-    height: 25px;
-    border-radius: 0px;
-}
-
-.new-episode-num:hover, .new-episode-num:active, .new-episode-num:focus{
-    background-color: #ffffff;
-    color: #310059;
-  }
-  .new-date:hover, .new-date:active, .new-date:focus{
-    background-color: #ffffff;
-    color: #310059;
-  }
-  .new-title:hover, .new-title:active, .new-title:focus{
-    background-color: #ffffff;
-    color: #310059;
+@media only screen and (min-width: 374px) {
+  .new-episode-num,
+  .new-date {
+    margin: 3 10px;
   }
 
-@media only screen and (min-width: 340px){
-    .new-episode-num, .new-date{
-        margin: 0;
-    }
-    .new-title{
-        font-size: 20px;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    .new-audio{
-       margin-top: 10px;
-    }
-    .new-soundcloud{
-        height:6em;
-    }
+  .new-wrapper {
+    padding-top: 5px;
+  }
+  .new-soundcloud {
+    height: 5em;
+  }
 }
 
-@media only screen and (min-width: 374px){
-    .new-episode-num, .new-date{
-        margin: 3 10px;
-    }
-
-    .new-wrapper{
-        padding-top: 5px;
-    }
-    .new-soundcloud{
-        height:5em;
-    }
+@media only screen and (min-width: 414px) {
+  .new-soundcloud {
+    height: 5em;
+  }
+  .new-episode-num {
+    margin-top: 0;
+  }
 }
 
-@media only screen and (min-width: 414px){
-    .new-soundcloud{
-        height:5em;
-    }
-    .new-episode-num{
-        margin-top:0;
-    }
-
+@media only screen and (min-width: 767px) {
+  .new-episode-num,
+  .new-date {
+    font-size: 20px;
+  }
+  .new-title {
+    font-size: 28px;
+    margin: 10px 0px 10px 0px;
+  }
+  .new-soundcloud {
+    height: 4em;
+  }
 }
 
-@media only screen and (min-width: 767px){
-    .new-episode-num, .new-date{
-        font-size: 20px;
-    }
-    .new-title{
-        font-size: 28px;
-        margin: 10px 0px 10px 0px;
-
-    }
-    .new-soundcloud{
-        height: 4em;
-    }
+@media only screen and (min-width: 799px) {
+  .new-episode-num,
+  .new-date {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  .new-title {
+    font-size: 38px;
+  }
+  .new-soundcloud {
+    height: 4em;
+  }
 }
 
-@media only screen and (min-width: 799px){
-    .new-episode-num, .new-date{
-        font-size: 25px;
-        margin-top: 10px;
-    }
-    .new-title{
-        font-size: 38px;
-    }
-    .new-soundcloud{
-        height: 4em;
-    }
-}
-
-@media only screen and (min-width: 999px){
-    .new-wrapper{
-        width: 40vw;
-    }
-
+@media only screen and (min-width: 999px) {
+  .new-wrapper {
+    width: 40vw;
+  }
 }
