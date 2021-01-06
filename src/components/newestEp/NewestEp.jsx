@@ -16,6 +16,8 @@ const NewestEp = (props) => {
     return [month, day, year].join("/");
   }
 
+  console.log(queriedEps)
+
   return (
     <>
       <article className="new-wrapper">
@@ -23,6 +25,7 @@ const NewestEp = (props) => {
         <span className="new-date">
           {formatDate(queriedEps.fields.post_date)}
         </span>
+        <button classname='go-to-details'><a href={`/episodes/${queriedEps.id}`}>Episode Details</a></button>
         <h3 className="new-title">{queriedEps.fields.title}</h3>
         <iframe
           className="new-soundcloud"

@@ -43,8 +43,8 @@ const Main = () => {
         <section className="green-box">
           <img
             className="stp-dwayne"
-            tabIndex="1"
-            src="./stp-peach-back.png"
+            tabIndex="0"
+            src="./stp-dark.png"
             alt="a collage of a girl looking blankly with her hand over her mouth"
           />
         </section>
