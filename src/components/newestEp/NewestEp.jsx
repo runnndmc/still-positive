@@ -24,7 +24,7 @@ const NewestEp = (props) => {
 
   return (
     <>
-      <article className="new-wrapper">
+{/*       <article className="new-wrapper"> */}
         <section className="top-wrap">
           <p className="new-episode-num">Ep #{queriedEps.fields.id}</p>
           <p className="new-date">{formatDate(queriedEps.fields.post_date)}</p>
@@ -47,7 +47,7 @@ const NewestEp = (props) => {
         >
           <h3 className="new-title">Episode Details</h3>
         </button>
-      </article>
+    {/*   </article> */}
     </>
   );
 };

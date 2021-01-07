@@ -45,7 +45,7 @@
   z-index: -1;
   height: 30vh;
   margin-left: 0px;
-  width: 155px;
+  width: 50vw;
 }
 
 @keyframes firstmove {
@@ -88,6 +88,12 @@
   width: 85vw;
   display: flex;
   flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  background-color: #310059;
+  width: 80vw;
+  border-radius: 30px/30px;
+  padding: 10px 0px 10px 10px;
 }
 .newest-title {
   font-family: "Shrikhand", cursive;
@@ -98,31 +104,9 @@
   margin-top: 10px;
   font-size: 26px;
   padding-left: 10px;
+  color: #ffffff;
 }
 
-@media only screen and (min-width: 340px) {
-  .green-box {
-    width: 50vw;
-  }
-  
-  .stp-dwayne {
-    padding-top: 30px;
-    margin-top: 20px;
-  }
-  .new-main-wrapper {
-    margin-top: 150px;
-    height: 25vh;
-  }
-  .new-wrapper {
-    padding-top: 5px;
-  }
-  .newest-title {
-    padding-left: 20px;
-    font-size: 30px;
-    margin-top: 0.5em;
-    margin-bottom: 10px;
-  }
-}
 
 @media only screen and (min-width: 374px) {
   .green-box {
