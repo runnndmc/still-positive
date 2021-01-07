@@ -46,7 +46,7 @@
 .btn-wrapper .ep-detail-btn:hover {
   background-color: #dfff00;
   border: none;
-  color: black;
+  color: #310059;
 }
 .start {
   grid-column-start: 2;

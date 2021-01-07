@@ -8,6 +8,6 @@ main{
 }
 @media only screen and (min-width: 999px){
     html{
-        overflow: hidden;
+        overflow: scroll;
     }
 }
