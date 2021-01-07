@@ -61,7 +61,7 @@ const EpisodeDetail = () => {
       ></img>
 
       <section className="middle-wrap">
-        <span className="detail-date">{formatDate(episode.post_date)}</span>
+        <aside className="detail-date">{formatDate(episode.post_date)}</aside>
         <p className="detail-duration">{episode.duration}</p>
         <p className="detail-episode-num">Episode #{episode.id}</p>
       </section>
