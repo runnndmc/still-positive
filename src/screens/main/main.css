@@ -6,8 +6,8 @@
   grid-row-start: 2;
   grid-row-end: 7;
   display: inline-grid;
-  grid-template-rows: auto 10% 10% 10%;
-
+  grid-template-rows: 20vh 1fr .10fr 1fr .10fr;
+  grid-template-columns: 5vw 15vw 40vw 20vw 5vw; 
 }
 .main-wrapper {
   width: 75vw;
@@ -84,7 +84,7 @@
 
 .new-main-wrapper {
   grid-row-start: 4;
-  height: 30vh;
+  grid-row-end:5;
   width: 85vw;
   display: flex;
   flex-direction: column;
