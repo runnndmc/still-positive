@@ -56,7 +56,7 @@ const Main = () => {
           </ul>
         </article>
         <section className="new-main-wrapper">
-          <h2 className="newest-title">Newest Episode</h2>
+       
           <Link className="new-title" to={`/episodes/${queriedEps.id}`}>
             <NewestEp queriedEps={queriedEps} />
           </Link>

@@ -24,6 +24,7 @@ const NewestEp = (props) => {
 
   return (
     <>
+       <h2 className="latest-episode">Newest Episode</h2>
       <section className="top-wrap">
         <p className="new-episode-num">Ep #{queriedEps.fields.id}</p>
         <p className="new-date">{formatDate(queriedEps.fields.post_date)}</p>
@@ -44,7 +45,7 @@ const NewestEp = (props) => {
         onClick={() => setActivated(!activated)}
         className="stubborn-btn"
       >
-        <h3 className="new-title">Episode Details</h3>
+        <h3>Episode Details</h3>
       </button>
     </>
   );

@@ -1,76 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
-.new-wrapper {
-  display: flex;
-  flex-direction: column;
-  background-color: #310059;
-  width: 80vw;
-  border-radius: 30px/30px;
-  padding: 15px 0px 10px 15px;
+.latest-episode {
+  font-family: "Shrikhand", cursive;
+  line-height: 0.8em;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 10px auto;
+  font-size: 26px;
+  padding-left: 10px;
+  color: #ffffff;
 }
-.top-wrap{
+.top-wrap {
+  font-family: "Syne Mono", monospace;
   display: flex;
   justify-content: space-between;
   width: 77vw;
-  padding: .25rem;
+  padding: 0.25rem;
+  font-weight: 700;
+  color: #dfff00;
 }
-.new-episode-num,
-.new-date {
-  color: #ffffff;
-  margin-bottom: 5px;
-  margin-top: 5px;
+.new-episode-num {
+  padding-right: 5px;
+}
+.new-soundcloud {
+  width: 77vw;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.stubborn-btn {
   font-family: "Syne Mono", monospace;
-  font-size: 15px;
-}
-.stubborn-btn{
   background-color: #310059;
   border: 1px solid white;
+  color:#dfff00;
   display: inline-block;
-  padding: 10px;
+  padding: 5px;
   border-radius: 20px;
   transition-duration: 0.4s;
   cursor: pointer;
   width: 77vw;
+  font-size: 1em;
 }
 .stubborn-btn:hover {
   background-color: #dfff00;
   border: none;
-}
-.new-title {
-  font-family: "Syne Mono", monospace;
-  text-decoration: none;
-  color: #dfff00;
-}
-.new-title:hover{
-  color:#310059;
-}
-.new-soundcloud{
-  width: 77vw;
-  height: 25px;
-  border-radius: 0px;
-  margin-bottom: .25rem;
-}
-
-.ep-name:hover,
-.ep-name:active,
-.ep-name:focus {
-  background-color: #ffffff;
   color: #310059;
 }
 
+
+
 @media only screen and (min-width: 340px) {
-  .top-wrap{
+  .top-wrap {
     justify-content: space-evenly;
   }
   .new-soundcloud {
     height: 6em;
   }
-
 }
 
 @media only screen and (min-width: 374px) {
-  .top-wrap{
+  .top-wrap {
     justify-content: space-evenly;
   }
 

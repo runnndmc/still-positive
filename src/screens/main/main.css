@@ -83,7 +83,7 @@
 }
 
 .new-main-wrapper {
-  grid-row-start: 4;
+  grid-row-start: 3;
   grid-row-end:5;
   width: 85vw;
   display: flex;
@@ -94,17 +94,6 @@
   width: 80vw;
   border-radius: 30px/30px;
   padding: 10px 0px 10px 10px;
-}
-.newest-title {
-  font-family: "Shrikhand", cursive;
-  line-height: 0.8em;
-  letter-spacing: 1px;
-  font-weight: 400;
-  align-content: center;
-  margin-top: 10px;
-  font-size: 26px;
-  padding-left: 10px;
-  color: #ffffff;
 }
 
 
