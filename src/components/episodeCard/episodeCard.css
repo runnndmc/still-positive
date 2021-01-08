@@ -30,20 +30,17 @@
     }
 }
 
-@media only screen and (min-width: 374px){
-
-}
-
-@media only screen and (min-width: 414px){
-
-}
-
-@media only screen and (min-width: 767px){
-
-}
-
 @media only screen and (min-width: 799px){
-    
+    .ep-name{
+        font-size: 28px;
+    }
+    .ep-num, .ep-date{
+        font-size: 20px;
+        margin-bottom: 2rem;
+    }
+    .ep-description{
+        font-size: 20px;
+    }
 }
 
 @media only screen and (min-width: 999px){

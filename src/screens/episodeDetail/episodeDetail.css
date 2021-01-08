@@ -133,6 +133,15 @@
     grid-column-end: 6;
   }
 }
+@media only screen and (min-width: 539px) {
+  .detail-thumbnail {
+    width: 25vw;
+    grid-column-start: 4;
+  }
+  .middle-wrap {
+    grid-column-end: 6;
+  }
+}
 
 @media only screen and (min-width: 767px) {
   .detail-thumbnail {
@@ -159,25 +168,13 @@
 @media only screen and (min-width: 799px) {
   .detail-thumbnail {
     margin-left: 30%;
-    margin-top: 0%;
+    width: 19vw;
   }
   .middle-wrap {
     font-size: 25px;
   }
   .detail-title {
-    font-size: 40px;
-  }
-  .detail-audio {
-    height: 10em;
-  }
-  .detail-description {
-    font-size: 20px;
-  }
-  .pdf-cc-btn {
-    margin-top: 10%;
-  }
-  .cc-text {
-    font-size: 1.5em;
+    font-size: 45px;
   }
 }
 

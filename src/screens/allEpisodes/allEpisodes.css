@@ -101,6 +101,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     grid-column-end: span 4;
+    font-size: 1.5em;
   }
   .episode-card {
     width: 30vw;
@@ -109,7 +110,7 @@
   .start {
     grid-column-start: 2;
     grid-column-end: 6;
-    grid-row-start: 6;
+    grid-row-start: 5;
     font-size: 40px;
   }
 }
