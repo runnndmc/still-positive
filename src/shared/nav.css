@@ -5,8 +5,8 @@
   position: relative;
   transform-origin: 60vw 50vw;
   transform: rotate(90deg);
-  top: 20vh;
-  right: 21vw;
+  top: 25vh;
+  right: 20vw;
   z-index: auto;
 }
 .nav-link {
