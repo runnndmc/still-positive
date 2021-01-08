@@ -82,17 +82,17 @@
 }
 
 @media only screen and (min-width: 767px) {
-  .new-episode-num,
-  .new-date {
-    font-size: 20px;
+  .latest-episode {
+    font-size: 40px;
+   }
+   .top-wrap {
+    font-size: 23px;
   }
   .new-title {
-    font-size: 28px;
+    font-size: 25px;
     margin: 10px 0px 10px 0px;
   }
-  .new-soundcloud {
-    height: 4em;
-  }
+
 }
 
 @media only screen and (min-width: 799px) {

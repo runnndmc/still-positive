@@ -78,7 +78,6 @@
   border-radius: 20px;
   transition-duration: 0.4s;
   cursor: pointer;
-  width: 77vw;
 }
 .pdf-cc-btn a {
   text-decoration: none;
@@ -127,10 +126,8 @@
 
 @media only screen and (min-width: 414px) {
   .detail-thumbnail {
-   
     margin-top: -7%;
     grid-column-start: 4;
-
   }
   .middle-wrap {
     grid-column-end: 6;
@@ -139,26 +136,23 @@
 
 @media only screen and (min-width: 767px) {
   .detail-thumbnail {
-    margin-left: 30%;
-    margin-top: 0%;
+    width: 25vw;
   }
   .middle-wrap {
     font-size: 25px;
   }
   .detail-title {
-    font-size: 40px;
+    font-size: 45px;
   }
   .detail-audio {
     height: 10em;
   }
   .detail-description {
-    font-size: 20px;
+    font-size: 25px;
   }
   .pdf-cc-btn {
     margin-top: 10%;
-  }
-  .cc-text {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 }
 

@@ -63,22 +63,20 @@
 }
 
 
-@media only screen and (min-width: 360px) {
-
-}
 
 @media only screen and (min-width: 374px) {
   .start{
     grid-row-start: 5;
     grid-row-end: 7;
-  
   }
 }
 
-@media only screen and (min-width: 414px) {
-}
-
 @media only screen and (min-width: 767px) {
+  .header-all-eps {
+    font-size: 40px;
+    grid-row-start: 2;
+    margin-top: 20px;
+  }
   .all-ep-wrapper {
     display: flex;
     flex-direction: row;
@@ -92,7 +90,7 @@
   .start {
     grid-column-start: 2;
     grid-column-end: 6;
-    grid-row-start: 6;
+    grid-row-start: 5;
     font-size: 40px;
   }
 }
