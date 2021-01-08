@@ -19,7 +19,7 @@
   padding: 0.25rem;
   font-weight: 700;
   color: #dfff00;
-  height:2em;
+  height: 2em;
 }
 .new-episode-num {
   padding-left: 5px;
@@ -33,7 +33,7 @@
   font-family: "Syne Mono", monospace;
   background-color: #310059;
   border: 1px solid white;
-  color:#dfff00;
+  color: #dfff00;
   display: inline-block;
   padding: 5px;
   border-radius: 20px;
@@ -47,8 +47,6 @@
   border: none;
   color: #310059;
 }
-
-
 
 @media only screen and (min-width: 340px) {
   .top-wrap {
@@ -69,45 +67,36 @@
     height: 1.75em;
   }
   .new-soundcloud {
-    margin-top: .5em;
+    margin-top: 0.5em;
   }
-
 }
 
 @media only screen and (min-width: 414px) {
-  .new-soundcloud {
-    height: 5em;
-  }
-  .new-episode-num {
-    margin-top: 0;
+  .latest-episode {
+    font-size: 28px;
   }
 }
 
 @media only screen and (min-width: 767px) {
-  .new-episode-num,
-  .new-date {
-    font-size: 20px;
+  .latest-episode {
+    font-size: 40px;
+  }
+  .top-wrap {
+    font-size: 23px;
   }
   .new-title {
-    font-size: 28px;
-    margin: 10px 0px 10px 0px;
-  }
-  .new-soundcloud {
-    height: 4em;
+    font-size: 30px;
+    margin: 10px 0px;
   }
 }
 
 @media only screen and (min-width: 799px) {
-  .new-episode-num,
-  .new-date {
+  .top-wrap {
     font-size: 25px;
     margin-top: 10px;
   }
-  .new-title {
-    font-size: 38px;
-  }
   .new-soundcloud {
-    height: 4em;
+    height: 5em;
   }
 }
 

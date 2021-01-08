@@ -8,7 +8,8 @@ main{
 }
 @media only screen and (min-width: 999px){
     html{
-        height: 100%;
-        overflow: scroll;
+    
+/*         overflow-y: scroll;
+        float: none; */
     }
 }
