@@ -75,12 +75,10 @@
 }
 
 @media only screen and (min-width: 414px) {
-  .new-soundcloud {
-    height: 5em;
+  .latest-episode {
+   font-size: 28px;
   }
-  .new-episode-num {
-    margin-top: 0;
-  }
+
 }
 
 @media only screen and (min-width: 767px) {

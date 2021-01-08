@@ -107,11 +107,9 @@
   .new-main-wrapper {
     margin-top: 10%;
   }
-
   .stp-annimation {
     padding-left: 1.5rem;
     margin-top:2rem;
-
   }
   .stp-annimation li {
     font-size: 20px;
@@ -120,29 +118,17 @@
 }
 
 @media only screen and (min-width: 413px) {
-  .green-box {
-    width: 55vw;
-    height: 30vh;
-  }
   .stp-dwayne {
-    height: 45vh;
+    height: 40vh;
     padding-top: 15px;
   }
   .stp-annimation {
-    grid-column-start: 2;
     width: 50vw;
     top: -20px;
     grid-row-start: 3;
-    grid-row-end: 4;
   }
   .stp-annimation li {
     font-size: 23px;
-  }
-  .new-wrapper {
-    margin-bottom: 0;
-  }
-  .new-main-wrapper {
-    margin-top: 180px;
   }
 }
 

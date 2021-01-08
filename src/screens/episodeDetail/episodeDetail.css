@@ -66,12 +66,13 @@
 } */
 
 .pdf-cc-btn {
+  font-family: "Syne Mono", monospace;
   font-size: 1em;
   padding: 1em;
   margin-right: 10px;
   font-weight: 600;
   background-color: #310059;
-  border: 1px solid white;
+  border: 2px solid white;
   color: #dfff00;
   display: inline-block;
   border-radius: 20px;
@@ -126,8 +127,13 @@
 
 @media only screen and (min-width: 414px) {
   .detail-thumbnail {
-    margin-left: 53px;
+   
     margin-top: -7%;
+    grid-column-start: 4;
+
+  }
+  .middle-wrap {
+    grid-column-end: 6;
   }
 }
 
