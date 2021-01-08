@@ -54,7 +54,7 @@
 .detail-description {
   font-size: 17px;
 }
-.detail-duration{
+.detail-duration {
   margin: 0;
 }
 /* .detail-video {
@@ -65,34 +65,33 @@
   margin-right: 5px;
 } */
 
-.pdf-cc-btn{
+.pdf-cc-btn {
   font-size: 1em;
   padding: 1em;
   margin-right: 10px;
   font-weight: 600;
   background-color: #310059;
   border: 1px solid white;
-  color:#dfff00;
+  color: #dfff00;
   display: inline-block;
   border-radius: 20px;
   transition-duration: 0.4s;
   cursor: pointer;
   width: 77vw;
 }
-.pdf-cc-btn a{
+.pdf-cc-btn a {
   text-decoration: none;
   color: #dfff00;
 }
-
 .pdf-cc-btn:hover {
   background-color: #dfff00;
   border: none;
   color: #310059;
 }
-.button-text:hover{
+.button-text:hover {
   color: #310059;
 }
-.pdf-cc-btn a:hover{
+.pdf-cc-btn a:hover {
   color: #310059;
 }
 
@@ -105,10 +104,23 @@
     margin-top: -10px;
   }
 }
-
 @media only screen and (min-width: 374px) {
+  .middle-wrap {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    height: 20vh;
+  }
   .detail-thumbnail {
-    margin-top: -10%;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 30vw;
+    grid-column-start: 4;
+    margin: 0;
+  }
+  .detail-wrapper {
+    grid-row-start: 5;
+    grid-row-end: 9;
+    margin-bottom: 10%;
   }
 }
 

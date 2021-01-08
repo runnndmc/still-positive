@@ -99,33 +99,23 @@
 
 @media only screen and (min-width: 374px) {
   .green-box {
-    background-color: #dfff00;
-    width: 55vw;
-    height: 29vh;
+    width: 55vw;   
   }
   .stp-dwayne {
-    margin-top: 20px;
-    height: 38vh;
+    height: 35vh;
   }
   .new-main-wrapper {
-    margin-top: 20vh;
+    margin-top: 10%;
   }
-  .newest-title {
-    margin-top: 5px;
-    margin-bottom: 10px;
-  }
+
   .stp-annimation {
-    padding-left: 20px;
+    padding-left: 1.5rem;
+    margin-top:2rem;
+
   }
   .stp-annimation li {
     font-size: 20px;
     letter-spacing: 1.5px;
-  }
-  .newest-title {
-    margin-top: 0;
-  }
-  .new-date {
-    margin: 0;
   }
 }
 
