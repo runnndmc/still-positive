@@ -1,12 +1,12 @@
 .nav-bar {
-  height: 10px;
+  height: 5vh;
   display: flex;
   justify-content: space-around;
   position: relative;
   transform-origin: 60vw 50vw;
   transform: rotate(90deg);
   top: 20vh;
-  right: 19vw;
+  right: 21vw;
   z-index: auto;
 }
 .nav-link {
@@ -16,12 +16,13 @@
 .episodes-link,
 .home-link {
   font-family: 'Syne Mono', monospace;
+  font-size: 1em;
   text-decoration: none;
   margin: 10px;
   background-color: #310059;
   color: white;
   padding: 4px;
-  padding-bottom: 1px;
+  padding-bottom: 10px;
   border-radius: 5px;
 }
 

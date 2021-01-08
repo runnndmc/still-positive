@@ -1,25 +1,24 @@
 .header-all-eps {
-  grid-row-start: 2;
+  grid-row-start: 3;
   grid-column-start: 1;
-  margin-top: 30px;
-  width: 90vw;
-  font-size: 35px;
+  grid-column-end:6;
+  margin-top: 0;
   font-family: "Shrikhand", cursive;
   letter-spacing: 1px;
   font-weight: 400;
+  font-size: 26px;
 }
 .all-ep-wrapper {
   grid-column-start: 2;
-  grid-row-start: 3;
-  grid-row-end: auto;
   grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: auto;
 }
 .episode-card {
   font-family: "Syne Mono", monospace;
   background-color: #310059;
   display: flex;
   flex-direction: column;
-  margin: 20px 10px 20px 0px;
   text-decoration: none;
   padding: 10px;
   border-radius: 10px;
@@ -30,29 +29,37 @@
   justify-content: center;
 }
 .btn-wrapper .ep-detail-btn {
+  font-family: "Syne Mono", monospace;
   background-color: #310059;
-  border: 2px solid white;
+  border: 1px solid white;
   color: #dfff00;
-  text-align: center;
-  text-decoration: none;
   display: inline-block;
-  font-size: 1em;
-  font-weight: 800;
-  padding: 10px;
+  padding: 5px;
   border-radius: 20px;
   transition-duration: 0.4s;
   cursor: pointer;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 800;
 }
+.ep-detail-btn{
+  padding: 5px;
+  width: 40vw;
+}
+
 .btn-wrapper .ep-detail-btn:hover {
   background-color: #dfff00;
   border: none;
-  color: black;
+  color: #310059;
 }
 .start {
   grid-column-start: 2;
   grid-column-end: 6;
-  grid-row-start: 6;
+  grid-row-start: 7;
+  grid-row-end: 7;
+
   font-size: 20px;
+  margin-top: 5em;
 }
 
 
