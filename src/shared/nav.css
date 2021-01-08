@@ -1,12 +1,12 @@
 .nav-bar {
-  height: 10px;
+  height: 5vh;
   display: flex;
   justify-content: space-around;
   position: relative;
   transform-origin: 60vw 50vw;
   transform: rotate(90deg);
   top: 20vh;
-  right: 19vw;
+  right: 21vw;
   z-index: auto;
 }
 .nav-link {
@@ -21,7 +21,7 @@
   background-color: #310059;
   color: white;
   padding: 4px;
-  padding-bottom: 1px;
+  padding-bottom: 10px;
   border-radius: 5px;
 }
 

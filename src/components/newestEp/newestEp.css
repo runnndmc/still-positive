@@ -6,7 +6,7 @@
   line-height: 0.8em;
   letter-spacing: 1px;
   font-weight: 400;
-  margin: 10px auto;
+  margin: 10px auto 4px;
   font-size: 26px;
   padding-left: 10px;
   color: #ffffff;
@@ -19,6 +19,7 @@
   padding: 0.25rem;
   font-weight: 700;
   color: #dfff00;
+  height:2em;
 }
 .new-episode-num {
   padding-left: 5px;
