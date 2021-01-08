@@ -60,13 +60,18 @@
 }
 
 @media only screen and (min-width: 374px) {
+  .latest-episode {
+    margin-bottom: 0;
+    letter-spacing: 1.75px;
+  }
   .top-wrap {
-    justify-content: space-evenly;
+    justify-content: space-between;
+    height: 1.75em;
+  }
+  .new-soundcloud {
+    margin-top: .5em;
   }
 
-  .new-soundcloud {
-    height: 5em;
-  }
 }
 
 @media only screen and (min-width: 414px) {
