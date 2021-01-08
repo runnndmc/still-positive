@@ -16,6 +16,7 @@
 .episodes-link,
 .home-link {
   font-family: 'Syne Mono', monospace;
+  font-size: 1em;
   text-decoration: none;
   margin: 10px;
   background-color: #310059;

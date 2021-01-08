@@ -6,17 +6,21 @@
 .ep-num, .ep-date{
     margin-top:0;  
     font-size: 15px;  
+    line-height: 0;
 }
 .ep-name{
     margin-top:0;
-    margin-bottom: 10px;
+    margin-bottom: .25em;
     font-weight: 900;
-    font-size: 30px;
 }
 .thumbnail{
     height: 200px;
     width: 210px;
     margin: 0 auto;
+}
+.ep-description{
+    line-height: 1;
+    font-size: 15px;  
 }
 
 @media only screen and (min-width: 360px){

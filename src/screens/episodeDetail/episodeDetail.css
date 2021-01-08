@@ -3,15 +3,32 @@
   display: inline;
   grid-column-start: 3;
   grid-column-end: 6;
-  grid-row-start: 3;
+  grid-row-start: 6;
   margin-left: 50px;
-  z-index: 2;
+  margin-top: 3rem;
+  z-index: 1;
+}
+.middle-wrap {
+  grid-row-start: 6;
+  grid-row-end: 7;
+
+  grid-column-start: 1;
+  grid-column-end: 6;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  font-size: 17px;
+  background-color: #ffffff;
   border: 1px solid #000000;
-  border-left: none;
-  border-right: none;
+  padding: 10px;
+}
+.detail-episode-num {
+  margin: 0;
 }
 .detail-wrapper {
-  grid-row-start: 4;
+  grid-row-start: 3;
+  grid-row-end: 6;
+
   grid-column-start: 1;
   grid-column-end: 6;
   display: flex;
@@ -21,45 +38,14 @@
   padding: 10px;
   padding-right: 0;
 }
-.middle-wrap {
-  grid-row-start: 3;
-  grid-column-start: 1;
-  grid-column-end: 6;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  font-size: 17px;
-  font-size: 20px;
-  background-color: #ffffff;
-  border: 1px solid #000000;
-  padding: 10px;
-}
-
-.wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.detail-episode-num {
-  margin: 0;
-}
-
 .detail-title {
+  grid-row-start: 4;
+  grid-row-end: 6;
   font-size: 30px;
   margin-top: 0;
   margin-bottom: 10px;
   border-bottom: 1px solid #000000;
 }
-
-.detail-video {
-  grid-column-start: 2;
-  grid-column-end: 6;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  margin-right: 5px;
-}
-
 .detail-audio {
   grid-column-start: 2;
   grid-column-end: 6;
@@ -68,19 +54,30 @@
 .detail-description {
   font-size: 17px;
 }
+.detail-duration{
+  margin: 0;
+}
+/* .detail-video {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+} */
 
 .pdf-cc-btn{
-  display: block;
-  z-index: 2;
   font-size: 1em;
-  padding: 10px;
-  border-radius: 25px;
-  grid-column-start: 2;
+  padding: 1em;
   margin-right: 10px;
-  background-color: #310059;
-  border: 2px solid white;
   font-weight: 600;
-  color: #dfff00;
+  background-color: #310059;
+  border: 1px solid white;
+  color:#dfff00;
+  display: inline-block;
+  border-radius: 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 77vw;
 }
 .pdf-cc-btn a{
   text-decoration: none;
