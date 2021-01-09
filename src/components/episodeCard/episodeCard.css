@@ -45,9 +45,16 @@
 
 @media only screen and (min-width: 999px){
 .ep-num, .ep-date{
-    font-size: 18px;
+    font-size: 20px;
 }
 .ep-name{
     font-size: 33px;
+}
+.thumbnail{
+    width: 8em;
+    height: 8em;
+}
+.ep-description{
+    font-size: 20px;
 }
 }

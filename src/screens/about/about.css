@@ -192,6 +192,10 @@
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row-start: 3;
+        margin-top:0;
+     }
+     .about-wrapper{
+         margin-top: 0;
      }
      .about-p1, .about-p2{
          font-size: 30px;
