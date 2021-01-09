@@ -84,7 +84,7 @@
   }
   .logo {
     font-size: 75px;
-    width: 70vw;
+
   }
 }
 
@@ -95,5 +95,9 @@
     grid-template-rows: 10vh 10vh 10vh 30vh 13vh 18vh;
     width: 93vw;
     padding-bottom: 0;
+  }
+  .logo {
+    font-size: 85px;
+
   }
 }

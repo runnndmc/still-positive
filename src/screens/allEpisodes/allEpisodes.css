@@ -119,8 +119,6 @@
   .header-all-eps {
     font-size: 50px;
     grid-row-start: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
     margin-top: 0;
   }
   .episode-card {

@@ -101,7 +101,9 @@
 }
 
 @media only screen and (min-width: 999px) {
-  .new-wrapper {
-    width: 40vw;
+  .top-wrap,
+  .new-soundcloud,
+  .stubborn-btn {
+    width: 97%;
   }
 }
