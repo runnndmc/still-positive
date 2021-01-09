@@ -165,7 +165,7 @@
 
 @media only screen and (min-width: 999px) {
   .main-desktop {
-    grid-column-end: 7;
+    grid-column-end: 8;
     grid-row-start: 3;
     grid-row-end: 6;
     align-items: flex-start;
@@ -194,7 +194,7 @@
     line-height: 1.25;
   }
   .new-main-wrapper {
-    width: 48%;
+    width: 50%;
     margin-top: 0;
   }
 }

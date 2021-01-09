@@ -187,15 +187,17 @@
     padding: 0 20px;
     align-items: flex-end;
     font-size: 30px;
+    height: auto;
+    margin-left:10%;
   }
   .detail-thumbnail {
     grid-column-start: 5;
     grid-column-end: 6;
-    grid-row-start: 4;
-    width: 80%;
-    margin: 0;
+   grid-row-start: 5;
+    width: 50%;
+    margin: 2em;
     border: none;
-    margin-left: 25px;
+    margin-left:25%;
   }
   .detail-wrapper {
     grid-column-start: 1;
