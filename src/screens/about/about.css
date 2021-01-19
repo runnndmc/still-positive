@@ -1,20 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 .about-title{
-    grid-row-start: 1;
-    grid-row-end:3;
+    grid-row-start: 3;
+    grid-column-start:1;
+    grid-column-end:6;
     margin-top:0;
-    grid-column-start: 1;
     font-family: "Shrikhand", cursive;
     letter-spacing: 1px;
     font-weight: 400;
+    font-size: 26px;
 }
 .about-wrapper{
     display: flex;
     flex-direction: column;
     margin-right: 14px;
     padding:10px;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-start: 4;
     grid-column-start: 1;
     grid-column-end: 6;   
 }
@@ -192,6 +192,10 @@
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row-start: 3;
+        margin-top:0;
+     }
+     .about-wrapper{
+         margin-top: 0;
      }
      .about-p1, .about-p2{
          font-size: 30px;

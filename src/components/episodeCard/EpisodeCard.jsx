@@ -4,10 +4,13 @@ import "./episodeCard.css";
 const EpisodeCard = (props) => {
   const { title, description, img, id, date } = props;
 
-  const descriptionTeaser = () => {
-    if(description.length >= 55){
+  const descriptionTeaser = (str) => {
+    if (str.length >= 55) {
+      const cut = str.slice(0, 55)
+      return cut.concat('...')
     }
-  }
+  };
+
 
   return (
     <>
@@ -23,7 +26,7 @@ const EpisodeCard = (props) => {
         loading="lazy"
       ></img>
 
-      <p className="ep-description">{description}</p>
+      <p className="ep-description">{descriptionTeaser(description)}</p>
     </>
   );
 };

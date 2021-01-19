@@ -10,9 +10,7 @@ const EpisodeDetail = () => {
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
 
-  useEffect(() => {
-    window.scrollTo(0,0);
-  });
+
 
   useEffect(() => {
     const findOneEpisode = async () => {
@@ -30,6 +28,10 @@ const EpisodeDetail = () => {
     findOneEpisode();
   }, [id]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   function formatDate(date) {
     var d = new Date(date),
       month = "" + (d.getMonth() + 1),
@@ -42,10 +44,10 @@ const EpisodeDetail = () => {
     return [month, day, year].join("/");
   }
 
-  const toggleContent= (e)=>{
-    e.preventDefault()
-    alert("toggle me bebe")
-  }
+  const toggleContent = (e) => {
+    e.preventDefault();
+    alert("toggle me bebe");
+  };
 
   if (!isLoaded) {
     return <h4>One Minute Babe...</h4>;
@@ -61,14 +63,14 @@ const EpisodeDetail = () => {
       ></img>
 
       <section className="middle-wrap">
-        <span className="detail-date">{formatDate(episode.post_date)}</span>
+        <aside className="detail-date">{formatDate(episode.post_date)}</aside>
         <p className="detail-duration">{episode.duration}</p>
         <p className="detail-episode-num">Episode #{episode.id}</p>
       </section>
 
       <section className="detail-wrapper">
-        <h2 className="detail-title">{episode.title}</h2>       
-{/*         <iframe className="detail-video"
+        <h2 className="detail-title">{episode.title}</h2>
+        {/*         <iframe className="detail-video"
           title={episode.title}
           src={episode.video_link}
           cc_lang_pref='en'
@@ -78,7 +80,8 @@ const EpisodeDetail = () => {
           controls="1"
           loading="eager"
         ></iframe> */}
-          <iframe className='detail-audio'
+        <iframe
+          className="detail-audio"
           title={episode.title}
           width="98%"
           height="130"
@@ -88,8 +91,16 @@ const EpisodeDetail = () => {
           src={episode.audio_url}
         ></iframe>
         <p className="detail-description">{episode.description}</p>
-        <button className='pdf-cc-btn' /* onClick={toggleContent(e)} */><a href='https://docs.google.com/document/d/1mqtGgqyUaYDlffzFpC7G03sDTitIlUwoeJ8vHMc7uPo/edit?usp=sharing' target="_blank" className='cc-text'>Closed Captions</a></button>
-       {/*  <section className='pdf-content'>this is content</section> */}
+        <button className="pdf-cc-btn" /* onClick={toggleContent(e)} */>
+          <a
+            href="https://docs.google.com/document/d/1mqtGgqyUaYDlffzFpC7G03sDTitIlUwoeJ8vHMc7uPo/edit?usp=sharing"
+            target="_blank"
+            className="button-text"
+          >
+            Closed Captions
+          </a>
+        </button>
+        {/*  <section className='pdf-content'>this is content</section> */}
       </section>
     </Layout>
   );

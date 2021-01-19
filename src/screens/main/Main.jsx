@@ -6,7 +6,6 @@ import NewestEp from "../../components/newestEp/NewestEp";
 import Layout from "../../shared/Layout";
 import "./main.css";
 
-
 const Main = () => {
   const [queriedEps, setQueriedEps] = useState([]);
   const [isLoaded, setLoaded] = useState(false);
@@ -31,39 +30,38 @@ const Main = () => {
     apiCall();
   }, []);
 
-
   if (!isLoaded) {
     return <h2>One minute babe..</h2>;
   }
 
   return (
     <Layout>
-      <section className='main-desktop'>
-      <main className="main-wrapper">
-        <section className="green-box">
-          <img
-            className="stp-dwayne"
-            tabIndex="1"
-            src="./stp-peach-back.png"
-            alt="a collage of a girl looking blankly with her hand over her mouth"
-          />
-        </section>
-        <ul className="stp-annimation">
-          <li className="stp-text">Still Positive</li>
-          <li className="stp-text">Still Positive</li>
-          <li className="stp-text">Still Positive</li>
-          <li className="stp-text">Still Positive</li>
-          <li className="stp-text">Still Positive</li>
-          <li className="stp-text">Still Positive</li>
-        </ul>
-        </main>
+      <section className="main-desktop">
+        <article className="main-wrapper">
+          <section className="green-box">
+            <img
+              className="stp-dwayne"
+              tabIndex="0"
+              src="./stp-dark.png"
+              alt="a collage of a girl looking blankly with her hand over her mouth"
+            />
+          </section>
+          <ul className="stp-annimation">
+            <li className="stp-text">Still Positive</li>
+            <li className="stp-text">Still Positive</li>
+            <li className="stp-text">Still Positive</li>
+            <li className="stp-text">Still Positive</li>
+            <li className="stp-text">Still Positive</li>
+            <li className="stp-text">Still Positive</li>
+          </ul>
+        </article>
         <section className="new-main-wrapper">
-          <h2 className="newest-title">Newest Episode</h2>
+       
           <Link className="new-title" to={`/episodes/${queriedEps.id}`}>
-            <NewestEp queriedEps={queriedEps}/>
+            <NewestEp queriedEps={queriedEps} />
           </Link>
         </section>
-        </section>
+      </section>
     </Layout>
   );
 };

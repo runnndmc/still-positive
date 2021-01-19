@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 html{
     background-color: #dfff00;
-    overflow: hidden;
 }
 main{
     width: 90vw;
     font-family: 'Questrial', sans-serif;
 }
-
+@media only screen and (min-width: 999px){
+    html{
+    
+/*         overflow-y: scroll;
+        float: none; */
+    }
+}

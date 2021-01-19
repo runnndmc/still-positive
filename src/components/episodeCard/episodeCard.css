@@ -1,22 +1,26 @@
 .id-wrapper{
     display: flex;
     justify-content: space-between;
-    margin-top: 0;
+    margin-top: 10px;
 }
 .ep-num, .ep-date{
     margin-top:0;  
     font-size: 15px;  
+    line-height: 0;
 }
 .ep-name{
     margin-top:0;
-    margin-bottom: 10px;
+    margin-bottom: .25em;
     font-weight: 900;
-    font-size: 30px;
 }
 .thumbnail{
     height: 200px;
     width: 210px;
     margin: 0 auto;
+}
+.ep-description{
+    line-height: 1;
+    font-size: 15px;  
 }
 
 @media only screen and (min-width: 360px){
@@ -26,27 +30,31 @@
     }
 }
 
-@media only screen and (min-width: 374px){
-
-}
-
-@media only screen and (min-width: 414px){
-
-}
-
-@media only screen and (min-width: 767px){
-
-}
-
 @media only screen and (min-width: 799px){
-    
+    .ep-name{
+        font-size: 28px;
+    }
+    .ep-num, .ep-date{
+        font-size: 20px;
+        margin-bottom: 2rem;
+    }
+    .ep-description{
+        font-size: 20px;
+    }
 }
 
 @media only screen and (min-width: 999px){
 .ep-num, .ep-date{
-    font-size: 18px;
+    font-size: 20px;
 }
 .ep-name{
     font-size: 33px;
+}
+.thumbnail{
+    width: 8em;
+    height: 8em;
+}
+.ep-description{
+    font-size: 20px;
 }
 }

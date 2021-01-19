@@ -1,12 +1,12 @@
 .nav-bar {
-  height: 10px;
+  height: 5vh;
   display: flex;
   justify-content: space-around;
   position: relative;
   transform-origin: 60vw 50vw;
   transform: rotate(90deg);
-  top: 20vh;
-  right: 19vw;
+  top: 25vh;
+  right: 20vw;
   z-index: auto;
 }
 .nav-link {
@@ -16,13 +16,27 @@
 .episodes-link,
 .home-link {
   font-family: 'Syne Mono', monospace;
+  font-size: 1em;
   text-decoration: none;
   margin: 10px;
   background-color: #310059;
   color: white;
   padding: 4px;
-  padding-bottom: 1px;
+  padding-bottom: 10px;
   border-radius: 5px;
+}
+
+.about-link:hover, .about-link:active, .about-link:focus{
+  background-color: #ffffff;
+  color: #310059;
+}
+.episodes-link:hover, .episodes-link:active, .episodes-link:focus{
+  background-color: #ffffff;
+  color: #310059;
+}
+.home-link:hover, .home-link:active, .home-link:focus{
+  background-color: #ffffff;
+  color: #310059;
 }
 @media only screen and (min-width: 340px){
   .nav-bar{
@@ -96,10 +110,12 @@
   .about-link,
   .episodes-link,
   .home-link {
-    font-size: 35px;
+    font-size: 40px;
     padding: 10px;
+    padding-bottom: 17px;
+
   }
   .nav-link{
-   padding: 0px 20px;
+   padding: 0px 25px;
   }
 }
