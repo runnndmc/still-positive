@@ -1,42 +1,40 @@
+.middle-wrap {
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  display: flex;
+  justify-content: space-between;
+  align-items: space-evenly;
+  flex-direction: row;
+  font-size: 17px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
 .detail-thumbnail {
-  width: 37vw;
+  width: 40vw;
   display: inline;
   grid-column-start: 3;
   grid-column-end: 6;
   grid-row-start: 6;
-  margin-left: 45px;
-  margin-top: 3rem;
   z-index: 1;
 }
-.middle-wrap {
-  grid-row-start: 6;
-  grid-row-end: 7;
-
-  grid-column-start: 1;
-  grid-column-end: 6;
+.nested-details{
+  margin-left: 5px;
   display: flex;
-  justify-content: space-evenly;
   flex-direction: column;
-  font-size: 17px;
-  background-color: #ffffff;
-  border: 1px solid #000000;
-  padding: 10px;
+  align-content: space-around;
 }
-.detail-episode-num {
-  margin: 0;
-}
-.detail-wrapper {
-  grid-row-start: 3;
-  grid-row-end: 6;
 
+.detail-wrapper {
+  grid-row-start: 2;
+  grid-row-end: 5;
   grid-column-start: 1;
   grid-column-end: 6;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   border: 1px solid #000000;
-  padding: 10px;
-  padding-right: 0;
 }
 .detail-title {
   grid-row-start: 4;
@@ -50,6 +48,7 @@
   grid-column-start: 2;
   grid-column-end: 6;
   margin-top: 10px;
+
 }
 .detail-description {
   font-size: 17px;
@@ -57,13 +56,11 @@
 .detail-duration {
   margin: 0;
 }
-/* .detail-video {
-  grid-column-start: 2;
-  grid-column-end: 6;
-  margin-top: 15px;
+.detail-video {
+  margin-top: 25px;
   margin-bottom: 10px;
   margin-right: 5px;
-} */
+}
 
 .pdf-cc-btn {
   font-family: "Syne Mono", monospace;
@@ -88,35 +85,61 @@
   border: none;
   color: #310059;
 }
-.button-text:hover {
-  color: #310059;
-}
+
 .pdf-cc-btn a:hover {
   color: #310059;
 }
 
-@media only screen and (min-width: 340px) {
-  .middle-wrap {
-    margin-top: -30px;
-  }
-  .detail-thumbnail {
-    border-top: none;
-    margin-top: -10px;
-  }
-}
-@media only screen and (min-width: 374px) {
+@media only screen and (min-width: 320px) {
   .middle-wrap {
     grid-row-start: 3;
     grid-row-end: 5;
     height: 20vh;
+    margin-top: -30px;
   }
-  .detail-thumbnail {
+/*   .detail-thumbnail {
     grid-row-start: 3;
     grid-row-end: 4;
-    width: 30vw;
     grid-column-start: 4;
     margin: 0;
+  } */
+  .detail-wrapper {
+    grid-row-start: 5;
+    grid-row-end: 9;
+    margin-bottom: 10%;
   }
+  .detail-video{
+    height: 70%;
+  }
+}
+@media only screen and (min-width: 340px) {
+  .middle-wrap {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    height: 20vh;
+    margin-top: -30px;
+  }
+/*   .detail-thumbnail {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    margin: 0;
+  } */
+  .detail-wrapper {
+    grid-row-start: 5;
+    grid-row-end: 9;
+    margin-bottom: 10%;
+  }
+}
+
+@media only screen and (min-width: 374px) {
+
+/*   .detail-thumbnail {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    margin: 0;
+  } */
   .detail-wrapper {
     grid-row-start: 5;
     grid-row-end: 9;
@@ -125,10 +148,7 @@
 }
 
 @media only screen and (min-width: 414px) {
-  .detail-thumbnail {
-    margin-top: -7%;
-    grid-column-start: 4;
-  }
+
   .middle-wrap {
     grid-column-end: 6;
   }
@@ -144,9 +164,7 @@
 }
 
 @media only screen and (min-width: 767px) {
-  .detail-thumbnail {
-    width: 25vw;
-  }
+
   .middle-wrap {
     font-size: 25px;
   }
@@ -166,10 +184,7 @@
 }
 
 @media only screen and (min-width: 799px) {
-  .detail-thumbnail {
-    margin-left: 30%;
-    width: 19vw;
-  }
+
   .middle-wrap {
     font-size: 25px;
   }
@@ -183,21 +198,18 @@
     grid-column-start: 5;
     grid-column-end: 7;
     grid-row-start: 4;
-    grid-row-end: 6;
-    padding: 0 20px;
-    align-items: flex-end;
+    grid-row-end: span 1;
+    padding: 5px 5px 20px;
     font-size: 30px;
-    height: auto;
-    margin-left:10%;
+    height: fit-content;
+    margin-left: 10%;
   }
   .detail-thumbnail {
     grid-column-start: 5;
     grid-column-end: 6;
-   grid-row-start: 5;
     width: 50%;
-    margin: 2em;
     border: none;
-    margin-left:25%;
+
   }
   .detail-wrapper {
     grid-column-start: 1;
