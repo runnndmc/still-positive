@@ -1,5 +1,5 @@
 .detail-thumbnail {
-  width: 37vw;
+  width: 40vw;
   display: inline;
   grid-column-start: 3;
   grid-column-end: 6;
@@ -11,31 +11,27 @@
 .middle-wrap {
   grid-row-start: 6;
   grid-row-end: 7;
-
   grid-column-start: 1;
   grid-column-end: 6;
   display: flex;
   justify-content: space-evenly;
-  flex-direction: column;
+  flex-direction: row;
   font-size: 17px;
   background-color: #ffffff;
   border: 1px solid #000000;
-  padding: 10px;
 }
 .detail-episode-num {
   margin: 0;
 }
 .detail-wrapper {
-  grid-row-start: 3;
-  grid-row-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 5;
   grid-column-start: 1;
-  grid-column-end: auto;
+  grid-column-end: 6;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   border: 1px solid #000000;
-  padding: 10px;
-  padding-right: 0;
 }
 .detail-title {
   grid-row-start: 4;
@@ -49,6 +45,7 @@
   grid-column-start: 2;
   grid-column-end: 6;
   margin-top: 10px;
+
 }
 .detail-description {
   font-size: 17px;
@@ -57,10 +54,9 @@
   margin: 0;
 }
 .detail-video {
-  margin-top: 15px;
+  margin-top: 25px;
   margin-bottom: 10px;
   margin-right: 5px;
-  height: 250%;
 }
 
 .pdf-cc-btn {
@@ -86,32 +82,58 @@
   border: none;
   color: #310059;
 }
-.button-text:hover {
-  color: #310059;
-}
+
 .pdf-cc-btn a:hover {
   color: #310059;
 }
 
-@media only screen and (min-width: 340px) {
-  .middle-wrap {
-    margin-top: -30px;
-  }
-  .detail-thumbnail {
-    border-top: none;
-    margin-top: -10px;
-  }
-}
-@media only screen and (min-width: 374px) {
+@media only screen and (min-width: 320px) {
   .middle-wrap {
     grid-row-start: 3;
     grid-row-end: 5;
     height: 20vh;
+    margin-top: -30px;
   }
   .detail-thumbnail {
     grid-row-start: 3;
     grid-row-end: 4;
-    width: 30vw;
+    grid-column-start: 4;
+    margin: 0;
+  }
+  .detail-wrapper {
+    grid-row-start: 5;
+    grid-row-end: 9;
+    margin-bottom: 10%;
+  }
+  .detail-video{
+    height: 70%;
+  }
+}
+@media only screen and (min-width: 340px) {
+  .middle-wrap {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    height: 20vh;
+    margin-top: -30px;
+  }
+  .detail-thumbnail {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    margin: 0;
+  }
+  .detail-wrapper {
+    grid-row-start: 5;
+    grid-row-end: 9;
+    margin-bottom: 10%;
+  }
+}
+
+@media only screen and (min-width: 374px) {
+
+  .detail-thumbnail {
+    grid-row-start: 3;
+    grid-row-end: 4;
     grid-column-start: 4;
     margin: 0;
   }
