@@ -10,8 +10,6 @@ const EpisodeDetail = () => {
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
 
-
-
   useEffect(() => {
     const findOneEpisode = async () => {
       const response = await axios.get(
@@ -44,10 +42,10 @@ const EpisodeDetail = () => {
     return [month, day, year].join("/");
   }
 
-  const toggleContent = (e) => {
+  /*   const toggleContent = (e) => {
     e.preventDefault();
     alert("toggle me bebe");
-  };
+  }; */
 
   if (!isLoaded) {
     return <h4>One Minute Babe...</h4>;
@@ -70,26 +68,25 @@ const EpisodeDetail = () => {
 
       <section className="detail-wrapper">
         <h2 className="detail-title">{episode.title}</h2>
-        {/*         <iframe className="detail-video"
-          title={episode.title}
-          src={episode.video_link}
-          cc_lang_pref='en'
-          cc_load_policy='1'
-          frameBorder="0"
-          allowFullScreen="allowfullscreen"
-          controls="1"
-          loading="eager"
-        ></iframe> */}
         <iframe
           className="detail-audio"
           title={episode.title}
-          width="98%"
+          width="100%"
           height="130"
           scrolling="no"
           frameBorder="no"
           allow="autoplay"
           src={episode.audio_url}
         ></iframe>
+        <iframe
+          width="800"
+          height="515"
+          title={episode.title}
+          src={episode.video_link}
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+        
         <p className="detail-description">{episode.description}</p>
         <button className="pdf-cc-btn" /* onClick={toggleContent(e)} */>
           <a

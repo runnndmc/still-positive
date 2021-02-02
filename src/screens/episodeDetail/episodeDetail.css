@@ -28,9 +28,8 @@
 .detail-wrapper {
   grid-row-start: 3;
   grid-row-end: 6;
-
   grid-column-start: 1;
-  grid-column-end: 6;
+  grid-column-end: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -57,13 +56,12 @@
 .detail-duration {
   margin: 0;
 }
-/* .detail-video {
-  grid-column-start: 2;
-  grid-column-end: 6;
+.detail-video {
   margin-top: 15px;
   margin-bottom: 10px;
   margin-right: 5px;
-} */
+  height: 250%;
+}
 
 .pdf-cc-btn {
   font-family: "Syne Mono", monospace;
