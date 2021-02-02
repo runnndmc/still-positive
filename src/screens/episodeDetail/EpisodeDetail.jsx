@@ -84,7 +84,7 @@ const EpisodeDetail = () => {
         <iframe
           className="detail-video"
           width="100%"
-          height="515"
+          height="500"
           title={episode.title}
           src={episode.video_link}
           frameborder="0"
