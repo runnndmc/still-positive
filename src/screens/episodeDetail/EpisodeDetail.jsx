@@ -55,17 +55,18 @@ const EpisodeDetail = () => {
     <Layout>
 
       <section className="middle-wrap">
-      <img
+
+        <aside className='nested-details'>
+        <p className="detail-date">{formatDate(episode.post_date)}</p>
+        <p className="detail-duration">{episode.duration}</p>
+        <p className="detail-episode-num">Episode #{episode.id}</p>
+        </aside>
+        <img
         className="detail-thumbnail"
         src={episode.thumbnail[0].thumbnails.large.url}
         alt="Still Positive logo. A cartoon reed-sternberg cell smiling with an outline of a person standing next to it and giving it the finger because - fuck illness"
         loading="lazy"
       ></img>
-        <section classname='nested-details'>
-        <aside className="detail-date">{formatDate(episode.post_date)}</aside>
-        <p className="detail-duration">{episode.duration}</p>
-        <p className="detail-episode-num">Episode #{episode.id}</p>
-        </section>
       </section>
 
       <section className="detail-wrapper">
