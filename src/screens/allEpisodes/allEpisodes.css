@@ -3,7 +3,7 @@
   grid-column-start: 1;
   grid-column-end:6;
   margin-top: 0;
-  font-family: "Shrikhand", cursive;
+  font-family: 'Aclonica', sans-serif;
   letter-spacing: 1px;
   font-weight: 400;
   font-size: 26px;
@@ -57,7 +57,7 @@
   grid-column-end: 6;
   grid-row-start: 7;
   grid-row-end: 7;
-
+  font-family: 'Aclonica', sans-serif;
   font-size: 20px;
   margin-top: 5em;
 }

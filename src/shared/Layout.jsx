@@ -9,7 +9,7 @@ const Layout = (props) => {
     <main className="layout-body">
       <Nav />
       <Link className="logo" to="/">
-        <h1 className="logo">STILL POSITIVE</h1>
+        <h1 className="logo">Still Positive</h1>
       </Link>
       {props.children}
     </main>
