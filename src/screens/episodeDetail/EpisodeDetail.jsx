@@ -53,24 +53,22 @@ const EpisodeDetail = () => {
 
   return (
     <Layout>
-
       <section className="middle-wrap">
-
-        <aside className='nested-details'>
-        <p className="detail-date">{formatDate(episode.post_date)}</p>
-        <p className="detail-duration">{episode.duration}</p>
-        <p className="detail-episode-num">Episode #{episode.id}</p>
+        <aside className="nested-details">
+          <p className="detail-date">{formatDate(episode.post_date)}</p>
+          <p className="detail-duration">{episode.duration}</p>
+          <p className="detail-episode-num">Episode #{episode.id}</p>
         </aside>
         <img
-        className="detail-thumbnail"
-        src={episode.thumbnail[0].thumbnails.large.url}
-        alt="Still Positive logo. A cartoon reed-sternberg cell smiling with an outline of a person standing next to it and giving it the finger because - fuck illness"
-        loading="lazy"
-      ></img>
+          className="detail-thumbnail"
+          src={episode.thumbnail[0].thumbnails.large.url}
+          alt="Still Positive logo. A cartoon reed-sternberg cell smiling with an outline of a person standing next to it and giving it the finger because - fuck illness"
+          loading="lazy"
+        ></img>
       </section>
 
       <section className="detail-wrapper">
-        <h2 className="detail-title">{episode.title}</h2>
+        <h3 className="detail-title">{episode.title}</h3>
         <iframe
           className="detail-audio"
           title={episode.title}
@@ -90,6 +88,8 @@ const EpisodeDetail = () => {
           frameborder="0"
           allowfullscreen
         ></iframe>
+        <p className="detail-description">{episode.description}</p>
+
         <button className="pdf-cc-btn" /* onClick={toggleContent(e)} */>
           <a
             href="https://docs.google.com/document/d/1mqtGgqyUaYDlffzFpC7G03sDTitIlUwoeJ8vHMc7uPo/edit?usp=sharing"
@@ -99,7 +99,6 @@ const EpisodeDetail = () => {
             Closed Captions
           </a>
         </button>
-        <p className="detail-description">{episode.description}</p>
 
         {/*  <section className='pdf-content'>this is content</section> */}
       </section>

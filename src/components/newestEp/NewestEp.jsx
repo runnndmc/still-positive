@@ -45,7 +45,7 @@ const NewestEp = (props) => {
         onClick={() => setActivated(!activated)}
         className="stubborn-btn"
       >
-        <h3>Episode Details</h3>
+        Episode Details
       </button>
     </>
   );
