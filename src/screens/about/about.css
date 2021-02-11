@@ -26,8 +26,9 @@
     font-size: 17px;
 }
 .about-hosted{
-    margin-top:0;
+    margin-top:5em;
     font-size: 17px;
+
 }
 .about-btn-wrap{
     grid-row-start: 5;
@@ -44,28 +45,6 @@
 .start{
     margin-top:15%;
 }
-
-/* .who-she-wrapper{
-    grid-row-start: 4;
-    grid-column-start: 2;
-    grid-column-end: 6; 
-}
-.who-she-title{
-
-}
-.who-she-intro{
-
-}
-.featured-title{
-
-}
-.featured-links-wrapper{
-
-}
-.featured-links{
-
-}
-*/
 
 @media only screen and (min-width: 360px){
     .about-title{
@@ -149,7 +128,6 @@
      }
      .about-hosted{
         font-size: 25px;
-        margin: 15px;
     }
     .subscribe-btn{
         font-size: 20px;
