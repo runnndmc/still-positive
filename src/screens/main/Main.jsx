@@ -4,31 +4,35 @@ import axios from "axios";
 
 import NewestEp from "../../components/newestEp/NewestEp";
 import Layout from "../../shared/Layout";
+import Subscribe from '../../components/subscribe/Subscribe';
 import "./main.css";
 
 const Main = () => {
   const [queriedEps, setQueriedEps] = useState([]);
   const [isLoaded, setLoaded] = useState(false);
 
+  const apiCall = async () => {
+    try {
+      const resp = await axios.get(
+        "https://api.airtable.com/v0/appRx1trr4DFayGsm/Table%201?view=Grid%20view",
+        {
+          headers: {
+            Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_API_KEY}`,
+          },
+        }
+      );
+      setQueriedEps(resp.data.records.shift());
+      setLoaded(true);
+    } catch (error) {
+      throw error;
+    }
+  };
+
+
   useEffect(() => {
-    const apiCall = async () => {
-      try {
-        const resp = await axios.get(
-          "https://api.airtable.com/v0/appRx1trr4DFayGsm/Table%201?view=Grid%20view",
-          {
-            headers: {
-              Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_API_KEY}`,
-            },
-          }
-        );
-        setQueriedEps(resp.data.records.shift());
-        setLoaded(true);
-      } catch (error) {
-        throw error;
-      }
-    };
     apiCall();
   }, []);
+
 
   if (!isLoaded) {
     return <h2>One minute babe..</h2>;
@@ -56,11 +60,11 @@ const Main = () => {
           </ul>
         </article>
         <section className="new-main-wrapper">
-       
           <Link className="new-title" to={`/episodes/${queriedEps.id}`}>
             <NewestEp queriedEps={queriedEps} />
           </Link>
         </section>
+        <Subscribe/>
       </section>
     </Layout>
   );

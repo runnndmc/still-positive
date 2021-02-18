@@ -109,10 +109,10 @@
   }
   .stp-annimation {
     padding-left: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
   .stp-annimation li {
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 1.5px;
   }
 }
