@@ -15,10 +15,10 @@ const Subscribe = () => {
 
   return (
     <>
-      <h3 className="subscribe">Subscribe to this Podcast</h3>
+      <p className="subscribe">Subscribe to this Podcast</p>
       <section className='s-icons-wrapper'>
         <a
-            className="spotify-logo"
+            className="s-icon"
             aria-label="spotify logo"
             href="https://open.spotify.com/show/5l80JhmvXn6cnjsj7jogX6"
             target="blank"
@@ -27,7 +27,7 @@ const Subscribe = () => {
             <i class="fa fa-spotify" aria-hidden="true"></i>
         </a>
         <a
-            className="youtube-logo"
+            className="s-icon"
             aria-label="youtube logo"
             href="https://www.youtube.com/channel/UC13NJpipstz343VhDw0nmYQ"
             target="blank"
@@ -36,7 +36,7 @@ const Subscribe = () => {
             <i class="fa fa-youtube" aria-hidden="true"></i>
         </a>
         <a
-            className="instagram-logo"
+            className="s-icon"
             aria-label="instagram logo"
             href="https://www.instagram.com/stillpositivepodcast/"
             target="blank"
@@ -45,7 +45,7 @@ const Subscribe = () => {
             <i class="fa fa-instagram" aria-hidden="true"></i>
         </a>
         <a
-            className="rss-feed-icon"
+            className="s-icon"
             aria-label="rss icon"
             href="https://anchor.fm/s/421f2344/podcast/rss"
             target="blank"
