@@ -2,18 +2,18 @@
 .subscribe{
     font-size: 1em;
     font-weight: 500;
-    width:85vw;
+    width:55vw;
     margin-bottom:0;   
-    padding: 0px 10px;
+    padding: 20px 10px 10px 10px;
     background-color: #dfff00;
 }
 .s-icons-wrapper{
-    width:85vw;
+    width:55vw;
     display:flex;
     justify-content: space-between;
     align-content: flex-start;
     align-items: baseline;
-    padding: 0 10px;
+    padding: 0px 10px 10px 10px;
     background-color: #dfff00;
 }
 .s-icon{
