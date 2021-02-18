@@ -184,14 +184,14 @@
   }
   .stp-annimation {
     align-items: flex-start;
-    margin-top: 5%;
-    width: 45rem;
-    margin-left: 4rem;
+    margin-top: 5em;
+    margin-left: 7rem;
   }
+
   .stp-annimation li {
     letter-spacing: 0.35em;
-    font-size: 42px;
-    line-height: 1.25;
+    font-size: 1.3em;
+    line-height: 1.5;
   }
   .new-main-wrapper {
     width: 40%;
