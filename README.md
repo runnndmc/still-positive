@@ -80,7 +80,7 @@ Site to host podcasts / create a forum / have a mission to connect with others w
 <br>
 
 ## Code Showcase:
-- _She may be small but I'm proud of this code because I was able to come up with how to do it all on my own 
+- _She may be small but I'm proud of this because it was done straight from the noggin.  
 
 ``` structure
 
