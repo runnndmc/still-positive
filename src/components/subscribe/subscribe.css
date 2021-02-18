@@ -3,3 +3,7 @@
     width:87vw;
     background-color: aqua;
 }
+.s-icons-wrapper{
+    display:flex;
+    justify-content: space-evenly;
+}

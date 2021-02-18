@@ -16,15 +16,44 @@ const Subscribe = () => {
   return (
     <>
       <h3 className="subscribe">Subscribe to this Podcast</h3>
-      <a
-        className="spotify-logo"
-        aria-label="spotify logo"
-        href="https://open.spotify.com/show/5l80JhmvXn6cnjsj7jogX6"
-        target="blank"
-        onclick="window.open(this.href); return false;"
-      >
-        <i class="fa fa-spotify" aria-hidden="true"></i>
-      </a>
+      <section className='s-icons-wrapper'>
+        <a
+            className="spotify-logo"
+            aria-label="spotify logo"
+            href="https://open.spotify.com/show/5l80JhmvXn6cnjsj7jogX6"
+            target="blank"
+            onclick="window.open(this.href); return false;"
+        >
+            <i class="fa fa-spotify" aria-hidden="true"></i>
+        </a>
+        <a
+            className="youtube-logo"
+            aria-label="youtube logo"
+            href="https://www.youtube.com/channel/UC13NJpipstz343VhDw0nmYQ"
+            target="blank"
+            onclick="window.open(this.href); return false;"
+        >
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+        </a>
+        <a
+            className="instagram-logo"
+            aria-label="instagram logo"
+            href="https://www.instagram.com/stillpositivepodcast/"
+            target="blank"
+            onclick="window.open(this.href); return false;"
+        >
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a
+            className="rss-feed-icon"
+            aria-label="rss icon"
+            href="https://anchor.fm/s/421f2344/podcast/rss"
+            target="blank"
+            onclick="window.open(this.href); return false;"
+        >
+            <i class="fa fa-rss-square" aria-hidden="true"></i>
+        </a>
+      </section>
     </>
   );
 };
