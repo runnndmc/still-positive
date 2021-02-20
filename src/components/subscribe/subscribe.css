@@ -26,10 +26,38 @@
 @media only screen and (min-width: 374px) {
 }
 @media only screen and (min-width: 413px) {
+    .subscribe{
+
+    }
+    .s-icons-wrapper{
+    width:65vw;
+
+    }
 }
 @media only screen and (min-width: 766px) {
+    .subscribe{
+        font-size: 35px;
+    }
+    .s-icons-wrapper{
+        width: 50vw;
+    }
+    .s-icon{
+        font-size: 45px;
+    }
 }
 @media only screen and (min-width: 799px) {
+    .subscribe{
+
+    }
+    .s-icons-wrapper{
+    }
 }
+
 @media only screen and (min-width: 999px) {
+    .subscribe{
+        width: 20vw;
+    }
+    .s-icons-wrapper{
+        width: 20vw;
+    }
 }

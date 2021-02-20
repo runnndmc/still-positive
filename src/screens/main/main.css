@@ -173,7 +173,7 @@
     justify-content: space-around;
     grid-column-end: 8;
     grid-row-start: 3;
-    grid-row-end: 6;
+    grid-row-end: 7;
     align-items: flex-start;
   }
   .main-wrapper {
@@ -201,5 +201,13 @@
   .new-main-wrapper {
     width: 40%;
     margin-top: 0;
+  }
+  .main-sub{
+    display:inline-block;
+    align-self: flex-end;
+    grid-column-start: 3;
+    grid-column-end:4;
+    grid-row-start: 5;
+    grid-row-end: 6;
   }
 }
