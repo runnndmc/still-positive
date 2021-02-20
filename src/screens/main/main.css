@@ -96,6 +96,11 @@
   padding: 10px 0px 10px 10px;
   z-index: 2;
 }
+.main-sub{
+  grid-column-start: 4;
+  grid-column-end:5;
+
+}
 
 @media only screen and (min-width: 374px) {
   .green-box {
@@ -109,10 +114,10 @@
   }
   .stp-annimation {
     padding-left: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
   .stp-annimation li {
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 1.5px;
   }
 }

@@ -1,0 +1,35 @@
+
+.subscribe{
+    font-size: 25px;
+    font-weight: 600;
+    width:80vw;
+    margin-bottom:0;   
+    padding: 30px 10px 10px 10px;
+   /*  background-color: #dfff00;
+   */
+}
+.s-icons-wrapper{
+    width:75vw;
+    display:flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: baseline;
+    padding: 0px 10px 10px 10px;
+    /* background-color: #dfff00;
+   */
+}
+.s-icon{
+    font-size: 35px;
+    color: #310059;
+}
+
+@media only screen and (min-width: 374px) {
+}
+@media only screen and (min-width: 413px) {
+}
+@media only screen and (min-width: 766px) {
+}
+@media only screen and (min-width: 799px) {
+}
+@media only screen and (min-width: 999px) {
+}

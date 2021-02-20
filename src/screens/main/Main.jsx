@@ -4,31 +4,35 @@ import axios from "axios";
 
 import NewestEp from "../../components/newestEp/NewestEp";
 import Layout from "../../shared/Layout";
+import Subscribe from '../../components/subscribe/Subscribe';
 import "./main.css";
 
 const Main = () => {
   const [queriedEps, setQueriedEps] = useState([]);
   const [isLoaded, setLoaded] = useState(false);
 
+  const apiCall = async () => {
+    try {
+      const resp = await axios.get(
+        "https://api.airtable.com/v0/appRx1trr4DFayGsm/Table%201?view=Grid%20view",
+        {
+          headers: {
+            Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_API_KEY}`,
+          },
+        }
+      );
+      setQueriedEps(resp.data.records.shift());
+      setLoaded(true);
+    } catch (error) {
+      throw error;
+    }
+  };
+
+
   useEffect(() => {
-    const apiCall = async () => {
-      try {
-        const resp = await axios.get(
-          "https://api.airtable.com/v0/appRx1trr4DFayGsm/Table%201?view=Grid%20view",
-          {
-            headers: {
-              Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_API_KEY}`,
-            },
-          }
-        );
-        setQueriedEps(resp.data.records.shift());
-        setLoaded(true);
-      } catch (error) {
-        throw error;
-      }
-    };
     apiCall();
   }, []);
+
 
   if (!isLoaded) {
     return <h2>One minute babe..</h2>;
@@ -36,6 +40,7 @@ const Main = () => {
 
   return (
     <Layout>
+
       <section className="main-desktop">
         <article className="main-wrapper">
           <section className="green-box">
@@ -55,12 +60,16 @@ const Main = () => {
             <li className="stp-text">Still Positive</li>
           </ul>
         </article>
+  
         <section className="new-main-wrapper">
-       
           <Link className="new-title" to={`/episodes/${queriedEps.id}`}>
             <NewestEp queriedEps={queriedEps} />
           </Link>
         </section>
+        <section className='main-sub'>
+           <Subscribe/>
+        </section>
+
       </section>
     </Layout>
   );
