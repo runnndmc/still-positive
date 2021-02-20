@@ -30,6 +30,7 @@ const AllEpisodes = () => {
     apiCall();
   }, []);
 
+
   function formatDate(date) {
     let d = new Date(date),
       month = "" + (d.getMonth() + 1),
@@ -49,7 +50,8 @@ const AllEpisodes = () => {
     
       <section className="all-ep-wrapper">
         {allEpisodes.map((episode, index) => (
-          <Link className="episode-card" to={`/episodes/${episode.id}`}>
+          <Link className="episode-card" to={`/episodes/${episode.id}`} key={index}>
+   
             <EpisodeCard
               title={episode.fields.title}
               description={episode.fields.description}

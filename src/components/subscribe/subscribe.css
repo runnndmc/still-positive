@@ -1,20 +1,21 @@
 
 .subscribe{
-    font-size: 1em;
+    font-size: 15px;
     font-weight: 500;
-    width:55vw;
+    width:30vw;
     margin-bottom:0;   
     padding: 20px 10px 10px 10px;
-    background-color: #dfff00;
-}
+   /*  background-color: #dfff00;
+   */}
 .s-icons-wrapper{
-    width:55vw;
+    width:30vw;
     display:flex;
     justify-content: space-between;
     align-content: flex-start;
     align-items: baseline;
     padding: 0px 10px 10px 10px;
-    background-color: #dfff00;
+    /* background-color: #dfff00;
+   */
 }
 .s-icon{
     font-size: 25px;

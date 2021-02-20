@@ -40,6 +40,9 @@ const Main = () => {
 
   return (
     <Layout>
+              <section className='main-sub'>
+           <Subscribe/>
+        </section>
       <section className="main-desktop">
         <article className="main-wrapper">
           <section className="green-box">
@@ -64,9 +67,7 @@ const Main = () => {
             <NewestEp queriedEps={queriedEps} />
           </Link>
         </section>
-        <section className='main-sub'>
-           <Subscribe/>
-        </section>
+
       </section>
     </Layout>
   );
