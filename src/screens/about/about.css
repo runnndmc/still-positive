@@ -1,10 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 .about-title{
     grid-row-start: 3;
     grid-column-start:1;
     grid-column-end:6;
-    margin-top:0;
-    font-family: "Shrikhand", cursive;
+    font-family: 'Syne Mono', monospace;
     letter-spacing: 1px;
     font-weight: 400;
     font-size: 26px;
