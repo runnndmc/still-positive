@@ -92,7 +92,7 @@ const EpisodeDetail = () => {
 
         <button className="pdf-cc-btn" /* onClick={toggleContent(e)} */>
           <a
-            href="https://docs.google.com/document/d/1mqtGgqyUaYDlffzFpC7G03sDTitIlUwoeJ8vHMc7uPo/edit?usp=sharing"
+            href={episode.cc}
             target="_blank"
             className="button-text"
           >
