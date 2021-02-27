@@ -130,6 +130,13 @@
     grid-row-start: 5;
     grid-row-end: 9;
     margin-bottom: 10%;
+    grid-column-end: 5;
+  }
+  .middle-wrap {
+    grid-column-end: 5;
+  }
+  .detail-video{
+    height: 50;
   }
 }
 
