@@ -130,16 +130,16 @@
     grid-row-start: 5;
     grid-row-end: 9;
     margin-bottom: 10%;
-    grid-column-end: 5;
+    grid-column-end: 6;
   }
   .middle-wrap {
-    grid-column-end: 5;
+    grid-column-end: 6;
   }
   .detail-video{
     height: 50;
   }
   .detail-description{
-   width: 70vw;
+   width: 80vw;
    overflow: hidden;
 
   }
