@@ -33,7 +33,7 @@ const EpisodeDetail = () => {
   function formatDate(date) {
     var d = new Date(date),
       month = "" + (d.getMonth() + 1),
-      day = "" + d.getDate(),
+      day = "" + (d.getDate() + 1),
       year = d.getFullYear();
 
     if (month.length < 2) month = "0" + month;
@@ -46,6 +46,7 @@ const EpisodeDetail = () => {
     e.preventDefault();
     alert("toggle me bebe");
   }; */
+
 
   if (!isLoaded) {
     return <h4>One Minute Babe...</h4>;
@@ -81,12 +82,10 @@ const EpisodeDetail = () => {
         ></iframe>
         <iframe
           className="detail-video"
-          width="100%"
-          height="500"
           title={episode.title}
           src={episode.video_link}
-          frameborder="0"
-          allowfullscreen
+          frameBorder="0"
+          allowFullScreen
         ></iframe>
         <p className="detail-description">{episode.description}</p>
 
@@ -94,6 +93,7 @@ const EpisodeDetail = () => {
           <a
             href={episode.cc}
             target="_blank"
+            rel='noreferrer'
             className="button-text"
           >
             Closed Captions
