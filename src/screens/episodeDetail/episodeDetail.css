@@ -138,6 +138,11 @@
   .detail-video{
     height: 50;
   }
+  .detail-description{
+   width: 70vw;
+   overflow: hidden;
+
+  }
 }
 
 @media only screen and (min-width: 414px) {
