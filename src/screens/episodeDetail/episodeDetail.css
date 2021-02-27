@@ -105,6 +105,10 @@
     grid-row-end: 9;
     margin-bottom: 10%;
   }
+  .detail-description{
+    width: 80vw;
+    overflow: hidden;
+   }
 
 }
 @media only screen and (min-width: 340px) {
@@ -127,7 +131,6 @@
   .detail-description{
     width: 80vw;
     overflow: hidden;
- 
    }
 
 }
