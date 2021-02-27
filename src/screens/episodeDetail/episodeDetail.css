@@ -42,7 +42,7 @@
   grid-row-start: 4;
   grid-row-end: 6;
   font-size: 30px;
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #000000;
 }
@@ -113,15 +113,22 @@
     grid-row-end: 5;
     height: 20vh;
     margin-top: -30px;
+    grid-column-end: 6;
   }
   .detail-wrapper {
     grid-row-start: 5;
     grid-row-end: 9;
     margin-bottom: 10%;
+    grid-column-end: 6;
   }
   .detail-video{
     height: 300;
   }
+  .detail-description{
+    width: 80vw;
+    overflow: hidden;
+ 
+   }
 
 }
 
@@ -172,6 +179,9 @@
   }
   .detail-audio {
     height: 10em;
+  }
+  .detail-video{
+    height: 500px;
   }
   .detail-description {
     font-size: 25px;
