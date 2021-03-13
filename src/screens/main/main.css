@@ -99,7 +99,6 @@
 .main-sub{
   grid-column-start: 4;
   grid-column-end:5;
-
 }
 
 @media only screen and (min-width: 374px) {

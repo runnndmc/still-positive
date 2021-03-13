@@ -1,12 +1,13 @@
 
 .subscribe{
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 600;
     width:80vw;
     margin-bottom:0;   
-    padding: 30px 10px 10px 10px;
-   /*  background-color: #dfff00;
-   */
+    padding: 0px 10px 10px 10px;
+    font-family: 'Syne Mono', monospace;
+    color: #310059;
+  
 }
 .s-icons-wrapper{
     width:75vw;
@@ -26,18 +27,11 @@
 @media only screen and (min-width: 374px) {
 }
 @media only screen and (min-width: 413px) {
-    .subscribe{
-
-    }
     .s-icons-wrapper{
     width:65vw;
-
     }
 }
 @media only screen and (min-width: 766px) {
-    .subscribe{
-        font-size: 35px;
-    }
     .s-icons-wrapper{
         width: 50vw;
     }
