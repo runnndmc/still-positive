@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Subscribe from "../components/subscribe/Subscribe";
 
 import "./nav.css"
 

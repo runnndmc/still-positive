@@ -15,7 +15,6 @@ const Subscribe = () => {
 
   return (
     <>
-      <p className="subscribe">Subscribe to this Podcast</p>
       <section className='s-icons-wrapper'>
         <a
             className="s-icon"
@@ -54,6 +53,7 @@ const Subscribe = () => {
             <i class="fa fa-rss-square" aria-hidden="true"></i>
         </a>
       </section>
+      <p className="subscribe">Subscribe to this Podcast</p>
     </>
   );
 };

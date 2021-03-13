@@ -1,4 +1,5 @@
 import React from "react";
+import Subscribe from "../../components/subscribe/Subscribe";
 import Layout from "../../shared/Layout";
 
 import "./about.css";
@@ -14,6 +15,9 @@ const About = () => {
         </p>
         <p className="about-hosted">Hosted and produced by Dayna Marie (@_____daynamarie) </p>
         <p>Staying sick and wanna chat with me on the podcast? Email stillpositivepodcast@gmail.com</p>
+      </section>
+      <section className='about-sub'>
+      <Subscribe />
       </section>
 {/*       <section className="about-btn-wrap">
         <button className="subscribe-btn">Subscribe to Podcast</button>
