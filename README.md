@@ -1,7 +1,6 @@
 # Still Positive
 Site to host podcasts / create a forum / have a mission to connect with others what are chronically ill
-
-
+[text](https://stillpositive.netlify.app/)
 
 ## Table of Contents <!-- omit in toc -->
 - [OVERVIEW](#overview)
