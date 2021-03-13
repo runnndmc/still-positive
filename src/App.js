@@ -10,7 +10,7 @@ import Main from "./screens/main/Main";
 
 function App() {
 
-  const environment = process.env.NODE_ENV;
+ /*  const environment = process.env.NODE_ENV; */
 
   return (
     
