@@ -19,9 +19,6 @@ const About = () => {
       <section className='about-sub'>
       <Subscribe />
       </section>
-{/*       <section className="about-btn-wrap">
-        <button className="subscribe-btn">Subscribe to Podcast</button>
-      </section> */}
     </Layout>
   );
 };

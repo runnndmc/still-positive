@@ -10,7 +10,7 @@ import "./main.css";
 const Main = () => {
   const [queriedEps, setQueriedEps] = useState([]);
   const [isLoaded, setLoaded] = useState(false);
-
+  
   const apiCall = async () => {
     try {
       const resp = await axios.get(
@@ -40,7 +40,6 @@ const Main = () => {
 
   return (
     <Layout>
-
       <section className="main-desktop">
         <article className="main-wrapper">
           <section className="green-box">
@@ -66,10 +65,10 @@ const Main = () => {
             <NewestEp queriedEps={queriedEps} />
           </Link>
         </section>
+
         <section className='main-sub'>
            <Subscribe/>
         </section>
-
       </section>
     </Layout>
   );
