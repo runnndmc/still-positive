@@ -36,7 +36,6 @@ const NewestEp = (props) => {
         height="130"
         scrolling="no"
         frameBorder="no"
-        allow="autoplay"
         src={queriedEps.fields.audio_url}
       ></iframe>
       <button
