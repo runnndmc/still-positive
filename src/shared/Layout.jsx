@@ -8,9 +8,7 @@ const Layout = (props) => {
   return (
     <main className="layout-body">
       <Nav />
-      <Link className="logo" to="/">
-        <h1 className="logo">Still Positive</h1>
-      </Link>
+      <Link className="logo" to="/">Still Positive</Link>
       {props.children}
     </main>
   );

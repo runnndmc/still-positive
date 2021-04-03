@@ -19,14 +19,10 @@
   margin: 5px 0 20px 0;
   font-family: 'Aclonica', sans-serif;
   font-size: 45px;
-  line-height: 0.8em;
-  font-weight: 200;
   letter-spacing: -3px;
   color: #000000;
-  grid-column-start: 1;
-  grid-column-end: 2;
   grid-row: 1;
-  width: 70vw;
+  width: 40vw;
 }
 .logo:hover,
 .logo:active,
@@ -99,6 +95,5 @@
   }
   .logo {
     font-size: 85px;
-
   }
 }
