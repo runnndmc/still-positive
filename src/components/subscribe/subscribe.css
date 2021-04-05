@@ -1,57 +1,66 @@
-
-.subscribe{
-    font-size: 18px;
-    font-weight: 600;
-    width:80vw;
-    margin-bottom:0;   
-    padding: 0px 10px 10px 10px;
-    font-family: 'Syne Mono', monospace;
-    color: #310059;
-  
+.subscribe {
+  font-size: 18px;
+  font-weight: 600;
+  width: 80vw;
+  margin-bottom: 0;
+  padding: 0px 5px 10px 10px;
+  font-family: "Syne Mono", monospace;
+  color: #310059;
+  transition: all 0.5s ease-in-out;
 }
-.s-icons-wrapper{
-    width:75vw;
-    display:flex;
-    justify-content: space-between;
-    align-content: flex-start;
-    align-items: baseline;
-    padding: 0px 10px 10px 10px;
-    /* background-color: #dfff00;
-   */
+.subscribe:hover {
+  color: #dfff00;
+  background-color: #310059;
+  border-radius: 10px;
 }
-.s-icon{
-    font-size: 35px;
-    color: #310059;
+.s-icons-wrapper {
+  width: 75vw;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: baseline;
+  padding: 0px 10px 3px 10px;
+}
+.s-icon {
+  font-size: 35px;
+  color: #310059;
+  transition: all 0.5s ease-in-out;
+}
+.s-icon:hover {
+  color: #dfff00;
+  border: none;
+  padding: 5px;
+  background-color: #310059;
+  border-radius: 10px;
 }
 
 @media only screen and (min-width: 374px) {
 }
 @media only screen and (min-width: 413px) {
-    .s-icons-wrapper{
-    width:65vw;
-    }
+  .s-icons-wrapper {
+    width: 65vw;
+  }
 }
 @media only screen and (min-width: 766px) {
-    .s-icons-wrapper{
-        width: 50vw;
-    }
-    .s-icon{
-        font-size: 45px;
-    }
+  .s-icons-wrapper {
+    width: 50vw;
+  }
+  .s-icon {
+    font-size: 45px;
+  }
 }
 @media only screen and (min-width: 799px) {
-    .subscribe{
-
-    }
-    .s-icons-wrapper{
-    }
+  .subscribe {
+  }
+  .s-icons-wrapper {
+  }
 }
 
 @media only screen and (min-width: 999px) {
-    .subscribe{
-        width: 20vw;
-    }
-    .s-icons-wrapper{
-        width: 20vw;
-    }
+  .subscribe {
+    width: 20vw;
+  }
+  .s-icons-wrapper {
+    width: 20vw;
+  }
 }

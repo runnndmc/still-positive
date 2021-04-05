@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-
-import Layout from "../../shared/Layout";
-import {getEpisode} from '../../services/episodes';
 import "./episodeDetail.css";
+import Layout from "../../shared/Layout";
+import { getEpisode } from "../../services/episodes";
+import { formatDate } from "../../services/date";
 
 const EpisodeDetail = () => {
   const [episode, setEpisode] = useState(null);
@@ -12,6 +12,7 @@ const EpisodeDetail = () => {
   const { id } = useParams();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const fetchEpisode = async () => {
       const episode = await getEpisode(id);
       setEpisode(episode);
@@ -19,28 +20,6 @@ const EpisodeDetail = () => {
     };
     fetchEpisode();
   }, [id]);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  });
-
-  function formatDate(date) {
-    var d = new Date(date),
-      month = "" + (d.getMonth() + 1),
-      day = "" + (d.getDate() + 1),
-      year = d.getFullYear();
-
-    if (month.length < 2) month = "0" + month;
-    if (day.length < 2) day = "0" + day;
-
-    return [month, day, year].join("/");
-  }
-
-  /*   const toggleContent = (e) => {
-    e.preventDefault();
-    alert("toggle me bebe");
-  }; */
-
 
   if (!isLoaded) {
     return <h4>One Minute Babe...</h4>;
@@ -64,6 +43,14 @@ const EpisodeDetail = () => {
 
       <section className="detail-wrapper">
         <h3 className="detail-title">{episode.title}</h3>
+        <a
+          href={episode.cc}
+          target="_blank"
+          rel="noreferrer"
+          className="button-text"
+        >
+          Closed Captions
+        </a>
         <iframe
           className="detail-audio"
           title={episode.title}
@@ -82,19 +69,6 @@ const EpisodeDetail = () => {
           allowFullScreen
         ></iframe>
         <p className="detail-description">{episode.description}</p>
-
-        <button className="pdf-cc-btn" /* onClick={toggleContent(e)} */>
-          <a
-            href={episode.cc}
-            target="_blank"
-            rel='noreferrer'
-            className="button-text"
-          >
-            Closed Captions
-          </a>
-        </button>
-
-        {/*  <section className='pdf-content'>this is content</section> */}
       </section>
     </Layout>
   );
