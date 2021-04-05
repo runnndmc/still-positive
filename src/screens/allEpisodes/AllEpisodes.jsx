@@ -23,9 +23,7 @@ const AllEpisodes = () => {
   const episodesJSX = allEpisodes.map((episode, index) => (
     <Link className="episode-card" to={`/episodes/${episode.id}`} key={index}>
       <EpisodeCard title={episode.fields.title} description={episode.fields.description} id={episode.fields.id} date={formatDate(episode.fields.post_date)} img={episode.fields.thumbnail[0].thumbnails.large.url}/>
-      <section className="btn-wrapper">
-        <button className="ep-detail-btn">View This Episode</button>
-      </section>
+      <button className="ep-detail-btn">View This Episode</button>
     </Link>
   ));
 

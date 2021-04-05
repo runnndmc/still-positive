@@ -6,11 +6,10 @@ const EpisodeCard = (props) => {
 
   const descriptionTeaser = (str) => {
     if (str.length >= 55) {
-      const cut = str.slice(0, 55)
-      return cut.concat('...')
+      const cut = str.slice(0, 55);
+      return cut.concat("...");
     }
   };
-
 
   return (
     <>
@@ -25,7 +24,6 @@ const EpisodeCard = (props) => {
         alt="Still Positive logo. A cartoon reed-sternberg cell smiling with an outline of a person standing next to it and giving it the finger because - fuck illness"
         loading="lazy"
       ></img>
-
       <p className="ep-description">{descriptionTeaser(description)}</p>
     </>
   );
