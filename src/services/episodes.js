@@ -18,3 +18,20 @@ export const getEpisodes = async () => {
         throw error
     }
 }
+
+export const getEpisode = async () => {
+    try{
+        const response = await axios.get(
+            `${apiUrl}?view=Grid%20view`,
+            {
+                headers: {
+                    Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_API_KEY}`,
+                },
+            }
+        )
+        const episode = response.data.records.shift()
+        return episode
+    } catch (error){
+        throw error
+    }
+}
