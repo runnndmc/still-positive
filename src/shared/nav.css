@@ -1,17 +1,11 @@
 .nav-bar {
-  height: 5vh;
   display: flex;
   justify-content: space-around;
   position: relative;
   transform-origin: 60vw 50vw;
   transform: rotate(90deg);
-  top: 25vh;
-  right: 20vw;
-  z-index: auto;
 }
-.nav-link {
-  text-decoration: none;
-}
+
 .about-link,
 .episodes-link,
 .home-link {
@@ -22,8 +16,8 @@
   background-color: #310059;
   color: white;
   padding: 4px;
-  padding-bottom: 10px;
   border-radius: 5px;
+  height: fit-content;
 }
 
 .about-link:hover, .about-link:active, .about-link:focus{
@@ -38,41 +32,37 @@
   background-color: #ffffff;
   color: #310059;
 }
-@media only screen and (min-width: 340px){
+
+
+/*======MEDIA QUERIES==========*/
+
+@media only screen and (min-width: 270px){
   .nav-bar{
-    top: 25vh;
+    top: 23vh;
     right: 20vw;
   }
-  .about-link,
-  .episodes-link,
-  .home-link {
-    padding: 1px 10px 5px 10px;
+}
+
+@media only screen and (min-width: 320px){
+  .nav-bar{
+    top: 23vh;
+    right: 20vw;
   }
 }
 
-@media only screen and (min-width: 360px) {
-  .about-link,
-  .episodes-link,
-  .home-link {
-    font-size: 20px;
-    padding: 5px 10px 5px 10px;
-  }
-}
-
-@media only screen and (min-width: 374px) {
-  .about-link,
-  .episodes-link,
-  .home-link {
-    font-size: 20px;
-    padding: 5px 7px 5px 10px;
-  }
-  .nav-bar {
-    right:20.3vw;
-    top:23vh;
+@media only screen and (min-width: 370px){
+  .nav-bar{
+    top: 8em;
+    right: 20vw;
   }
 }
 
 @media only screen and (min-width: 414px) {
+  .about-link,
+  .episodes-link,
+  .home-link {
+    font-size:1.3em;
+  }
 }
 
 @media only screen and (min-width: 766px) {
@@ -83,21 +73,15 @@
   .about-link,
   .episodes-link,
   .home-link {
-    font-size: 30px;
-    padding-bottom: 10px;
+    font-size: 1.7em;
   }
-
 }
 
 @media only screen and (min-width: 799px) {
-  .nav-bar{
-    width: 65vw;
-  }
   .about-link,
   .episodes-link,
   .home-link {
-    font-size: 35px;
-    padding-bottom: 12px;
+    font-size:2em;
   }
 }
 
@@ -105,17 +89,6 @@
   .nav-bar{
     width: 25vw;
     top: 30vh;
-    right: 28vw;
-  }
-  .about-link,
-  .episodes-link,
-  .home-link {
-    font-size: 40px;
-    padding: 10px;
-    padding-bottom: 17px;
-
-  }
-  .nav-link{
-   padding: 0px 25px;
+    right: 27vw;
   }
 }

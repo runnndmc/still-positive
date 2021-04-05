@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios";
+
 
 import Layout from "../../shared/Layout";
+import {getEpisode} from '../../services/episodes';
 import "./episodeDetail.css";
 
 const EpisodeDetail = () => {
@@ -11,19 +12,12 @@ const EpisodeDetail = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    const findOneEpisode = async () => {
-      const response = await axios.get(
-        `https://api.airtable.com/v0/appRx1trr4DFayGsm/Table%201/${id}`,
-        {
-          headers: {
-            Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_API_KEY}`,
-          },
-        }
-      );
-      setEpisode(response.data.fields);
+    const fetchEpisode = async () => {
+      const episode = await getEpisode(id);
+      setEpisode(episode);
       setLoaded(true);
     };
-    findOneEpisode();
+    fetchEpisode();
   }, [id]);
 
   useEffect(() => {
