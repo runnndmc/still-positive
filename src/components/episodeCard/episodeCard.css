@@ -1,59 +1,64 @@
-.id-wrapper{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+.id-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
-.ep-num, .ep-date{
-    margin-top:0;  
-    font-size: 15px;  
-    line-height: 0;
+.ep-num,
+.ep-date {
+  font-family: "Syne Mono", monospace;
+  margin-top: 0;
+  font-size: 15px;
+  line-height: 0;
 }
-.ep-name{
-    margin-top:0;
-    margin-bottom: .25em;
+.ep-name {
+  margin-top: 0;
+  margin-bottom: 0.25em;
 }
-.thumbnail{
-    height: 200px;
-    width: 210px;
-    margin: 0 auto;
+.thumbnail {
+  height: 200px;
+  width: 210px;
+  margin: 0 auto;
+  border-radius: 10px;
+
 }
-.ep-description{
-    line-height: 1;
-    font-size: 15px;  
+.ep-description {
+  line-height: 1;
+  font-size: 15px;
 }
 
-@media only screen and (min-width: 360px){
-
-    .ep-name{
-        font-size: 25px;
-    }
+@media only screen and (min-width: 360px) {
+  .ep-name {
+    font-size: 25px;
+  }
 }
 
-@media only screen and (min-width: 799px){
-    .ep-name{
-        font-size: 28px;
-    }
-    .ep-num, .ep-date{
-        font-size: 20px;
-        margin-bottom: 2rem;
-    }
-    .ep-description{
-        font-size: 20px;
-    }
-}
-
-@media only screen and (min-width: 999px){
-.ep-num, .ep-date{
+@media only screen and (min-width: 799px) {
+  .ep-name {
+    font-size: 28px;
+  }
+  .ep-num,
+  .ep-date {
     font-size: 20px;
+    margin-bottom: 2rem;
+  }
+  .ep-description {
+    font-size: 20px;
+  }
 }
-.ep-name{
+
+@media only screen and (min-width: 999px) {
+  .ep-num,
+  .ep-date {
+    font-size: 20px;
+  }
+  .ep-name {
     font-size: 33px;
-}
-.thumbnail{
+  }
+  .thumbnail {
     width: 8em;
     height: 8em;
-}
-.ep-description{
+  }
+  .ep-description {
     font-size: 20px;
-}
+  }
 }

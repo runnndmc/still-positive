@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./episodeCard.css";
 
 const EpisodeCard = (props) => {
@@ -18,12 +19,7 @@ const EpisodeCard = (props) => {
         <p className="ep-date">{date}</p>
       </section>
       <h3 className="ep-name">{title}</h3>
-      <img
-        className="thumbnail"
-        src={img}
-        alt="Still Positive logo. A cartoon reed-sternberg cell smiling with an outline of a person standing next to it and giving it the finger because - fuck illness"
-        loading="lazy"
-      ></img>
+      <img className="thumbnail" src={img} alt="Still Positive logo. A cartoon reed-sternberg cell smiling with an outline of a person standing next to it and giving it the finger because - fuck illness" loading="lazy"></img>
       <p className="ep-description">{descriptionTeaser(description)}</p>
     </>
   );
