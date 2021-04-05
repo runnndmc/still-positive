@@ -2,31 +2,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
 .latest-episode {
-  font-family: 'Aclonica', sans-serif;
+  font-family: "Aclonica", sans-serif;
   line-height: 0.8em;
   letter-spacing: 1px;
   font-weight: 400;
-  margin: 10px auto 4px;
+  margin: 10px  4px;
   font-size: 26px;
   color: #ffffff;
-}
-.latest-episode:hover{
-  background-color: #ffffff;
-  color: #310059;
+  transition: all .5s ease-in;
   padding: 2px;
-  padding-top:5px;
+  padding-top: 5px;
+  width: fit-content;
+}
+.latest-episode:hover {
+  background-color: #dfff00;
+  color: #310059;
 }
 .top-wrap {
   font-family: "Syne Mono", monospace;
   display: flex;
   justify-content: space-between;
   width: 77vw;
-  padding: 0.25rem 0  0.25rem 0;
+  padding: 0.25rem 0 0.25rem 0;
   font-weight: 700;
   color: #dfff00;
   height: 2em;
 }
-
 .new-soundcloud {
   width: 77vw;
   border-radius: 10px;
@@ -40,14 +41,13 @@
   display: inline-block;
   padding: 5px;
   border-radius: 20px;
-  transition-duration: 0.4s;
+  transition: all .5s ease-in;
   cursor: pointer;
   width: 77vw;
   font-size: 1em;
 }
 .stubborn-btn:hover {
   background-color: #dfff00;
-  border: none;
   color: #310059;
 }
 

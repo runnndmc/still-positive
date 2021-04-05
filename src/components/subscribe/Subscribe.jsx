@@ -13,10 +13,6 @@ const Subscribe = () => {
   };
   useScript("https://use.fontawesome.com/c66d5a27d2.js");
 
-  const handleClick = () => {
-    window.open(this); 
-    return false;
-  }
 
   return (
     <>

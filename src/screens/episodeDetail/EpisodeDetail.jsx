@@ -3,9 +3,8 @@ import { useParams } from "react-router-dom";
 
 import "./episodeDetail.css";
 import Layout from "../../shared/Layout";
-import {getEpisode} from '../../services/episodes';
-import {formatDate} from '../../services/date';
-
+import { getEpisode } from "../../services/episodes";
+import { formatDate } from "../../services/date";
 
 const EpisodeDetail = () => {
   const [episode, setEpisode] = useState(null);
@@ -44,6 +43,14 @@ const EpisodeDetail = () => {
 
       <section className="detail-wrapper">
         <h3 className="detail-title">{episode.title}</h3>
+        <a
+          href={episode.cc}
+          target="_blank"
+          rel="noreferrer"
+          className="button-text"
+        >
+          Closed Captions
+        </a>
         <iframe
           className="detail-audio"
           title={episode.title}
@@ -62,18 +69,6 @@ const EpisodeDetail = () => {
           allowFullScreen
         ></iframe>
         <p className="detail-description">{episode.description}</p>
-
-        <button className="pdf-cc-btn">
-          <a
-            href={episode.cc}
-            target="_blank"
-            rel='noreferrer'
-            className="button-text"
-          >
-            Closed Captions
-          </a>
-        </button>
-
       </section>
     </Layout>
   );

@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Redirect } from "react-router";
 
 import "./newestEp.css";
-import {formatDate} from "../../services/date"
+import { formatDate } from "../../services/date";
 
-const NewestEp = ({queriedEps}) => {
+const NewestEp = ({ queriedEps }) => {
   const { fields } = queriedEps;
   const [activated, setActivated] = useState(false);
 
@@ -14,7 +14,7 @@ const NewestEp = ({queriedEps}) => {
 
   return (
     <>
-       <h2 className="latest-episode">Newest Episode</h2>
+      <h2 className="latest-episode">Newest Episode</h2>
       <section className="top-wrap">
         <p className="new-episode-num">Ep #{fields.id}</p>
         <p className="new-date">{formatDate(fields.post_date)}</p>

@@ -7,7 +7,7 @@ import Layout from "../../shared/Layout";
 const About = () => {
   return (
     <Layout>
-      <h2 className="about-title">About STP</h2>
+      <h2 className="about-title">about</h2>
       <section className="about-wrapper">
         <p className="about-p1">
           Talking to those with and without chronic illness and/or disabilities.

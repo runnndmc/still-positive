@@ -14,7 +14,7 @@
   color: #ffffff;
   margin: 10px;
 }
-.ep-detail-btn{
+.ep-detail-btn {
   font-family: "Syne Mono", monospace;
   background-color: #310059;
   border: 1px solid white;
@@ -32,7 +32,6 @@
   border: none;
   color: #310059;
 }
-
 
 @media only screen and (min-width: 374px) {
 }
