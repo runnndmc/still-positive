@@ -1,33 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
 
 import Layout from "../../shared/Layout";
 import "./allEpisodes.css";
 import EpisodeCard from "../../components/episodeCard/EpisodeCard";
+import {getEpisodes} from '../../services/episodes';
 
 const AllEpisodes = () => {
   const [allEpisodes, setAllEpisodes] = useState([]);
   const [isLoaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    const apiCall = async () => {
-      try {
-        const resp = await axios.get(
-          "https://api.airtable.com/v0/appRx1trr4DFayGsm/Table%201?view=Grid%20view",
-          {
-            headers: {
-              Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_API_KEY}`,
-            },
-          }
-        );
-        setAllEpisodes(resp.data.records);
+    const fetchEpisodes = async () => {
+      const episodes = await getEpisodes();
+        setAllEpisodes(episodes);
         setLoaded(true);
-      } catch (error) {
-        throw error;
-      }
     };
-    apiCall();
+    fetchEpisodes();
   }, []);
 
 
