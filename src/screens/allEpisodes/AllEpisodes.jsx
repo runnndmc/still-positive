@@ -5,7 +5,7 @@ import "./allEpisodes.css";
 import Layout from "../../shared/Layout";
 import EpisodeCard from "../../components/episodeCard/EpisodeCard";
 import { getEpisodes } from "../../services/episodes";
-import {formatDate} from "../../services/date";
+import { formatDate } from "../../services/date";
 
 const AllEpisodes = () => {
   const [allEpisodes, setAllEpisodes] = useState([]);
@@ -20,32 +20,22 @@ const AllEpisodes = () => {
     fetchEpisodes();
   }, []);
 
+  const episodesJSX = allEpisodes.map((episode, index) => (
+    <Link className="episode-card" to={`/episodes/${episode.id}`} key={index}>
+      <EpisodeCard title={episode.fields.title} description={episode.fields.description} id={episode.fields.id} date={formatDate(episode.fields.post_date)} img={episode.fields.thumbnail[0].thumbnails.large.url}/>
+      <section className="btn-wrapper">
+        <button className="ep-detail-btn">View This Episode</button>
+      </section>
+    </Link>
+  ));
+
   if (!isLoaded) {
     return <h1>One moment babe..</h1>;
   }
 
   return (
     <Layout>
-      <section className="all-ep-wrapper">
-        {allEpisodes.map((episode, index) => (
-          <Link
-            className="episode-card"
-            to={`/episodes/${episode.id}`}
-            key={index}
-          >
-            <EpisodeCard
-              title={episode.fields.title}
-              description={episode.fields.description}
-              id={episode.fields.id}
-              date={formatDate(episode.fields.post_date)}
-              img={episode.fields.thumbnail[0].thumbnails.large.url}
-            />
-            <section className="btn-wrapper">
-              <button className="ep-detail-btn">View This Episode</button>
-            </section>
-          </Link>
-        ))}
-      </section>
+      <section className="all-ep-wrapper">{episodesJSX}</section>
     </Layout>
   );
 };

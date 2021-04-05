@@ -45,13 +45,11 @@ const Main = () => {
             <li className="stp-text">Still Positive</li>
           </ul>
         </article>
-
         <section className="new-main-wrapper">
           <Link className="new-title" to={`/episodes/${queriedEps.id}`}>
             <NewestEp queriedEps={queriedEps} />
           </Link>
         </section>
-
         <section className="main-sub">
           <Subscribe />
         </section>

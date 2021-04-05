@@ -6,6 +6,7 @@ import Layout from "../../shared/Layout";
 import {getEpisode} from '../../services/episodes';
 import {formatDate} from '../../services/date';
 
+
 const EpisodeDetail = () => {
   const [episode, setEpisode] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
@@ -62,7 +63,7 @@ const EpisodeDetail = () => {
         ></iframe>
         <p className="detail-description">{episode.description}</p>
 
-        <button className="pdf-cc-btn" /* onClick={toggleContent(e)} */>
+        <button className="pdf-cc-btn">
           <a
             href={episode.cc}
             target="_blank"
@@ -73,7 +74,6 @@ const EpisodeDetail = () => {
           </a>
         </button>
 
-        {/*  <section className='pdf-content'>this is content</section> */}
       </section>
     </Layout>
   );
