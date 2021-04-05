@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import Layout from "../../shared/Layout";
 import "./allEpisodes.css";
+import Layout from "../../shared/Layout";
 import EpisodeCard from "../../components/episodeCard/EpisodeCard";
 import { getEpisodes } from "../../services/episodes";
 import {formatDate} from "../../services/date";
@@ -20,12 +20,10 @@ const AllEpisodes = () => {
     fetchEpisodes();
   }, []);
 
-
   if (!isLoaded) {
     return <h1>One moment babe..</h1>;
   }
 
-  console.log(allEpisodes);
   return (
     <Layout>
       <section className="all-ep-wrapper">

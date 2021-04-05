@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-
+import "./episodeDetail.css";
 import Layout from "../../shared/Layout";
 import {getEpisode} from '../../services/episodes';
-import "./episodeDetail.css";
+import {formatDate} from '../../services/date';
 
 const EpisodeDetail = () => {
   const [episode, setEpisode] = useState(null);
@@ -20,19 +20,6 @@ const EpisodeDetail = () => {
     };
     fetchEpisode();
   }, [id]);
-
-  function formatDate(date) {
-    var d = new Date(date),
-      month = "" + (d.getMonth() + 1),
-      day = "" + (d.getDate() + 1),
-      year = d.getFullYear();
-
-    if (month.length < 2) month = "0" + month;
-    if (day.length < 2) day = "0" + day;
-
-    return [month, day, year].join("/");
-  }
-
 
   if (!isLoaded) {
     return <h4>One Minute Babe...</h4>;
