@@ -10,6 +10,12 @@
   font-size: 26px;
   color: #ffffff;
 }
+.latest-episode:hover{
+  background-color: #ffffff;
+  color: #310059;
+  padding: 2px;
+  padding-top:5px;
+}
 .top-wrap {
   font-family: "Syne Mono", monospace;
   display: flex;

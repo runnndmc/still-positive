@@ -28,7 +28,6 @@
 }
 
 .detail-wrapper {
-  font-family: 'Aclonica', sans-serif;
   grid-row-start: 2;
   grid-row-end: 5;
   grid-column-start: 1;
@@ -37,6 +36,7 @@
   flex-direction: column;
   justify-content: space-around;
   border: 1px solid #000000;
+  font-weight: 700;
 }
 .detail-title {
   grid-row-start: 4;
