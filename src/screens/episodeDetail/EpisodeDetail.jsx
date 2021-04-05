@@ -12,6 +12,7 @@ const EpisodeDetail = () => {
   const { id } = useParams();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const fetchEpisode = async () => {
       const episode = await getEpisode(id);
       setEpisode(episode);
@@ -19,10 +20,6 @@ const EpisodeDetail = () => {
     };
     fetchEpisode();
   }, [id]);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  });
 
   function formatDate(date) {
     var d = new Date(date),

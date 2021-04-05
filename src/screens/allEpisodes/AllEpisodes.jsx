@@ -36,7 +36,6 @@ const AllEpisodes = () => {
 
   return (
     <Layout>
-    
       <section className="all-ep-wrapper">
         {allEpisodes.map((episode, index) => (
           <Link className="episode-card" to={`/episodes/${episode.id}`} key={index}>
