@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import NewestEp from "../../components/newestEp/NewestEp";
 import Layout from "../../shared/Layout";
 import Subscribe from '../../components/subscribe/Subscribe';
-import {getEpisode} from '../../services/episodes';
+import {getFirstEpisode} from '../../services/episodes';
 import "./main.css";
 
 const Main = () => {
@@ -13,12 +13,12 @@ const Main = () => {
   const [isLoaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    const fetchEpisode = async () => {
-      const episode = await getEpisode()
-      setQueriedEps(episode)
+    const fetchFirstEpisode = async () => {
+      const firstEpisode = await getFirstEpisode()
+      setQueriedEps(firstEpisode)
       setLoaded(true);
     };
-    fetchEpisode();
+    fetchFirstEpisode();
   }, []);
 
 
