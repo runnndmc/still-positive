@@ -33,11 +33,6 @@ const EpisodeDetail = () => {
     return [month, day, year].join("/");
   }
 
-  /*   const toggleContent = (e) => {
-    e.preventDefault();
-    alert("toggle me bebe");
-  }; */
-
 
   if (!isLoaded) {
     return <h4>One Minute Babe...</h4>;
